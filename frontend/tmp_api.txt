@@ -1,0 +1,64 @@
+﻿import axios from 'axios';
+import { useAuthStore } from '@/store/auth';
+
+const DEFAULT_API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+const CANDIDATES = [
+  DEFAULT_API,
+  'http://127.0.0.1:3000',
+  'http://localhost:3001',
+  'http://127.0.0.1:3001'
+];
+
+function getBaseUrl(){
+  if (typeof window === 'undefined') return DEFAULT_API;
+  const override = localStorage.getItem('API_URL');
+  if (override) return override;
+  const idx = Number(localStorage.getItem('API_URL_INDEX') || 0);
+  return CANDIDATES[Math.max(0, Math.min(CANDIDATES.length - 1, idx))];
+}
+
+const api = axios.create({ baseURL: getBaseUrl() });
+
+api.interceptors.request.use((cfg) => {
+  // Permitir override de endpoint desde localStorage en client (Ãºtil si cambia el backend)
+  if (typeof window !== 'undefined') {
+    const current = getBaseUrl();
+    if (api.defaults.baseURL !== current) api.defaults.baseURL = current;
+  }
+  const token = useAuthStore.getState().token || (typeof window !== 'undefined' ? localStorage.getItem('token') : null);
+  if (token) cfg.headers.Authorization = `Bearer ${token}`;
+  (cfg.params ||= {})['_t'] = Date.now();
+  // Evitar caches intermedios
+  (cfg.headers ||= {})['Cache-Control'] = 'no-store';
+  return cfg;
+});
+
+api.interceptors.response.use(
+  (r) => r,
+  async (err) => {
+    if (typeof window !== 'undefined') {
+      const base = api.defaults.baseURL || DEFAULT_API;
+      console.warn('[API] Error con baseURL:', base, err?.message || err);
+    }
+    const cfg: any = err?.config || {};
+    if (typeof window !== 'undefined' && !cfg._retried) {
+      cfg._retried = true;
+      // Avanzar candidato y reintentar una vez en caso de red caÃ­da/conexiÃ³n rechazada
+      const status = err?.response?.status;
+      const isNetwork = err?.code === 'ERR_NETWORK' || !err?.response || (status && status >= 500);
+      if (isNetwork) {
+        const currentIdx = Number(localStorage.getItem('API_URL_INDEX') || 0);
+        const nextIdx = (currentIdx + 1) % CANDIDATES.length;
+        const nextBase = CANDIDATES[nextIdx];
+        localStorage.setItem('API_URL_INDEX', String(nextIdx));
+        api.defaults.baseURL = nextBase;
+        cfg.baseURL = nextBase;
+        try { return await api.request(cfg); } catch(e){ /* fallthrough */ }
+      }
+    }
+    return Promise.reject(err);
+  }
+);
+
+export default api;
+

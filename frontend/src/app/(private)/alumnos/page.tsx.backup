@@ -1,0 +1,138 @@
+'use client';
+import * as React from 'react';
+import { Box, Stack, TextField, MenuItem, Button, Tooltip, IconButton, Grid, Card, CardContent, Typography, Chip } from '@mui/material';
+import CheckCircleRounded from '@mui/icons-material/CheckCircleRounded';
+import CancelRounded from '@mui/icons-material/CancelRounded';
+import dayjs from 'dayjs';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+// import DataTable from '@/components/data/DataTable';
+import api from '@/lib/api';
+import type { GridColDef } from '@mui/x-data-grid';
+import { useQuery } from '@tanstack/react-query';
+import { useAuthStore } from '@/store/auth';
+import { can, type Rol } from '@/lib/rbac';
+
+type Row = {
+  id: number;
+  persona_id: number;
+  nombre: string;
+  apellido: string;
+  dni: string;
+  deporte?: string | null;
+  categoria?: string | null;
+  estado?: string;
+};
+
+export default function AlumnosList(){
+  const authUser = useAuthStore(s => s.user as any);
+  const rol = ((authUser?.user?.rol_sistema || authUser?.rol_sistema || '') as Rol) || undefined;
+  const isCoord = rol === 'COORDINADOR';
+
+  const [page, setPage] = React.useState(0);
+  const pageSize = 25;
+  const [deporte, setDeporte] = React.useState<string>('');
+  const [categoria, setCategoria] = React.useState<string>('');
+  const [fecha, setFecha] = React.useState<string>(dayjs().format('YYYY-MM-DD'));
+  const qc = useQueryClient();
+
+  const { data: deportes } = useQuery({
+    queryKey: ['deportes'],
+    queryFn: async ()=> (await api.get('/catalogo/deportes')).data as string[]
+  });
+  const { data: categorias } = useQuery({
+    queryKey: ['categorias'],
+    queryFn: async ()=> (await api.get('/catalogo/categorias')).data as string[]
+  });
+
+  async function fetchRows(p:number, size:number){
+    const params:any = { page: p+1, size };
+    if (deporte) params.deporte = deporte;
+    if (categoria) params.categoria = categoria;
+    const paths = isCoord ? ['/coordinador/alumnos', '/api/coordinador/alumnos'] : ['/alumnos', '/api/alumnos'];
+    let lastErr:any;
+    for (const path of paths){
+      try { return (await api.get(path, { params })).data; } catch(e){ lastErr = e; }
+    }
+    throw lastErr;
+  }
+
+  const { data, isFetching } = useQuery({
+    queryKey: ['alumnos', page, pageSize, deporte, categoria, isCoord],
+    queryFn: async ()=> fetchRows(page, pageSize)
+  });
+
+  const marcarAsistencia = useMutation({
+    mutationFn: async ({ id, presente, obs, dep, cat }:{ id:number; presente:boolean; obs?:string; dep?:string|null; cat?:string|null })=>{
+      const payload:any = { fecha, presente, observacion: obs };
+      if (dep) payload.deporte = dep;
+      if (cat) payload.categoria = cat;
+      const paths = [`/alumnos/${id}/asistencias`,`/api/alumnos/${id}/asistencias`];
+      let last:any;
+      for (const p of paths){ try { return (await api.post(p, payload)).data; } catch(e){ last=e; } }
+      throw last;
+    },
+    onSuccess: ()=> qc.invalidateQueries({ queryKey: ['asistencias', fecha, deporte, categoria] })
+  });
+
+  const rows: Row[] = data?.data || data || [];
+  const rowCount = data?.total || rows.length || 0;
+
+  // Cards: acciones de asistencia
+  const Acciones = ({ row }:{ row:Row }) => (
+    <Stack direction="row" gap={1} alignItems="center">
+      <Tooltip title="Marcar presente">
+        <span>
+          <IconButton size="small" color="success" disabled={marcarAsistencia.isPending} onClick={()=> marcarAsistencia.mutate({ id: row.id, presente: true, dep: row.deporte || undefined, cat: row.categoria || undefined })}>
+            <CheckCircleRounded fontSize="small" />
+          </IconButton>
+        </span>
+      </Tooltip>
+      <Tooltip title="Marcar ausente">
+        <span>
+          <IconButton size="small" color="error" disabled={marcarAsistencia.isPending} onClick={()=> marcarAsistencia.mutate({ id: row.id, presente: false, dep: row.deporte || undefined, cat: row.categoria || undefined })}>
+            <CancelRounded fontSize="small" />
+          </IconButton>
+        </span>
+      </Tooltip>
+    </Stack>
+  );
+
+  return (
+    <Box sx={{ display:'grid', gap: 1 }}>
+      <Stack direction="row" gap={1} flexWrap="wrap">
+        <TextField type="date" label="Fecha" value={fecha} onChange={(e)=> setFecha(e.target.value)} />
+        <TextField select label="Deporte" value={deporte} onChange={(e)=>{ setPage(0); setDeporte(e.target.value); }} sx={{ minWidth: 180 }}>
+          <MenuItem value="">Todos</MenuItem>
+          {(deportes || []).map((d)=> (<MenuItem key={d} value={d}>{d}</MenuItem>))}
+        </TextField>
+        <TextField select label="Categoria" value={categoria} onChange={(e)=>{ setPage(0); setCategoria(e.target.value); }} sx={{ minWidth: 180 }}>
+          <MenuItem value="">Todas</MenuItem>
+          {(categorias || []).map((c)=> (<MenuItem key={c} value={c}>{c}</MenuItem>))}
+        </TextField>
+      </Stack>
+      <Grid container spacing={2}>
+        {rows.map((r)=> (
+          <Grid key={r.id} item xs={12} md={6} lg={4}>
+            <Card variant="outlined">
+              <CardContent>
+                <Stack spacing={0.5}>
+                  <Stack direction="row" justifyContent="space-between" alignItems="center">
+                    <Typography fontWeight={700}>{r.apellido} {r.nombre}</Typography>
+                    <Chip size="small" label={r.estado || 'ACTIVO'} color={(r.estado||'ACTIVO')==='ACTIVO'?'success':'default'} />
+                  </Stack>
+                  <Typography variant="body2">DNI: {r.dni}</Typography>
+                  <Typography variant="body2">Deporte: {r.deporte || '-'}</Typography>
+                  <Typography variant="body2">Categoría: {r.categoria || '-'}</Typography>
+                  <Acciones row={r} />
+                </Stack>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+        {!isFetching && rows.length===0 && (
+          <Grid item xs={12}><Typography variant="body2">No hay alumnos para mostrar.</Typography></Grid>
+        )}
+      </Grid>
+    </Box>
+  );
+}

@@ -1,0 +1,44 @@
+{
+  "name": "club-lujan-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "migrate": "node scripts/migrate.js",
+    "migrate:watch": "node scripts/migrate.js --watch",
+    "dc:migrate": "docker compose run --rm migrator",
+    "dc:migrate:watch": "docker compose run --rm migrator node scripts/migrate.js --watch",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand"
+  },
+  "dependencies": {
+    "axios": "^1.13.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "bwip-js": "^4.5.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.1",
+    "express-validator": "^7.0.1",
+    "form-data": "^4.0.4",
+    "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "mysql2": "^3.11.0",
+    "node-cron": "^3.0.3",
+    "pdfkit": "^0.15.2",
+    "qrcode": "^1.5.4",
+    "qs": "^6.14.0",
+    "sharp": "^0.34.4",
+    "supertest": "^7.0.0",
+    "swagger-ui-express": "^5.0.1",
+    "ws": "^8.18.3",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

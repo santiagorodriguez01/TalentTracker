@@ -1,0 +1,26 @@
+﻿import axios from 'axios';
+import { useAuthStore } from '@/store/auth';
+
+const DEFAULT_API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+
+const api = axios.create({ baseURL: DEFAULT_API });
+
+api.interceptors.request.use((cfg) => {
+  // Permitir override manual del endpoint desde localStorage (si existe)
+  if (typeof window !== 'undefined') {
+    const override = localStorage.getItem('API_URL');
+    if (override && api.defaults.baseURL !== override) api.defaults.baseURL = override;
+  }
+  const token = useAuthStore.getState().token || (typeof window !== 'undefined' ? localStorage.getItem('token') : null);
+  if (token) cfg.headers.Authorization = `Bearer ${token}`;
+  // Anti-cache solo para GET
+  if ((cfg.method || 'get').toLowerCase() === 'get') {
+    (cfg.params ||= {})['_t'] = Date.now();
+  }
+  (cfg.headers ||= {})['Cache-Control'] = 'no-store';
+  (cfg.headers ||= {})['Accept'] = 'application/json';
+  return cfg;
+});
+
+export default api;
+

@@ -1,0 +1,29 @@
+# Node
+node_modules/
+npm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+# Build / cache
+dist/
+coverage/
+.tmp/
+.cache/
+
+# Docker / runtime
+uploads/
+mysql-data/
+*.sock
+*.pid
+*.log
+
+# Env / secretos
+.env
+.env.*
+*.local
+
+# SO / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,183 @@
+openapi: 3.0.3
+info:
+  title: Club Luján - AI Integration API
+  description: >
+    API de integración con microservicios de Inteligencia Artificial (biometría y análisis físico).  
+    Gestiona la comunicación entre el backend principal (Node.js) y los microservicios Python.
+  version: 1.0.0
+  contact:
+    name: Equipo de Desarrollo Club Luján
+    email: soporte@clublujan.ar
+servers:
+  - url: https://api.clublujan.ar/api
+    description: Servidor de producción
+  - url: http://localhost:3000/api
+    description: Servidor local de desarrollo
+
+tags:
+  - name: IA Biometría
+    description: Operaciones relacionadas con enrolamiento y verificación facial
+  - name: IA Rendimiento
+    description: Análisis físico y métricas de entrenamiento
+
+paths:
+  /ai/alumnos/{id}/enroll-face:
+    post:
+      tags:
+        - IA Biometría
+      summary: Enrolar rostro de un alumno
+      description: >
+        Envía una imagen al microservicio biométrico para registrar la cara de un alumno.
+      operationId: enrollFace
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: ID del alumno
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                image:
+                  type: string
+                  format: binary
+                  description: Imagen del rostro del alumno
+      responses:
+        "200":
+          description: Enrolamiento exitoso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                  message:
+                    type: string
+                  embedding_b64:
+                    type: string
+                    description: Vector facial codificado en Base64
+        "400":
+          description: Faltan datos o imagen no válida
+        "401":
+          description: No autorizado
+        "500":
+          description: Error interno del servidor
+
+  /ai/revisor/{id}/verify-face:
+    post:
+      tags:
+        - IA Biometría
+      summary: Verificar rostro de usuario
+      description: >
+        Envía una imagen al microservicio para validar la identidad de un usuario mediante comparación facial.
+      operationId: verifyFace
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: ID del usuario a verificar
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                image:
+                  type: string
+                  format: binary
+                  description: Imagen del rostro para verificación
+      responses:
+        "200":
+          description: Verificación completada
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                  allow:
+                    type: boolean
+                    description: Si se permite o no el acceso
+                  score:
+                    type: number
+                    format: float
+                  reason:
+                    type: string
+        "400":
+          description: Imagen faltante o inválida
+        "401":
+          description: No autorizado
+        "500":
+          description: Error interno del microservicio o base de datos
+
+  /ai/alumnos/{id}/analyze-performance:
+    post:
+      tags:
+        - IA Rendimiento
+      summary: Analizar rendimiento físico
+      description: >
+        Envía un video al microservicio de análisis físico, que devuelve métricas y conclusiones del entrenamiento.
+      operationId: analyzePerformance
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: ID del alumno
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                video:
+                  type: string
+                  format: binary
+                  description: Video de entrenamiento o sesión física
+      responses:
+        "200":
+          description: Análisis completado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                  metrics:
+                    type: object
+                    additionalProperties: true
+                    description: Métricas devueltas por el microservicio de IA
+                  message:
+                    type: string
+        "400":
+          description: Video faltante o inválido
+        "401":
+          description: No autorizado
+        "500":
+          description: Error interno del servidor o del microservicio
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

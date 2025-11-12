@@ -1,0 +1,1 @@
+export default function(err,req,res,_){console.error('[ERR]',err);if(res.headersSent)return;const c=err.status||err.code||500;const m=err.message||'Error interno';res.status((c>=100&&c<600)?c:500).json({error:{message:m,status:c}});}

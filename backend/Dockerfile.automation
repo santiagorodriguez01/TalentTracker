@@ -1,0 +1,32 @@
+# =========================================
+# DOCKERFILE PARA AUTOMATIZACIÓN Y CRON JOBS
+# Contenedor dedicado a backups, logs y monitoreo
+# =========================================
+
+FROM mysql:8
+
+# Instalar dependencias
+RUN microdnf install -y \
+    cronie \
+    bc \
+    gzip \
+    procps \
+    && microdnf clean all
+
+# Crear directorios necesarios
+RUN mkdir -p /app/scripts \
+    /backups \
+    /var/log/talenttracker \
+    /var/log/talenttracker/reports
+
+# Copiar scripts
+COPY scripts/*.sh /app/scripts/
+COPY scripts/start.sh /app/start.sh
+COPY scripts/crontab /app/scripts/crontab
+
+# Convertir finales de línea de Windows a Unix y dar permisos de ejecución
+RUN sed -i 's/\r$//' /app/start.sh /app/scripts/*.sh /app/scripts/crontab && \
+    chmod +x /app/scripts/*.sh /app/start.sh
+
+# Comando de inicio
+CMD ["/app/start.sh"]

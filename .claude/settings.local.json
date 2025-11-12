@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(docker logs:*)",
+      "Bash(docker stop:*)",
+      "Bash(docker-compose build:*)",
+      "Bash(docker start:*)",
+      "Bash(docker exec:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJjb29yZGluYWRvciIsInJvbF9zaXN0ZW1hIjoiQ09PUkRJTkFET1IiLCJpYXQiOjE3NjI4MDg5MjAsImV4cCI6MTc2MjgwOTgyMH0.LQVT5y7ob-DMR5YA00_9_tH5YrOvCfEAnivp1amtwJw\")",
+      "Bash(test:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(tree:*)",
+      "Bash(npm run build:*)",
+      "Bash(docker ps:*)",
+      "Bash(docker restart:*)",
+      "Bash(timeout 5 docker logs:*)",
+      "Bash(timeout 20 docker logs:*)",
+      "Bash(sed:*)",
+      "Bash(docker run:*)",
+      "Bash(./install_audit_system.sh:*)",
+      "Bash(docker-compose ps:*)",
+      "Bash(docker-compose restart:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

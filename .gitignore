@@ -1,0 +1,74 @@
+# Node modules
+backend/node_modules/
+frontend/node_modules/
+node_modules/
+
+# Build directories
+frontend/.next/
+backend/dist/
+.next/
+dist/
+
+# Docker data
+backend/mysql-data/
+mysql-data/
+
+# Uploads and temp files
+backend/uploads/*
+!backend/uploads/.gitkeep
+uploads/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment variables
+# NOTE: Para transferir a otro notebook, NECESITAS incluir estos archivos
+# Descomenta estas líneas si vas a hacer git push (para no subir secretos)
+# backend/.env
+# frontend/.env.local
+
+# Cache
+.cache/
+.tmp/
+*.cache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+biometric_access/__pycache__/
+performance_tracker/__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+.dockerignore
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/

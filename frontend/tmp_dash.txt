@@ -1,0 +1,166 @@
+﻿'use client';
+import * as React from 'react';
+import { Box, Paper, Typography, IconButton, Stack } from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Groups2Rounded from '@mui/icons-material/Groups2Rounded';
+import PersonRounded from '@mui/icons-material/PersonRounded';
+import ReceiptLongRounded from '@mui/icons-material/ReceiptLongRounded';
+import PointOfSaleRounded from '@mui/icons-material/PointOfSaleRounded';
+import AssessmentRounded from '@mui/icons-material/AssessmentRounded';
+import PolicyRounded from '@mui/icons-material/PolicyRounded';
+import AddRounded from '@mui/icons-material/AddRounded';
+import { useRouter } from 'next/navigation';
+
+function ShortcutCard({
+  label, icon, href
+}: { label: string; icon: React.ReactNode; href: string }) {
+  const router = useRouter();
+  return (
+    <Paper
+      role="button"
+      onClick={() => router.push(href as any)}
+      sx={{
+        p: { xs: 2, sm: 2.5 },
+        width: '90%',
+        maxWidth: { md: 420, lg: 460 },
+        mx: 'auto',
+        textAlign: 'center',
+        borderRadius: '14px !important', // rectangular, un poco mÃ¡s suave
+        cursor: 'pointer',
+        boxShadow: (t) => t.palette.mode === 'light'
+          ? t.shadows[2]
+          : '0 1px 2px rgba(255,255,255,0.06), 0 6px 18px rgba(255,255,255,0.10)',
+        transition: 'transform 160ms ease, box-shadow 180ms ease, background-color 180ms ease',
+        '&:hover': {
+          boxShadow: (t) => t.palette.mode === 'light'
+            ? t.shadows[4]
+            : '0 2px 4px rgba(255,255,255,0.08), 0 10px 24px rgba(255,255,255,0.16)',
+          transform: 'translateY(-2px)',
+          backgroundColor: (t) => t.palette.mode === 'light'
+            ? 'rgba(47,166,74,0.08)'
+            : 'rgba(255,163,126,0.16)'
+        },
+        '&:active': { transform: 'scale(0.99)' }
+      }}
+      elevation={1}
+    >
+      <IconButton size="large" disableRipple sx={{ pointerEvents: 'none' }}>
+        {icon}
+      </IconButton>
+      <Typography variant="body2" fontWeight={600} sx={{ mt: 1 }}>
+        {label}
+      </Typography>
+    </Paper>
+  );
+}
+
+export default function Dashboard() {
+  return (
+    <Box>
+      <Typography variant="h6" fontWeight={700} sx={{ mb: 2 }}>
+        Accesos rÃ¡pidos
+      </Typography>
+
+      <Grid
+        container
+        spacing={3} // ~24px uniforme entre filas y columnas
+        sx={{ px: { xs: 2, sm: 3 }, py: 2 }} // padding interno para separar de laterales y arriba/abajo
+      >
+        <Grid xs={12} sm={6}>
+          <ShortcutCard label="Socios" icon={<Groups2Rounded />} href="/socios" />
+        </Grid>
+        <Grid xs={12} sm={6}>
+          <ShortcutCard label="Personas" icon={<PersonRounded />} href="/personas" />
+        </Grid>
+        <Grid xs={12} sm={6}>
+          <ShortcutCard label="Cuotas" icon={<ReceiptLongRounded />} href="/cuotas" />
+        </Grid>
+        <Grid xs={12} sm={6}>
+          <ShortcutCard label="Caja" icon={<PointOfSaleRounded />} href="/caja" />
+        </Grid>
+        <Grid xs={12} sm={6}>
+          <ShortcutCard label="Reportes" icon={<AssessmentRounded />} href="/reportes" />
+        </Grid>
+        <Grid xs={12} sm={6}>
+          <ShortcutCard label="AuditorÃ­a" icon={<PolicyRounded />} href="/audit" />
+        </Grid>
+      </Grid>
+
+      <Typography variant="h6" fontWeight={700} sx={{ mt: 3, mb: 1 }}>
+        Acciones rÃ¡pidas
+      </Typography>
+      <Stack direction="row" spacing={1}>
+        <Paper
+          onClick={() => location.assign('/socios/new')}
+          sx={{
+            px: 2, py: 1,
+            borderRadius: 9999, // ovalada
+            display: 'inline-flex', alignItems: 'center', cursor: 'pointer',
+            boxShadow: (t) => t.palette.mode === 'light'
+              ? t.shadows[1]
+              : '0 1px 2px rgba(255,255,255,0.06), 0 6px 18px rgba(255,255,255,0.10)',
+            transition: 'transform 160ms ease, box-shadow 180ms ease, background-color 180ms ease',
+            '&:hover': {
+              boxShadow: (t) => t.palette.mode === 'light'
+                ? t.shadows[3]
+                : '0 2px 4px rgba(255,255,255,0.08), 0 10px 24px rgba(255,255,255,0.16)',
+              transform: 'translateY(-1px)',
+              backgroundColor: (t) => t.palette.mode === 'light' ? 'rgba(47,166,74,0.08)' : 'rgba(255,163,126,0.16)'
+            }
+          }}
+          elevation={0}
+        >
+          <AddRounded fontSize="small" />
+          <Typography sx={{ ml: 1 }} variant="body2">Alta socio</Typography>
+        </Paper>
+        <Paper
+          onClick={() => location.assign('/personas/new')}
+          sx={{
+            px: 2, py: 1,
+            borderRadius: 9999, // ovalada
+            display: 'inline-flex', alignItems: 'center', cursor: 'pointer',
+            boxShadow: (t) => t.palette.mode === 'light'
+              ? t.shadows[1]
+              : '0 1px 2px rgba(255,255,255,0.06), 0 6px 18px rgba(255,255,255,0.10)',
+            transition: 'transform 160ms ease, box-shadow 180ms ease, background-color 180ms ease',
+            '&:hover': {
+              boxShadow: (t) => t.palette.mode === 'light'
+                ? t.shadows[3]
+                : '0 2px 4px rgba(255,255,255,0.08), 0 10px 24px rgba(255,255,255,0.16)',
+              transform: 'translateY(-1px)',
+              backgroundColor: (t) => t.palette.mode === 'light' ? 'rgba(47,166,74,0.08)' : 'rgba(255,163,126,0.16)'
+            }
+          }}
+          elevation={0}
+        >
+          <AddRounded fontSize="small" />
+          <Typography sx={{ ml: 1 }} variant="body2">Alta persona</Typography>
+        </Paper>
+        <Paper
+          onClick={() => location.assign('/pagos/new')}
+          sx={{
+            px: 2, py: 1,
+            borderRadius: 9999, // ovalada
+            display: 'inline-flex', alignItems: 'center', cursor: 'pointer',
+            boxShadow: (t) => t.palette.mode === 'light'
+              ? t.shadows[1]
+              : '0 1px 2px rgba(255,255,255,0.06), 0 6px 18px rgba(255,255,255,0.10)',
+            transition: 'transform 160ms ease, box-shadow 180ms ease, background-color 180ms ease',
+            '&:hover': {
+              boxShadow: (t) => t.palette.mode === 'light'
+                ? t.shadows[3]
+                : '0 2px 4px rgba(255,255,255,0.08), 0 10px 24px rgba(255,255,255,0.16)',
+              transform: 'translateY(-1px)',
+              backgroundColor: (t) => t.palette.mode === 'light' ? 'rgba(47,166,74,0.08)' : 'rgba(255,163,126,0.16)'
+            }
+          }}
+          elevation={0}
+        >
+          <AddRounded fontSize="small" />
+          <Typography sx={{ ml: 1 }} variant="body2">Registrar pago</Typography>
+        </Paper>
+      </Stack>
+    </Box>
+  );
+}
+

@@ -1,0 +1,47 @@
+# =========================================
+# CRONTAB - TALENTTRACKER AUDIT SYSTEM
+# Configuración de tareas programadas
+# =========================================
+#
+# IMPORTANTE: Este archivo debe ser cargado en el contenedor de automatización
+# Para instalar: crontab /app/scripts/crontab
+#
+# Zona horaria: America/Argentina/Buenos_Aires (GMT-3)
+# =========================================
+
+# Formato: minute hour day month dayofweek command
+
+# =========================================
+# BACKUP COMPLETO DIARIO
+# Ejecuta a las 3:00 AM Argentina (00:00 UTC cuando es verano, 03:00 UTC cuando es invierno)
+# =========================================
+0 3 * * * /app/scripts/backup_full.sh >> /var/log/talenttracker/backup.log 2>&1
+
+# =========================================
+# LOGGING HORARIO
+# Recolecta métricas y estadísticas cada hora
+# =========================================
+0 * * * * /app/scripts/hourly_logs.sh >> /var/log/talenttracker/hourly.log 2>&1
+
+# =========================================
+# LIMPIEZA DE AUDITORÍAS ANTIGUAS
+# Ejecuta todos los domingos a las 2:00 AM
+# Mantiene solo los últimos 90 días de auditoría
+# =========================================
+0 2 * * 0 /app/scripts/cleanup_audit.sh >> /var/log/talenttracker/cleanup.log 2>&1
+
+# =========================================
+# VERIFICACIÓN DE SALUD DEL SISTEMA
+# Ejecuta cada 15 minutos para verificar conectividad
+# =========================================
+*/15 * * * * /app/scripts/health_check.sh >> /var/log/talenttracker/health.log 2>&1
+
+# =========================================
+# REPORTE SEMANAL
+# Genera reporte semanal los lunes a las 8:00 AM
+# =========================================
+0 8 * * 1 /app/scripts/weekly_report.sh >> /var/log/talenttracker/reports.log 2>&1
+
+# =========================================
+# FIN DE CRONTAB
+# =========================================

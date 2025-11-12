@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin
+Content-Type: application/pdf
+Content-Disposition: inline; filename="carnet_1.pdf"
+Date: Sat, 20 Sep 2025 00:35:04 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
