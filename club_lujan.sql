@@ -449,7 +449,20 @@ INSERT INTO `audit_log` (`id`, `usuario_id`, `accion`, `entidad`, `entidad_id`, 
 (238,	8,	'LOGIN',	'usuario',	8,	'{\"ip\": \"::ffff:172.18.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0\"}',	'2025-11-10 23:13:12',	'2025-11-10 23:13:12'),
 (239,	3,	'LOGIN',	'usuario',	3,	'{\"ip\": \"::ffff:172.18.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 00:35:10',	'2025-11-11 00:35:10'),
 (240,	15,	'LOGIN',	'usuario',	15,	'{\"ip\": \"::ffff:172.18.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 00:40:04',	'2025-11-11 00:40:04'),
-(241,	3,	'LOGIN',	'usuario',	3,	'{\"ip\": \"::ffff:172.18.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 00:43:24',	'2025-11-11 00:43:24');
+(241,	3,	'LOGIN',	'usuario',	3,	'{\"ip\": \"::ffff:172.18.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 00:43:24',	'2025-11-11 00:43:24'),
+(242,	3,	'LOGIN',	'usuario',	3,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 02:44:24',	'2025-11-11 02:44:24'),
+(243,	3,	'LOGIN',	'usuario',	3,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 03:07:18',	'2025-11-11 03:07:18'),
+(244,	18,	'LOGIN',	'usuario',	18,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 03:54:04',	'2025-11-11 03:54:04'),
+(245,	3,	'LOGIN',	'usuario',	3,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 11:12:04',	'2025-11-11 11:12:04'),
+(246,	18,	'LOGIN',	'usuario',	18,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 11:15:11',	'2025-11-11 11:15:11'),
+(247,	18,	'LOGIN',	'usuario',	18,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 11:21:07',	'2025-11-11 11:21:07'),
+(248,	18,	'LOGIN',	'usuario',	18,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 11:45:18',	'2025-11-11 11:45:18'),
+(249,	18,	'LOGIN',	'usuario',	18,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 11:50:13',	'2025-11-11 11:50:13'),
+(250,	18,	'LOGIN',	'usuario',	18,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 12:07:35',	'2025-11-11 12:07:35'),
+(251,	3,	'LOGIN',	'usuario',	3,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\"}',	'2025-11-11 12:16:50',	'2025-11-11 12:16:50'),
+(252,	18,	'LOGIN',	'usuario',	18,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-11 12:26:29',	'2025-11-11 12:26:29'),
+(253,	15,	'LOGIN',	'usuario',	15,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\"}',	'2025-11-11 12:40:06',	'2025-11-11 12:40:06'),
+(254,	3,	'LOGIN',	'usuario',	3,	'{\"ip\": \"::ffff:172.19.0.1\", \"ua\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"}',	'2025-11-12 14:04:21',	'2025-11-12 14:04:21');
 
 DROP TABLE IF EXISTS `beneficio`;
 CREATE TABLE `beneficio` (
@@ -482,7 +495,11 @@ CREATE TABLE `biometric_audit_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `biometric_audit_log` (`id`, `date_created`, `date_modified`, `user_id`, `action`, `score`, `liveness_passed`, `metadata`, `created_at`, `updated_at`) VALUES
-(1,	'2025-11-04 13:41:30',	'2025-11-04 13:41:30',	5,	'ENROLL',	NULL,	0,	'{\"message\": \"Enrollment successful\", \"has_embedding\": 0}',	'2025-11-04 13:41:30',	'2025-11-04 13:41:30');
+(1,	'2025-11-04 13:41:30',	'2025-11-04 13:41:30',	5,	'ENROLL',	NULL,	0,	'{\"message\": \"Enrollment successful\", \"has_embedding\": 0}',	'2025-11-04 13:41:30',	'2025-11-04 13:41:30'),
+(2,	'2025-11-11 02:45:08',	'2025-11-11 02:45:08',	3,	'ENROLL',	NULL,	0,	'{\"message\": \"Enrollment successful\", \"has_embedding\": 1}',	'2025-11-11 02:45:08',	'2025-11-11 02:45:08'),
+(3,	'2025-11-11 02:45:44',	'2025-11-11 02:45:44',	3,	'ACCESS_GRANTED',	0.994,	1,	'{\"reason\": null, \"evidence\": {\"blink\": true}, \"challenge\": \"blink\"}',	'2025-11-11 02:45:44',	'2025-11-11 02:45:44'),
+(4,	'2025-11-11 02:45:46',	'2025-11-11 02:45:46',	3,	'ACCESS_GRANTED',	0.996,	1,	'{\"reason\": null, \"evidence\": {\"blink\": true}, \"challenge\": \"blink\"}',	'2025-11-11 02:45:46',	'2025-11-11 02:45:46'),
+(5,	'2025-11-11 02:45:47',	'2025-11-11 02:45:47',	3,	'ACCESS_GRANTED',	0.995,	1,	'{\"reason\": null, \"evidence\": {\"blink\": true}, \"challenge\": \"blink\"}',	'2025-11-11 02:45:47',	'2025-11-11 02:45:47');
 
 DROP TABLE IF EXISTS `biometric_profile`;
 CREATE TABLE `biometric_profile` (
@@ -500,7 +517,8 @@ CREATE TABLE `biometric_profile` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `biometric_profile` (`id`, `date_created`, `date_modified`, `user_id`, `face_vector`, `model_version`, `created_at`, `updated_at`) VALUES
-(1,	'2025-11-04 13:41:30',	'2025-11-04 13:41:30',	5,	'ÿØÿà\0JFIF\0\0\0\0\0\0ÿÛ\0C\0			\n\n\n\n\n\n	\n\n\nÿÛ\0C\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÿÀ\0\"\0ÿÄ\0\0\0\0\0\0\0\0\0\0\0	\nÿÄ\0µ\0\0\0}\0!1AQa\"q2‘¡#B±ÁRÑð$3br‚	\n\Z%&\'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ\0\0\0\0\0\0\0\0	\nÿÄ\0µ\0\0w\0!1AQaq\"2B‘¡±Á	#3RðbrÑ\n$4á%ñ\Z&\'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ\0\0\0?\0ýÈõ£ u4ˆ9ÇëCFXô5óç E4aØ?\\vÍ(»Š{\"®\nœóÍ2v`Ã\r×¶(‚µ#8 }{Õg_Òô8¡ŸX¾[t¹¹[h]ó‡•¾êñÜûÔ’ÍÆíàÕ³ß8þt	ÞÚ3.NXßžÕä?µíaáoÙÓCòÙÿ\0Z¹‰¾Ã¥+œŸI$ÇÝOÔÖíUûnxKà%¥×…´gSñFÌGjŽ<»\'#‡˜Žã „ë_›~7ø¯âŠž2»Õ5Ýbâòâvv¾¾–MÃ9ÿ\0V¿ÝÐUòè8Sswf×Æþ4øããiuÿ\0ë2ê7!1Úƒˆm‡`‹œ`VÙà¸u[€Á|¬?îàtúÖrÅ§im´ûe–a&š‰õKa(‰õxÎ[GO¦MKZñJ\nÈÚ—T·Ñáy#ÄNÿ\02Ë @:šåõ-v+»–¸“\\!˜³75KÅÞ!šácÓí¡Hç~K‘íÚ¨A¥K{õ0²2óå¼ŸÌw¨”l—¼Yº·µ×ƒiðøâñ>RÆ+x‘AúŸJç›À·É¡%äÛ°ÒO.Õð­[‰¡Ô³m¬Q’0Ur›‡áÉ¬íOá\\—h·RšÝ»lœ¨üê°ì2o¥¼,cÕíð?†=Æ«[éR\'ˆã‹ž9ú‚*Þƒãmq\r¶­s,d’	¸¨÷8þU™q¨|Cw1Å¦Ù\\*ýâÀ*¦îfu–3ê–,Ñ¬ñÌHÀ3@?•L—÷‘‚Úžj<4väús\\d^9ñžó·†Œt\' ~DVn­ñ;Æ÷òm‘e$Ë0ý)}ã¨×µí>cmkãÕM¿5Ì^jöS±kíFUiã\rvxK][ÌÁIÜ7r>•ÏÝxŠ½å¤¹ìpAúÕB7eZÛTÚ®•™ ¸tQÎÆè+\'Sñ6s+C\Züøá‡ˆþ)²p|•rG÷¹ªwWÍrÛö…£­h¢¬$“fŒ—fPÈ“üàunÒ–ËÄ7Ö¸·óˆžÿ\0\\ÖI½ûeö‰çëU_Y’Ý·[¶ïã9ªŒPrênÝÍäÄÉ\'–ùþGâ\rejÖ©\rÀ6FÇîºU×\\S&ùçàÔÉ¬XÝ³^0dnˆäãðô4F*á³$´Ö<Ge¶[]FPÁ°6¿Ðý+³ðOÇiLýV`¤e™~n{q\\-üZe“Þè~lñg÷îÉ_ñ‰®Ûk¤<1y,ß/¡\'Ú´².3>Ìý•?l­Ká7í¼Ká›Æ±;ñ}fÃtQç•eì}r+õŸö~ý¥~þÑþÙðuÛGq)º³›–Œ÷Úˆ{û×óýáÛƒdë0•^Ã®ké?ÙCö‹ñgÂmnÛ]ðæ¬Ò­´¡¦³3¹{¡ûRJÇ5ZjGíŽqƒš àŠóßÙËö‰ð/íàH<]áàd\'Ë¿±•Ç™m((Ãû½Hnùè¤.sžÞ˜¦qJ-1˜\' § 8ˆÎE=~õTB;‰E+‘¸ò(ª(èéˆéNÚØÎÓ¥2Lç#Ò¸Àc6:U{©t§j‘˜‚*µä»#É`¼œ±03Ÿ¥4®‚æîÎå7qŽw.qþó_3þÛŸ·Ÿ‡>iRø+áæ¹ouâI ÃÜÇ&bÓ#Æ‡z^ÁGÝêkË?mÛËÅrk\ZŸÃ_ƒú¤–6VªÖÚ†©jëæ]7FDl|«Ø‘é_øÛXñŽ©pðE¨[ÁdšRò0Ï¸ÍZ†¢MÜÞñwÅy¼s®O,º…Ã™ZKÛÙ›2ÊÇ®I<çô«\Z\\·w1&¡Ûˆ B0#$Üžù®gÂÞÒ-á:Æ¡x[æÎâøÔ^kboÝ–:o†ÁŽ\'ùˆ9\'ÔÑ\'ÊŽÊ4Ô¬û«-JSý«ªà61`3Ÿð¬ÍCÄ\Z\rœxÓ4CpÜŒÌ6€=}sPØxV™Á»»Yúe‰Ækºð—Á¸îJ¶¥#gŒ\00+TV=zOc‡KkŸiøW{wQ«)ä{Ò±¥ð5ìwB÷ ìI}\rgð£G·R ±wc×`Í?þæ¥­´9\Z\"9\r?Ò¹Þ\"7;c—M-Ÿ‚õ•Í‚ITÖ2y¨ŸÃž ”Ñ’\\u†æF¿ ¯~ÿ\0…gi²+ÂäýÑÀGPøa=°i’Ue¾3Rñ±ÀMt<\"ÞÃZÓ¦\'ûÊ+ÇîåÞ\r3WÕ.%.´h7(dÃò¯RÖþÉ$ÌŒ rJŠÄ¾øx#ã»q>µQ¬¤s¼#ìy.¥}$DÉ\"¼ã¯Ïj:Í‹?šñÝ	ÅzÖ­à-R0ÓCn­ë”È®C^ð²KöÊœ`ªàV‘š2ú¼ãÐó­JêÚï\";v_˜äô±n€òÉDÛÜf»M[Áº³íš2¤œ€F+›Õt+ûi›ÎÓœàrTžµ¼$ˆ•\'mNRq‡ùåÛ“ÆW¡âl`zÒÔüû(Ê¾Ÿ\"†.yâ¹­n{¸­|Û]ü±è3ƒT–§?+LšñÌ#jƒ“ß5JKèÝˆ–àc(+˜¹ñGŠ·›j¬ÄUxüLìAšÙ#ª·ô®…&ìt7šœÊ¿¸Œ`Kuª‰¯Beÿ\0JF\0\Zº~ê´z®Ÿu\Zÿ\0¤È	eèj¤ÖV*ëm~€ek\ni“ÌŽ·G×!„+ÛÞÇ+dP{zûU¥Ó¢ÕuÔ4	<›´PÏoŒ+¯÷Åp‘C=’±÷8Ú(ÓüK{£jQÜ4ÎñÇ&å;¹NÜ~µn’Z[Óá[ä¾€(Œ…ÿ\0X¹êqéZú^±u köú„w1»PàcÜWáO‰:l—ñ}­€gâ+­¿|c£Þ»Ù®Ú‰ *ÊË·(>ëW;…™iu>‹ý”kwövø¡kâ[Y]ô›²«1Û\"¤n¿Zý…øUñÃŸ|aã/\rê‰wkwºJž£¡ô9â¿žë[½OIÓš;ÞZÊIŒ‡CÇ_Ò¿B?àÿ\0¶]Å¤‹ð[ºG†êC.’³?Âå£Õ€$}1ÜRå9kA^çé‚Ã v£#¦j–¬ØjÑ¢H…ál_­[ä¾XõéÍ5±È·ÝÒŠ}Ê:‡dHö†ÏãPÈWŒ\Zs!aœ®*3ŽõÄÝ„Ýˆ&;T¹<Í|×ÿ\0\0ý¨åø)ðîoø[Yò|C¬Û¼6b,Ž2>fö?Óš÷¿‰^)>ðF©ât@ZÎÊIQO¨^¿8â¿&?l‹þ4ñWÄíBïÅWÍq¦;dT‰ÁW¡\'¹«†ãLñ\ZxÃÄ7®ñË©¬-¸ùƒq$±êO¾kŒI\"7Ë{}¨Kq\"ôvná]¯aâT3	V9×žNúÕo\n]ß>èáW g1òã])+Ër3­I©¶V}¡³´7ßü>ðÙÔŠGcæ,’+•Ó¼-2I»û>EÆfW°üZ´–;\rKŠg£ÜÃßË_Dzx\ZNSIç~	]_2\\HOQ‚ËÇç^Åá/„zNž Þ«>9#UŸ‡:.µm§@5Á–Ø1…íé]ÎŸ¬wð¯Ÿ«ZN¥´¡BŽÆM¯…ô{DÄ\Z|cê¹©ãÒìPçì¨=FÁŠÖhT®\0¨\ZÎBO?¥`ç+)$ÌMCÁÞÔÁûF™	cÑ•qŠå|Að—Lu\'O— åeaŽ•ßÍF{{Ö^¦Äü¸éš¨NHRHò‹¿†×qÂwÙy¨GÌc\\â°oþiW@Å\rØˆãÎ†½‘UÕ~FÇÕBÆÒêB³Aœ/-´×D*HËÙÅ½?	ŒÒ4):È:œW=¯üÔv‘¡\0ñ‘‘^ñuáÍ>wVŽ„êjÿ\0†ã(|²q·ŒšÑU’\'êôåº>_ñWÂë¹âkMBÕ	\0aÑ­y‡¼¨hÇ˜‰!Xƒ€+ëýsÃ6÷2´S78àíâ¼ëâ/Ã¹¾ÌÒ$Jã¹ÍuÒ«¡Ç_²>GÕôS\"½µÌ´§ÜW§Íc;Ã%¦ø$ùH+úæ¾ñÇî¡-íq*©cxz¯øW—kúDSK\"GV+ŒmÁ÷ük²LñjÑiìyÏ„,ZyxØ‚\\º{qÞ¹©t+[9e´¸ˆÇîƒ‚¯ÿ\0Z½\Zú%žÚàu\'©æ¹gLŽiêI çŠéU\Z8\\.ìróhP¬¥£WãïÁ_¯ §Çát6îøÝ•8\'­l8d¶g×Ê‹i--ä)	c™	ÉŒ÷ü?ÆµFˆöw9{Ÿ\r^Z“±Ìj˜øÖeüš…Ç—y‰¯¯è—0Åwn^ÝÓ*ä×5¨höîÅÈÈ`7\'¡þ•Ó	óìÝŒÍ]ñ4vÁ$É?‘ëÿ\0\nõ†¸ÓŸI¿r\'È_³W“[iÒéÛ£‘¸läÌ{ñÍzW„¯CÙî™V)àp%‘O\rÜ§JŠÉ^è5HíLîÐ›K©\n¤\0Ç©ÇOÒ®|ñV³ðÃÆöz¾Ÿ©ÏÛ”ky#m­o(`UôŸÂ±nï…ðK©.ã„R&¨\ZË+rß.}ý+d®ß_Ù‡â®—ûA|Ñ¼sté&¦ÖÃûBâÜìa0áœc¦â2G©5éð¬Ñ Ži·•8ÜG\'ë_”ÿ\0ðIßÛwLøeâ˜~xÿ\0RŽÛGÕ%H¡»™²¶óœž<_«¸#p ûƒÅC‚I©QLó	äbŠ	æ:™ùj¹\0T\r\"G÷ó×Ò§¹R[!±Æ?ZËÖ.¢µBÓ¹²?úõÈ•ÆÝý¶>>ÙøÁ³øvÛMóê¼2/Ÿ²8‡¦9Î+òãâ¶½ŠuiµGX¤“Î`òDNÒÝˆÏjû«öÛð|k{«øŽÆå›ggìé†É–6éœ±¯_Ÿ~&¸³µ`‰Y†âqŽGjÚEA{Ç%ÌšV¨‹-¸(üîÛúWMáÛkk¹ì7ÓÚ»”ò·>•ªCoqp®Tí$OjôƒÞ²Õµ¬¥$\0[âªsä‰×‡¦§+3¯ø{ð·Äž*–4¶)˜bY9¸ë_V|1ø+á¿\0é±ý“NY.Œ`µÃcvqÐz\nÍø9à=\'Ãp[e]FNÞ:õt´fPr1ÐWÏâ±r”¹Qö,-:QR±º\\ˆß:É«¶Ð*¨§š0™\\æ¢‰‚õ¯9FîìõbÑ …³ÀÈ¨ä·‘Iî=EN·AFò¥i–UÀÆkE“¹Ÿsmæ!RO?ZÊÔìä*\nÄpz‘[×Fx<úUB£xÜ3ìkHÄ¤®Žrm>qÐ(Àþ*¥,FÖ#9Á®›T·@\0ŒŒã¦*ƒX†M¬½}+HÄ99ÉàH†ëÓ5Vä BKö­½JÈ@¾a\0¨ë\"þòþ^3Ï5N7Ëêö>dþheÏN•JóC‚îÜ«Å’G§Ò>ž»·:äú‘QMj£r³cÐbª*È‡ÏñÏÂ›KÙgó­z£{ƒë^ñGá¥k9¸û;Kjü™í×DGr;×ØÚ½ŒW‘œ¨™(qÞ¹\rKÂÝ«²(ŠbyÜ «}Aí]“G%L<f~~øÏÂzµœîZ1\"‚ÌúÏsèk‰ž5†M³©p~µöÇÅ/šn°e¹‡MXnäÁÊIïŽÕó·ÄŸÙç_ÓÞKí2ØNØ\"H•ðTv85Ù	]=L#mØò{­¬…-Â–^Jíí\\þ Ó4àÃ@ÿ\0Üa€}«[Z±»Ò.M®¡k,.½VT\"²ïŸÙgÚAùŸ»]0³G¢ÖŒ†Úú0ÿ\0fv`äêÜœp=*ÔÖÞ]Ï›£\',¬yû¿JÇ¿imŠ6£8Y­ùÈõ4Ïí‹ÛIðÌ®¹ÀpyÐŽâº)£žNÌÔº·HÂ´»¥…†#ä)?×ß\Zäº[¦éwÂçlþÏl~4‘êP_[¼QH£?y×ª„¶¡mšÖA‘ž}U»\ZRM•ÏSÑ5};U²M>iÀ¸x·YÌÍÇü¿\nÊþÒ{Ù.4‰fò®~1±ÇC\\Nƒâ%Ò&[;é›ËÜ6ÊÜlðÃÚ»Oi‰©Ø¯‹´¹6Üù>Uà‰±æ‚§kã× ¤àÐœR6ü\'âËý1SY†F†âÑü»ÄÉÁ=ãŒƒØšýÿ\0‚QþÚÉûCü3?\n¼g«,ž(ðÍ²Gùõ\r?\0$À÷xÎýAS_†~ÖãÖ÷”}«Ëò§ðÊIëïžþõí?²gÇÏ~ÍŸ´O‰¾ºh®4;ðZl‹‹fl<Oê¥r¤{Šƒš¬ý…)òœduÅÏ|/øƒ¢ü^ø{£üMðÚÜi\ZÝ„wVRÊÃ•?í+eOºš(8¹Yé“«È¥bø’Ö	låšë;S Ý€Æ·Õbå‡OZóOÚGPñ<^\0ºÓ¼%ç»À\"Cl¹”äq·û§#ïv®Hî6|ût~ÑzÆ¬ü=Óuíî¡O&Úy<ÉŽ7îoàÒ¿<\Zy¯õ™\"•Ël”íÀïÞ½kâäé~+º°Þ­$¼sÌ·šê~sŸ÷²3^k§ZïñÚä‹\nÓdàtô­–Æ°Z…¯†^kÏ-”`ûW¼|ð…Œ²ùÅI‘XP2X\nã|+áË{]æÝ[£¯£þøÝ®–â8¼¢ƒæ87ô®<MWžÞ]‡‹ÏYðˆ¶ö]L¸Â‚©è1]Œ¨	QŽ2W·‰l¢X#èª\0ÉôªºÏˆl4˜·w®9oç^\rIÜú”áM$É®çOÌpMWóÔ’S?•y¯ÿ\0ho\nhv§ì—ž}Æò®°°Ägýªò~Ö~(…ðíÄ6Ã8i\'Ÿqcìú×\\0•$sUÇÒ¥æ}M5âÁvÇ<ñTáñ†“|ë˜·ÂQ_x›öŠø¨¼‡Pñ}ÁF%‚nÂ¯°Çjã5_‹šî¥ˆµ›ýØÜ‘šê†­YÂó„žˆý\'ŸÆš<çk_[Ý.,Ô\\²»PÐL¤v(Õù¥¥üYñV•;\\b}ÛJ‚&$.{æ»oþÑ~6Ó\Z8_U¹H™²Èò{\ZÓêˆÚŽo)»8Ÿ{4î/ŸAšt™O=0kÃþüq—Äê¶××m“÷KžN;{×®C¬¼Ñ+‡\\‘ô¬*Rä=zXkÖ]!‡åY“ZyqäÀïWä˜;uÍV¼ygµbµ6(¸à#5VöÞséS	BÉ€yïT¼Evð[™AÁêqMj5àXÙ†zV=ÜŠË“ƒÛ½X¾Ö¡šfp~yËßx’ÞÏq–ïêq]”àäìbå²ÍÇØ$È¸ˆ¤Ü×/â¯é:ºù† ²vt½½éºÇÄ?\rÛ0ûV©\Zžß8¬ø[>–SZü\'á¥º£hrÊµ=O7ø§û<i\ZÑw¸±Ì2(?á_?x÷ök¼±•ÍŠJ#êc¯³&ñVªÛà¼†DaË,‡ƒ®è:^¦\rÊl!Æ6®:×E8Ýž}Jtæî|ª|9ÖôÙZÎuic9ÈdäV5ßÃè£g³2DëÈW¾Ð×þ\ZEöÇgÓFq&Ü‚+\"O†\Z°ŠkTûØÅt§ÊpTÃÆúMáÝnÒPe¶up}?\\ÒK%ä3\"M¹€Xœÿ\0œ×Ö.ýžôë¤i ƒpaòãšñŸüÖtÛÍ¶Q³.q´©ãšŽvÝÌÞKž_©é³ËQTps]WÃCueqàŸÌÑ=Äe-®}ßE#ëÞœ|3}›k\"ªÉ-Êñ‘ÐW5{­}šñ.¯-H¸B7Œ`ã±Í]îrÎ,HäÕ|â	lç9Ò\\H•aœ‚=jôý\ZHõ‹UÕro‘ò	<Žý1éYz¦•¡ø÷Âpj¨j\0Y@ÿ\0X½³ôéMÐ÷@µ‘gXÄg(9;ªZ1“»=ÃÀµ§íðïÂ6žðoÄ{Ëm2ÇzÚÂ“6Ž1þÓøÑ^e¦–Æ9QYCqƒÇ&ŠƒSú$cïVv½ak{lðIíùrÏ—ÆíZT&ö#S\\oÅ/iÞ	Ó¡2=õÔLb†ZGUáz\0;±àWÊ·?.?mo	éÞøû«xC°ö6ÿ\0-‘-ðŽ\\°l×•xA[‹‹‰cóÞØö¯bý¬µ›|W»ñ5Ý“ÀÕb†pÄüDŽ3Ö¼âÕh“ A„¸FÎyÁëWÐë§š:†¶ ]ÅrC¯Þô<WÖŸô¯ìÝ%7c0;WÍ?t;ÍzêÞÆÚÑ¤ó‰6õ?Ì\núËÂ>½Òô-.Ý$•\0ÉQŽOW™Œ—Céð4ùaÌM¬^-•´·’\\$P@›¥‘Èë_5üqñ>·ñ\\\'C¿–ßM´ˆªÉ”3œó×Ïì ¼×nß@Y[ÈöË°‘¼ú{×1kð²[™ÔÇ¦›xÑq¹ÇÞ÷Á5£N\nìê©ÖvGÍz–ƒ}fÏ*W*r_k³¹÷Ýßé\\Nµ§k:µÙ‰á	ó`&Ö_Ï­}¡ð€\\ÄZk¥vÇÊ\0Šåo¿gÄMÚÙD%$å”`“ë]qÄBÖ9%—NGÇzïƒüL±36@£å‘ŽàG§ë•_\rk¦c:tÉþ1×ó¯³µo„ºrFÊ0Ã±Zã<Að¶ÖÉ·®$c­&$<¥Ú÷>i‡ÂÚÜs¬¢É›ç‰†A5èÞðÝ­Ü =–Xx\\œqé]ÓxrÆÖuómcÈÎAÍu¾Ò´g‰Ù!RG$š&/B©eò‹¹ðûÃc@e{V8,	T\'=y¯qðÎ·%ÅšoS€˜\0ž•Éè±ó2 ìd×áß\n\\]°[D^GÌkš­TÏo\rAÂ ··J«åaIÁÇj“YŸìV\r+¨Ès]~Ÿàcmýß9à•ÎkÆv>T>Dˆ3Æ:×$ZG_)ÇÇ¬Æçs8ÏZÌñF½Àd~u¢žTÍ´`gû×âým#ßÐñÍoIs37+^-ñŒš{ºF0pkÅ>#|\\Ô¶É»eU¹P9É®«Çú”·…ü¹Ê$z×x·Ã÷×ìb´†M„òr0O©&½*1KSÌ­);´pþ(ø¯Ý»É.§.9rp+„Õ|ªÁ•}O©åsÎ+¹Ö~x‚rÐAhÄ÷ñµs\\®·ðÄ Z+Êy?Îº £\'©åOÚßcKøÉâmäÏg<‘sÈŠ^£ñ®÷À?µ¸ºŠù÷wŠ>d‘¸ÍyÖ§ð·Äú|FâþÏËZÆ—Ãš•Žg†ôÁšÝS‚ØQrŠÔûÂß4mr4û<ëæ°Ì–ó°úí&ºÝ;QðŠ¡#Í0\\)ÿ\0Së_x[ÄZŒ»5\0P.?„€kÑt?ê0:ÜÃ|êQ7BÀŸÊ”’Ø«¶Ï¦bðãÚçk3!ç\ré\\÷‹|ßï#Œg9«\'áÿ\0Åë·³‰5	C$ eðŸé^‰þ‰«Ú,öÄø Ô[”g‡ø×àŒwÀê6ys” …èÆ¾qø©á&Ðf{kèÙf…Èósƒ_}Í ù‘à/#?x7íuðšÞóG:Ý¤H$ûÌp;ÔÅ¶ÌjÒN>kð‡ˆ®to\r^ÆbÞŠÀÆ9ù2s]„¼Eˆì–GŒïW\"aŽÕÉhñ´7Òhó€b¹Œ¡9èÝYøW;éž.“B™×nL“ÁaZÚèòÓ=šÓÁ’½²:`¹\\7j+³ðÜ>…jÌyòFsEddÛ¹ý¼…!vUÉU$S^}â_K{c¨êº”í=ÅÄ/sÔ#žÀp8ô&»ù²á”ŽsQ]D—–RZÄ@%88ûµÆr9Xü»ý±4ÍÅÖßmµm”L\0©…ëÜç95â7·‚ÃJ– <äO·5öGü/ÂQZK jšm¡XãÒ]£†fbÄþuñ^°YçHÐðsŸ­h•ÑÕ	]&}qû|<ü3oã”$J<ÈóÓ=	ïKwHãä¡	õõ¯:ý’¢Uø!¡¢®7[·O÷«Öí¢Ëýà=:×‹ˆ—5F³ÃFØxúv›á¦†óíÚš#–ÚGCëN¾{9˜E&znÅ]ñMêéáÂ®èrÖþ ·G/på9G&³Rhé‚ŒzšwZ01eÆ=H®k]›ÃZPwÔ5x¡\n2C6IíÒ¯êóx›Ä°Zõ´û\"8†.e—ê{W-\'‡ô]ìÜhÌÄÍ1ËcêzSælßK\\ä¼[ã	ÆÙ·–iW8ÌVíÏéŠóŸøãÃ¾aÊœ³Û×¤ü@×4û„‰’¸ê zðïxŽÖIœ„FƒÉâµ§NF~Ñ\\ÍÔü]¡ÝÈD x\r•8§i¾!Û Ë´ç‚­\\v§{ÃwˆæŸ¤1Y‰8ê9­}›JâRì{·ÃßÍs(¶¼;³ŒgŠúKá40ê–ÈŠÒ2HòoÃ•œÌ’ºð:WÕŸ\0%J†ÀÚsô®J#j5›ÐõÑÌQgÉÛÆEyÄ›!öƒ!Ú\0¡¯R½Ô™—nîv¯1øˆDŽÌÍÓ$Ö•ÝŽØÂûž5âÐ¶ûöõÇµxÿ\0î\\ÊpI%³^³ñh¡ŠGa‚ ×ˆx¯T2»0#¶kØÂÁ8Üá®ùYÇx’ò8˜‰\\.O!…rÓÏlÌÿ\02ò{Š½â©ÌóÏ\'­s­#…f\'¿JïQ²9¬î[;$`J’ÛGŠÿ\0÷RÀzqT,/ÒK•‰†9äã¥z„l´,Iu$€ãæýÙ\"¹ç7\rq´žÇ8Ÿ¬õp!“KYý£š[ÿ\0ÙÃFÕ!ÃhÉÛË@Ÿ5zî‹ÿ\0T)•ÔJ1ÀHÈÍl,ÚAQ•ô‘ü*Ã4¡^I‰Ð¤÷GË^#ý˜çÓ²Ú}ÍÁRNVf\\Ò¸û¿…ÚÎ‘yZ®žé³\"ýÑôï__kvñÌI0ÛÐc5Êjº%„ó‡1©>Œ ×\\*_sžt ž‡€éÞ»°ˆýª&0¶>xŽ<³ýâ=k¿øIâmsJ×AÔÂËe:†S&ârG#­v’x7Kž2$µ$vãùkŸ¸ð	Ñ/™´¶p¯\'˜±¶p #¥jÝÕÎYÒqÔô[xã–‘GZàh­	ï~\ZjsEÌPÏ|`×¡éVÌt¸dÇ1½×=ÇôªÞ,ðü\Z÷†o´›žV{gR?à&³NÚ™4¹OÌûÈ$m\\yÄ‡à`àŒV„4›©|i¡Lß8%ñÆOÄ›ì/ˆZ†ž¬BÅpp;ƒé^ƒðDŽ{$¿œ‚0ö«®Ö…Ï\"ª\\Ìö¯	|2Öu¯ZjVÒ¸I#à(8àQE}/û;þÏZßˆþ\rhšÕ½Ã$ñJU–2Ai§µÌÛ¹ÉÌ~Á±m¸Í¨EcÏ#šk¸\'h=:Ò’!&	ô®5±ÄÕÑó?ü?Â‘ëŸ\nf¾kbÏo:p¹Û’F>µùÃ¨ÚcR’ŸýSü¹5úÛûCø^ÓÄß\r5/£i1;Çn8ý3_•Þ\"ðôãÆ‹£ÂÍº½0‘?ÅŽ*¹ìta×5‘ö×ìÁk%¯ÁßDÀk2NL±5éî…úÖ°¾ø^?\røGMÑ£P>ÇeG>¡@5¹}(†Îqòú×ƒ^iÕlûÌ:WŠ}ŽÇM>æBY?/8Å`ØÇmdÍôŠý4<V×Šµ{€ØÊƒÉ÷¯øëªüAÖ­_Gð5¡g‘v‰ö$~çÖˆrËrœZ7þ%þÓ|g*Þê°4¨¼*?NÕóÅ/ÛÃQÕÒh¼¤OpUˆ2Fx)Í&¥û$xšü?ˆü¯›öWó>ËÂc?ÄQž1Þ—Rð‡‡­<\'&‡ÿ\0õµ·ÅkDU±ÁÇlW«BjqÕ•d¬|yûbüKÕ&¸e	\nŒì]ø#¤ú×«|{ñÌ—ñ[èþ4ƒPF²ŠygKB—æ‡æåŠg»œúWCâÙÛâ´Æ{x|(—¶åŽÙ£~aêA ŠÌÐe_ˆ³ÍÛ!²Ó!9Þf¹óLí^¿JíP¤¶<õ*×Õš¿¼iñ\'Æ·w„éfá]Â€A#=+Ó>øÎ9µ+mÄ°ˆŒ²ˆÒd<ƒêGaïXÞø¾ÓßO²ñ$óyóù·„	¼ôÆ+¿øuû;ØÞëpê®ÒÊC‚C\\°Ú¹ë8Æ\ržŽÚ5©ôÃ-µŠ@ñ†%Aó’FkÝ~i×:xvhŠ©\0ô®+áåx`‰””\0cžœW²izri¶«q^åÍ#ÚÃQ¾äúþ±ö[<Æ¸;y¯/ñ¯ˆâ–V‰¦Ë8èMwÚò”„³äŸCé^Uã2.šEç9Áôö¨§g;“‚G›|L»[ÈþŽkÄ5gÜÒ#ç<W´|@€­±“\';y¯Õ`Ûw*H1ó\r})Dò1‘IÝ®»æd8ÆH9®_T¹{lÄ«¸1Â×e¯Ûy2I½qž†¼ãâ?ˆït-0Ë¥Z‰%9”\'éõ®É««œ	×ÃÀMý«©Ãå,øÛø}kØü7­XCGæÃ†PPç_é:³øŽâ(ŸZ½‚G]d”íg’0~ïµr_üAñ[á_‹\"Ò¬ük{Ú¬±¥8Á=óí¥rÊŒªH‰ÖT•ÏÑK¹í|°fee~ŒTkQƒB»Œ‰¬#À<<gkpE~{xoöÃøÕá½6XOŒ&¸rà,W0†\\w9ë]§ƒ¿nÏO\"Aâ»P	ožX›\0þ¨Ži™SÇÂ¤¬«u‹[Ý6A.¬ËœC;ï}j¤:ù’A£‘68=‰ú×™xwö ð?ˆZ05-Ÿ™ÁÞ[jzoˆlÝ•ärŒpÈÀãò®…O”ÝNêæà½é°ñßšÜÒà·»€	7’:Wmu$N\"bXæº­ç(ìgU.ÄTmÄèªÛÁAòã =*\rQLZTómÈX˜ðzñWàDšÜF\0ŸãgÔnÏ\r“·CIjyòv‹gæ÷ÅÍ0ÜüLÔn|·:ƒ`ú×§ü9Ð¢·ÑÂ%æHÔ/“»·Ô×	¯£jÞ!–ôŒæàÇë_G~É¿\nï>(|qðo­,žeº¿…®ÑzÓç$ûWT \Z¬õgì—ìð_ÃÞý™¼¢kšj­Úè©4êýCJZ_ýžŠõ{]:ÚÒÖ+HHD†5Tp\0Qn(¬RLóÝMN—9;yúRòÅ´©òyäõªšÆµ¦h6jZ½âÁoîyX—éë^{•‘’æ›QHáþ>ßj\ZgÂûËmC_j/ö@Ã!$“?9ÿ\0ur\Zø./€\Z‡‡¿i­Á:Û›ëúJœƒÜüãÝq_[üXý¢<6¯lÃOÔîm-f´ÐÛçž™ÚNOá\\Žµàß‰¿´T^8ð®¢ò­‡L+‘x²ÁFAçøš°H¨6z¸L\"5cu¥ÏPÓ ò`ÁŒ|ÄœÕ™â9•a*™ÎÞEmÃFG>˜‹­ÂÒ3c°ãŠðg\'Ísí¢¬”{w«Æï3–=ù²o, •	’à}+°¿Ðœ’ÀnÉç\"³¥ðÌÍž1ÐQ2ÒÔà5].Þî3dß\";ìP;W\rã/‡º}áyV\0Ì_€¾•ì÷^\n‘ü¼öÍeKàÈ÷ñ‚Ýó]4±ƒJ/Vž5/‡3\r¾áÙd-üO.Üõ¬Y~x†W2\\¬p«7Ý\r’?\ZúVo…~Ì5Aü\"³ˆrsÊí­þ¹7Ô•†§½Ó¾CnQ$…¥Jôï…ÿ\0çšùm\Z5R2Mz/…þÇsp³Mo…ÏÍžÕèZO‡l´¸¼«Kp\ZÂuå5k4pÊ×\"ð×†`ÒmR(bjknÚ‚XqïU]¡`F~özÕ·»Š8Èzç¹éSŠŽ¦OŠöý˜ðÅy/Œ¦ò™ö¶y&½#ÄzŠ°,²à×•xÒ4¶ÓUI{ÅÎ]8ñµäsÆWc‘šò]z:‰)Ò½?Æ¤ˆÝ†:q^c«d]Ç«f¾‹\nš‰ãb^¶15Ío¬ß)–ç%ðìöîÂXr¼ã+šö…$N:Žžõ—­ø~\rB&ŽhzŽ8Åv§¥™ÀÓ<cHÑ´¨nòúbNÕèjïÄ~øÁ§@oÍÄWÐE¶Þúæ1œáàŠï¬¼…NK—?…j§‚\ZUS\Z´N::/ô¬¯Ë+™Ê’©£>?ñ¿ìQñD˜IámNÇT‰ŽHi.¿àÔ\rþx—Ãºÿ\0ö‡Ž´8c†ÝNÈAob:8ÛŠúãQðˆdaå”•}sÎ+&ëÀ7Reg°(ßí9æ´…hÿ\0SŒ%xŸ<xŸá†Ÿ«ú¤Z[1kÊþäUoÇñÀ~\"[Mî…¬ŸrâYê?†¾ˆáÇÙ›sY)öaS/ƒ!pbžÊ-Œåeë[]3xEÇqžÔçÔ,ã[¤Ã\0\nœ{w®ãEÉ@G`+Ÿ²ðüpBp\0Æ1Òº?\rA$jÈÜãšÏ¨æìŽ¿Iù­~nrkøß4–ÿ\0	uù¡á†žáHØ®JB#Æ1šÅøÕjdøE¯ª¦ãöÓ¿4 ®Ï:«´YðÇ‡<7=Þ»RÆZ-û¥!sÆ1î{{×ì_üWö8Ó¾ézOÅýcAHµCÃé*M!ÜTÌÍ€=0ŠôÏ5ùð7Ââ‰Z\'‡aUß{©[D©·9,ã¯á_¿Þ\nðÔ>ðÆ @T¥•¤p€\0QÇçšÚNñ±óØšœ³±¬?!H¿¼?:+ÌqÞ&žöÇlõ¯ÿ\0lïÚÏáµ¬Vºi»?ÙM¾cŸSÚ¾Šecƒåõ#9éŒó_›¿ðP_üR¼Ò¡Ÿ1ÃpUT7WSUcèø_õüzMlzÃOŒžø×¥)±U³ÔP?O™e÷SüCÞ»‚ÞµÐüi©êé©¹Ud¨Ý’?JùköGðLš·Ä{[Ù7ˆ£mŒTñÛé_exyZ½Í”@ÇÜõõ¯>¤yOÑ±x8P†ÇRË†+žU¹Òâ²ªsŒã5 äŠ™!$ª2\\W#Ï&Öç#u£1‚‡¤S$ÓcE\0]-ÜB1µ»óÇjÅÔ$‚7\'wn*yluBœZ¹‹jŠ…X~•…u‡ùT\nØÕõ(œíÀänéYeÃŒ²S4öq±Kû4\\ÈK6¥Ok£ÚÇpœƒÜõ©W`|\n±on%mÅ±J,‰PIÚÆ®™QýÅ–ëZ,rÀÊ¨ép¿0ÈõÍiL‘[Ú´²°Í+#hèPº¸VàÇZçµ½ZP\nB	3Zò¸¾”,\rÇñjÍ6m“$öô¥\"ïc‹Õî§hJ“Ú¸ÕðG×¢x‚Þf‘8éŠà<T%•‰1	çŠÞŒo\"¤´<çÅÖë4Eï^_â8\Zœ8<“^·âK èÀã5ç~&Óˆ$íu¯z‚´O+™i($ëVš%”å\0V~p[ÝëFÙÕÓ‚\ru%s‰Et]\"9.\0c“žâ»]3Ãö’B±×>¤Wc3Á xÇ8õ®ãÂ—Ë:8€Ê;ÖUah›Ó¦’¸à¨Üå\'ÔŠ…¾Ú®_	žù\\×T…XŒóÚ¦hU†\nãÜW3LÓ‘>‡uàf„Çû•—¨|5µKã‘÷01^ŽlÉÈ\"¢¹±U<gò­áVV2¨ò{¿^Z’ÁwpEEi¥KkŸ26x<W¨ÉcjG1nkUÓ£f;T3[ÂrêpÔŒ½*ß.GÝîjŸÅ;U—á–¹ni:{vôæµ¬¡ò‹duªßâFð²‚£JœŸûàÖ°nçŸ8Ýsÿ\0…ø;ÿ\0_ö¼Òµ[¸Õ´ßÀÚ½÷˜8`œ\"ÿ\0ßF¿fYå”ù…—.K¾ÓÀÉÎ+ñ¯öýªµoÙ—À—¿ð¯~é÷Zö±òÜëZ´¬ñÇATH—ç©&¾³øAÿ\0KñùÖaµø½àí2ïO‘ÀžçH¢š\0{…,Cžëfô<LFR\\Érá8íESð¯ˆôxvÓÅ¾ŠêÆú-´èü2ŸnÄìATSÃÕNÖ65Ë¶Óô[Ëþwk#qì¤ÿ\0Jü§øós/‰>*^Ìì[7,	cÜšýXñ\r‹êZÖœƒ&âLçÈõ¯ËŸŽ>ŸCøŸqFà¬í¿zàä•äT•®Ùú\'\0ºqÄÔo}Yý–¼-“is¬ùE_ËÄ;c¹¯tðYŠ=`GæQž~•åõ?Á_¬ZòB\'»Î`çøHàV÷„~/Ùêž5Ó¼-g\0àH|å=ÂÒ¸¦¹µ>Ë1Öç¶AŽ3ZP\0@ãž+Îïä^sÓ“ZÖòùˆ\0\"°JçÎ/tÇÖ–`äÆIƒÒ¹ëûS1Û1Î=«®Ô å€_qXWÖáäCV:©Júíî“j©º4Q½ÅdË”ÅT]\rÔ-0d\nTeµdaÐt\"£”Û™#Àåð«ÎkJÒ(•A“™q\0ó§Ò¢šëÊã8õ¨nÅ)u±£«Q1$)Vî{UMNöëWQ9T?Ä;Ö4jZ¬V*Z@:õÜ80àbœu4åÒåoøxÅæbHúÖ¡Òdœye0	êE\\°»´·A_|Òx›T·ŠÀ½œáXu\0tüiòÜI\\àþ!øjÖÆq–P¥2üóšò¥Â·±®ãÆÚÜÓ™\Z[‡nÛ‰äó^mâÍn6O–E\0v=kªŒUË{¯‰a/s\\ˆ-ÕøükwÄÞ,O1 VÎ;W)u©µÀ*î„×·F>éæb/\'±Ëk–“$¹ˆ÷õ¨tmBHï>Ç*òÃ©5»uaÛç\'#¾kÄš+[[ý¾îˆäãÒºiœ|3~ÔòÇÖxY•³ó\0Äk…ðýòÞÚ,ÀöÓx~ý!ºEg$“À¥*›ºz¹ ü£¾x«¨Äuª:[yÑ†@«ÛNy¯:iÜÖ	\\rÌŠpÏ¥E}s)\r(àqUfÉ¾â9\'9¬mNâHÁÃ=ëJqlÊ®BÝýü+ò¡Åc\\·Éæ2OsU¤Ô‹»9õÍD×EÀ ë]†§›SVÛ,D@¾*§Ž#I|#}o(ÊÍfñ°õc<S`a«7Çz”v”»æ\r£ÜÖñVv8¢×=#ðæ‡¤x>ÈA‚xFâpHUÓ½rÚïí)“®ÇkáÏ‰á’êiÝþè®{W [Ú.¥k,‘,l¼jùÇ\\³[=nk4òîÊŽ=êÚ²>—,ÂR¯;Ilü:ý«~#èþ\n°ÓtoËmmGË‚\';S,IÛ$Ñ^Cá\r2úO\rY½½¸(bà—ÇsEIçÕËpŠ¬´êÏÜá“Cc3_~ÝŸxº/i¶…`ÔpÊŸuË\0G×½}“Ì›N3îzWñÛÂ6¾-øuq–Á¥²q4GnOšó+A8ŸÃØùeùŠ—G¡ñÆÛë­(4«feŽÞÝ#^{°g½Jêãã6‹%Ä¤¢K ?Þ‡øWeûAønk†]^(ö«\"ü£‘ø×ž|Ô­´o‰šd×,>Kœr0æk‰¤â~³QÆ½4÷GÚÖ3“\ZœçŽ•¯az¡†q8¹í.WÈ»ÇÝ«ðÈÂá˜äŒ\ZåØù·tìnO(‘x#¥dßÛÈÌJ®síW!l®IüéNÇ8ÈüE-ÍbìŽ~x1ÕFjŽ¤C‚G<V¶ªÅ%Úc¶+\\™Ä ¨9‘QÌuA©èd_8^äæ±5+ÅlÆÇPkBäHI%óïš«˜®¬Ó)$÷Íg-l’±›áýJ-7Äv·ç $±ãÒºO|H\Z5É\"í|¦ÏNÂ¹­{I1YÈð±ƒÜ\ZòßŠº®«s¤½“f@qž~µµ›6ŽÇIâŸÛGá¿‚u%¶×üR° 8bŠÏß!•zƒñgÃ?ü(ž!ð¦½ok:f9íß+îì}5ð½à;Ä>\'KYoD¯4˜R nöæ½£á¯Á\Zü!Ó-µÿ\0	\\:Dà5å´™1ÊÐ\Zët¡ÜÊsŒ$zŸŽ¼A,\r!ÜF	â¼‡Å>/y%eiq]üI¨ê6FtˆÅ&xØç¼wÅ\Zœ–ì÷7wHô5½($‘r«šÎ¦$™®-Åa7ŠtŸ·-›ëV¢f?,^zî?†s\\\'ŒõOxšÕôûK¹ma`UŒqõ¯\'_…z^‹«›ÖGYKgÌy\\·×9¯JŠ8\\ùÞ§ÕP\\&ÐùÈ=1Þ›¬Ki¬ƒ£#‘^EàOßhJ¶w:“Ë¬’£êk¡×<}­lºf—#0#çrxúVŠL†•Í	êÝDAÁšêtûæ[…0kŠð½ªù[ƒÎs]=Žü€8Â†Ú)Y#Ó|/®œ#®;×V%Œ6pÏ5åú&¤Ñ:•cÀõ®çKÖ£’· z×4¢›3-j>T@€ãó®wW•A\'püé|I¬Ÿdõì±§½wRY‰úÖ´â’0œô±òªÅ€ÉïP}±CmÈç¾j½ìÌä)5±Ö±Üóê¿t×ü¸Ïá\\çÄMNÆu´Ò.nÖ9frÑ¡<¶ßÿ\0]mG2¨9ü+Æþ7ê—‡â=ƒ£X,É¹`Oò«Zja…‡µ­c±¶ŒZž`gùWÎ^!&ñ¬ÑÇƒºôþ¬kØü9ãÔn#µœÅùÇ¥y¬ž¸Õ¾0ÝiÖÖìë\rï§’O#‰ªœ”£f}†]BM½¯>|°×>èÚ­ÈæË¤Œ?¥ôßÁ„º~è>Ö¢Ýwm`¦àã£¹.Gá»…(h|Ýlt}´µêÏ²\";AÆ9¦^[Åqm%¼­…–2Ç¨§\'_Â‰#òÅp5t~uË%#æßø\'DÖo.¼3¬J\"–)HIe=8¯;¶ý–|1¥kâEº˜½´Ë4jŒ\0$6Gè+Ùÿ\0j´÷qkö3µ»ÍFhÎ\n°è\Zóï‡·zÖ•–zÞ°×ˆI³ŽÞ•åW‹„Õ2Ì\\«åÑ”YÞxtI%²37^úÕ¥å¹œ•™ °6êè\0Ý	­ØáÀ»W=Ó2Õ»’Z ó×ÔÔ¡?71\0 R»@ÚjMˆ£«ÛnÔôíŠåu²Á¶më]†£\"ìÁ#§zçuX<ì,j	\'®jºŽºjÊç5>l‡äã=*v‰Qztö­Óá³ˆ´Äe¾íQ¸¸P¸ uëQ¸çQ$cjê$W©+·+ŽÕ´­\Zó\"XƒÜ+ŒŠèõùØNÊ&ÀUÜW<â¹{£q$åvì$dñÚµ‚±ÃW(hŠáÊõY4‹Pßx?2>•ÐëZÍ¤\ZØÝÓk¸b ·®\0yYC*•+ê+â\rÂGvÑÂÀ8!¸5´[³8¾³Z£ÔóßywO2ÚÉ·#åÇ5å~*øa«ë0¾´%w‰91¨í]æ¯©Ý¶«ök”^ŸZí¼%¦Z¶•åK*O*GQšîMRI£¦Ÿ-™òÛhsÚ3!ˆª¡î1\\×‹|7a¨0Y|ÝppE}Eñ?áž…,‘ß,\")$8Ê\0éÒ¼ƒÆ?$´œ²L$Q×h¯B†\"5V§-JÒ‹º<vMÁ£Ô¤ØO\nOjê<;áXáXlž§=k@iorâùqÁ5¡iÀ\0n+©$Ë§ŠrZš:&›ºí^ý«ZX0*\0ïTtÙr1ZÖ…q†î)J)£ªN;–­d0qÛšÝ°Õœ@ç#¹¬$]ì ~5~6Ú0ZËÙ+Ü§¢¹5ó	›q\'>Æ«LTn~´öîÀ ÓX9\"«áÐÂR¹Jà~_ŸzE\\Øç´Û™I¹ØÖ¥…C0ã§^*à–çÚnÄÑ3ˆË¾=ò+Æ~5êZMö¯	G0b>½+Ø5)½“:õëÇozùÃ[ð·u_\\™ô9Ö9.’VèËži7`ËÒŽ\"æ÷Ã±öNPyÏ¨¯~ýŒ>AãŒwÞ8Öl7ØiW+<ÙL‰§ê“ð<Ÿa^_ðçáÕæˆ‰5í¾é¥p‘ÆK1û£ó¯»þxÛáwÃû/\rC2 ŸQ•W—†NOû<À×E(Fnç^kš}ZŒ’ÝÌ×‚YLÉnI÷¢±ÛSÁÀb}è®õI¼EI;ÜúÑ³§ò¥*Xì `žr*Eû´×|sø×Í¦Þ‡+wV<{ö„–òïÄ1Y¼„Ä°‚Š½3^Avš…Œ¢ó»5ôŸÄÿ\0¿ŠôÑ}§ô»uáü´_Jð?Ì¶W[^Û6\\Šóqp“w?JáÌFYz¤¤ŽáûÜM¤!·0}Ù®Å@ò×q\\?ÂÝN-NÂUŒap&»\\°àšàGmHòM¢T g4Ù$RF)Šyå©m<þ«R’*j{ÙI½b]Kå1Ï÷IÎ+oP$¡P;Öµ2[ÄY°Çi*OcFØÚsä§sÖü_“yM-ÈcÒ©YÞÍtþtÊ1ëšÆþÊ¼Ö.ž[Û‘æ+Ÿ•F\0¸­‹-ö ûQ˜‚1ŒU8¤´<—Zs‘“¬‹ÔKåÙÉ°8ÅI7†mïîLì 1@„©ã½\\¶Ñ|™˜ÜÇóoùrj]VòÏK·ó@=‰äÔó+\n©%qš~‹gláä„3‘Â¸ïŠú1håhåP:Ö´ÿ\0ôË8šy¤\nc$ó\\_‹>\'hÚÛ5£êIžŠ»‡5P…ÝÏFô<{Ryf×š6SãŸÆ½kÀvëuk“‡a\\´¾Òî¯†£i:#““’0k©ðæ£§heº½‹)Î]³éÚÁ,¢Yø™¦B–­\n*‚H8=ÿ\0Â¼GÅJ.f€séÇZôˆŸ4ÍBbö3£ü˜^ysy¤MÀQ’O^J+S–¾òÝœØ\"¹gY\"ýàl/R\rÜBÏp@o—å\n;WY=¤i™’<;\n©Ûß$pA½(TÔóÕ%‘aqÞAì­M\Zõg\")Ÿ:õ§]éŽ÷NdŒ€Ãå*3Y¿`•%pÙ$õ­Ö¨j£‹:è™‡ ýjâ–\0çŠçtMf #ÄŽ#ƒ[ÖÓ OSSÌvF¯4I~rC¤¸\0{Ó·/­\r†^?\ZOVD¤‘žÑ6ýÝø«ãÒ.ïÚ¦Ò´Z#Ï©=t)kÓkå«“Šç¼gã\rÁsYé—±4·W0ù‘Å\Zd‘ŸÐV¯ˆ%Ë¬K€sœgÚ¨	!ÔgQ¨Ù£²,Ž€²Œv¡ê¬m‡*»=\'öSðmÿ\0¼V<w¯Ø°Ò˜4º¯)û£ßšúVâéúù‡‘^û=_è²|4†ÛJ·1yS2ÜüNyÉüë±’t\'\0ôíŠôðÔ×-ÏšÍkÎ¦#•½1¹P~÷ëESgf9ÍÚyžÎ\'Ûˆý¸¦ÍÉÈ¥€NqíM}Ç \nù$¬Î[j\n¤s‘ÇCXž#ø}á’5ýÖäŸâ‘0ßZÜUr¸Ç¦ìP¼šRŒe¹­<E\\2½7cÌõ†žðÈ¹ð®œmÖë‰ÔÈXdtÆj»2ã`ýk´ñí°›EgP”Á‰îpÌÛÆáÇæbhÆÐû\\›WA¹»±Cž¹¢æo”sÖ˜¿tÔw‹f¿ø×îSnåk™|ÆëÓ©®{_0&I÷A=ý«ZôËå²«àžõÍë6òy~fâN}jS±uãb„öVQ®Í#YÛùUkÏÚéî©-Ò!ÏsY^)Ô®míÝc 2©+^ñsÇ:·q“c<Ï1ÂÛ\0‘êMmM)èÎ8RÔöˆômÒGŠê2ÛNyÆ\rxo¿iÈï•¢·»ÆÞï^K®è´/ï¼Vx´ëVn]’P½øà\nÛÐÿ\0f5‚v{ÛùHá¤Ÿh$çÝKLõpÔ/bàø³{¬†R.,f±õ?¹œ\\GtsŒ·ZÙÔf/ÙÚ­Æ‡sw‹p\\,Çïçü+†ñGÁïØk?ÉÂñç¨*9äõë®4©£Ý£‡³ØÓ—âæ©¥.=EÊŽ¸l×/âßŽ^&¸?f²Ô™##w=k™Ô|ñÊvûýœå˜äJ¼Žâ¨Ý|\'ø¥©oº¹Ô´øÂ¨*$óWì k:kcZßâ.±™î5cêXÖÖ…ñ¾êÚ@.%R `œæ¼Æãá_Å·Êÿ\0hÙ(ÝÃ5›sð»âä,ÎºÕ³ëƒ]£:½*r…™ôž…ñ7M×G%Ê£œŠÓŽîåßŠÃÔ\Zù¼[ã¿\0]Ö iT^8ü«Ñ>~ÑZN ‚)oQdÛó#þ53¢àô<<F0w‰ï×]*”W3®Á=Ür+ÂT‘òñƒLðïôíacA+|ËÓ5¯+CuüCñ¡6‘æÎÝ¸6†H®³[½u¶®ó£ ŠÁþÊ	9›VVÎžQS\0E8…6Ö…§y:‚jkwb„\Z‹#8•aÉKræî‰ÈÉ `äõôö¦£o­i¶ŸnºŠÙ\0ß$ª‰îI\0Ö´¶§ívpZž¶³ø®æÉ%â\nTö=ÿ\0ZÕÒ¢Flü§8É¯¥üOû2ü\'ñ-œ1êžHo##kûG1JÅT\rÌsÉÏ­QðßìÕðçÂs‹ô7—®ŒqßNÔ(ükXaê7v5š`ã=È?gÍ&ÿ\0Lð¬÷×±4kws˜Qªñ»õÞŽ•I´yiUT`éRŠõéG’>[Z5ë9 ¢Š+C£íÐ9ùºS$“i!jS÷?\n‚nµòIÜãNâ#\rÌÄ\nA!ÛZF“rlcH\0\0Ó®¬VÕ,’öÂ{wë\"#ñë^fv‚Ñü¤Œjõ9NFÓœ{Wø®ÅtÝveQ„•·/·ŠåÆA¸\\ú.­ìê:}ÌðS‘Mp60ÇÖžy\\úŠŠø•PA+Ç{ic6ùIb¸íX\ZžDnƒ“ƒÅmj3ì›?7lW?uÄÏ’ø^sÍI{œ¦¯§¾§)aÉntª­ð»M¾e¹…K)ÈÊç»{Kc|cw¯z±%¼qÇ…õE¸Š)Ežc©|,µFFFÓœ¨®sÄ\r®#·\rd¸9èzÜøW`ëÎ:VV«.ØpªïjÚåvwQ¬£©äQxrÿ\0K¬ñ«ú«Õã/\nXêñyŸgHŠp1Á¯[ÕÄ-\0—ËVaÀ\'Šó_‰ž!Òí¢daµÕ9\"»©bÔÏNž9.§“ê_„7æ4Ýo›½gjþH×ýà¼+¼·Õô«¿Ísö\Z.ªEs©*^eÑÚºcU\Z¼}6·8-gK•j($òkÿ\0H¹x°±‘Üã½zF§fc¤Žj‡öDsµO|Šê§ˆQ<êøˆIžU?€\"Ö’òÝ\'£Õsû9ønYšálÂ¹ïÁ•{2hö¬ÌÒC†ÏJréöi÷Pg§5o¤yU*k¹Àxátþ•Z+ùÞ0~ì’gÛª˜H9ÇSš¶€Cò¢Ê¡¹OÞ	1ÔsŠÏšç#’“Œf@ã5zÌ2òª6 )ÛžüV•§óT`ôcòCn\"œXzÐÄ84‰Þ´‚æD¶Ò%Š^í?vŸô!¯|B±¶–ñ@Æâ\\žGë\\LjKðz’{W»~Ì>º=ÿ\0‹n¡Ú×-íœÿ\0prÇñ<~ºh®i#ÍÆTöplô{÷ÜìÅ¹&¨\\0*T0àúÕ»ÂLgŽÆ³®	W$W°––>UÝÉ±ª&–›¼ú\nPÀŽH§}JI±h¢Š9‡Ê}¼]vã=ª¼Î`EòhãDnAB—š(ª)nGq!Q¹Zç¾!i&ÿ\0M\ZŒ6Ødœ}áþ4QQ[ZnçF¤èâc(÷8¸/h÷#úÿ\0*¯{r¥€è\\QEx54•ÒéIÎ7}Œ«ÔóFZCÏNµŸ9N=(¢ Òú‘,»FÜTwW~LDäò;ÑEZ˜—\ZŒ{Ì	õÍakZäj¿,¤`ã¥T·¡Ð¢¹_Ä~\"Sl¾[dçxÇÅráVR£nF:QEua•Îj¤pžÕÝìg‚áØ189<Õ¯áù7I·½WZ9á9\\·¯ÜÛÚÚòA\' ®~ÓUÜ\rÜdQETrwq\Z®P‚}ª¯Ú‰mý=³EÑ9«­E7®O.iÞaùšŠ+e±’ŠH–ÝAmÞ•~ÆN*(­3{’+ŽVžè¢µ¦ìŒ¦Ú4|3¡ßx—Z·Ð´È‹Ü]L±B;d÷ü:×ÖÚ\'…-¼/áÛOZÆ¡- XÎ?‰€å¿“øÑEváÒ½ÏžÍ§-\nwÑ¶þ\rgÜƒ¸œw¢Šõ\"Ý=QC.#”¶8QE\"ÿÙ',	'mediapipe_v1',	'2025-11-04 13:41:30',	'2025-11-04 13:41:30');
+(1,	'2025-11-04 13:41:30',	'2025-11-04 13:41:30',	5,	'ÿØÿà\0JFIF\0\0\0\0\0\0ÿÛ\0C\0			\n\n\n\n\n\n	\n\n\nÿÛ\0C\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÿÀ\0\"\0ÿÄ\0\0\0\0\0\0\0\0\0\0\0	\nÿÄ\0µ\0\0\0}\0!1AQa\"q2‘¡#B±ÁRÑð$3br‚	\n\Z%&\'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ\0\0\0\0\0\0\0\0	\nÿÄ\0µ\0\0w\0!1AQaq\"2B‘¡±Á	#3RðbrÑ\n$4á%ñ\Z&\'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ\0\0\0?\0ýÈõ£ u4ˆ9ÇëCFXô5óç E4aØ?\\vÍ(»Š{\"®\nœóÍ2v`Ã\r×¶(‚µ#8 }{Õg_Òô8¡ŸX¾[t¹¹[h]ó‡•¾êñÜûÔ’ÍÆíàÕ³ß8þt	ÞÚ3.NXßžÕä?µíaáoÙÓCòÙÿ\0Z¹‰¾Ã¥+œŸI$ÇÝOÔÖíUûnxKà%¥×…´gSñFÌGjŽ<»\'#‡˜Žã „ë_›~7ø¯âŠž2»Õ5Ýbâòâvv¾¾–MÃ9ÿ\0V¿ÝÐUòè8Sswf×Æþ4øããiuÿ\0ë2ê7!1Úƒˆm‡`‹œ`VÙà¸u[€Á|¬?îàtúÖrÅ§im´ûe–a&š‰õKa(‰õxÎ[GO¦MKZñJ\nÈÚ—T·Ñáy#ÄNÿ\02Ë @:šåõ-v+»–¸“\\!˜³75KÅÞ!šácÓí¡Hç~K‘íÚ¨A¥K{õ0²2óå¼ŸÌw¨”l—¼Yº·µ×ƒiðøâñ>RÆ+x‘AúŸJç›À·É¡%äÛ°ÒO.Õð­[‰¡Ô³m¬Q’0Ur›‡áÉ¬íOá\\—h·RšÝ»lœ¨üê°ì2o¥¼,cÕíð?†=Æ«[éR\'ˆã‹ž9ú‚*Þƒãmq\r¶­s,d’	¸¨÷8þU™q¨|Cw1Å¦Ù\\*ýâÀ*¦îfu–3ê–,Ñ¬ñÌHÀ3@?•L—÷‘‚Úžj<4väús\\d^9ñžó·†Œt\' ~DVn­ñ;Æ÷òm‘e$Ë0ý)}ã¨×µí>cmkãÕM¿5Ì^jöS±kíFUiã\rvxK][ÌÁIÜ7r>•ÏÝxŠ½å¤¹ìpAúÕB7eZÛTÚ®•™ ¸tQÎÆè+\'Sñ6s+C\Züøá‡ˆþ)²p|•rG÷¹ªwWÍrÛö…£­h¢¬$“fŒ—fPÈ“üàunÒ–ËÄ7Ö¸·óˆžÿ\0\\ÖI½ûeö‰çëU_Y’Ý·[¶ïã9ªŒPrênÝÍäÄÉ\'–ùþGâ\rejÖ©\rÀ6FÇîºU×\\S&ùçàÔÉ¬XÝ³^0dnˆäãðô4F*á³$´Ö<Ge¶[]FPÁ°6¿Ðý+³ðOÇiLýV`¤e™~n{q\\-üZe“Þè~lñg÷îÉ_ñ‰®Ûk¤<1y,ß/¡\'Ú´².3>Ìý•?l­Ká7í¼Ká›Æ±;ñ}fÃtQç•eì}r+õŸö~ý¥~þÑþÙðuÛGq)º³›–Œ÷Úˆ{û×óýáÛƒdë0•^Ã®ké?ÙCö‹ñgÂmnÛ]ðæ¬Ò­´¡¦³3¹{¡ûRJÇ5ZjGíŽqƒš àŠóßÙËö‰ð/íàH<]áàd\'Ë¿±•Ç™m((Ãû½Hnùè¤.sžÞ˜¦qJ-1˜\' § 8ˆÎE=~õTB;‰E+‘¸ò(ª(èéˆéNÚØÎÓ¥2Lç#Ò¸Àc6:U{©t§j‘˜‚*µä»#É`¼œ±03Ÿ¥4®‚æîÎå7qŽw.qþó_3þÛŸ·Ÿ‡>iRø+áæ¹ouâI ÃÜÇ&bÓ#Æ‡z^ÁGÝêkË?mÛËÅrk\ZŸÃ_ƒú¤–6VªÖÚ†©jëæ]7FDl|«Ø‘é_øÛXñŽ©pðE¨[ÁdšRò0Ï¸ÍZ†¢MÜÞñwÅy¼s®O,º…Ã™ZKÛÙ›2ÊÇ®I<çô«\Z\\·w1&¡Ûˆ B0#$Üžù®gÂÞÒ-á:Æ¡x[æÎâøÔ^kboÝ–:o†ÁŽ\'ùˆ9\'ÔÑ\'ÊŽÊ4Ô¬û«-JSý«ªà61`3Ÿð¬ÍCÄ\Z\rœxÓ4CpÜŒÌ6€=}sPØxV™Á»»Yúe‰Ækºð—Á¸îJ¶¥#gŒ\00+TV=zOc‡KkŸiøW{wQ«)ä{Ò±¥ð5ìwB÷ ìI}\rgð£G·R ±wc×`Í?þæ¥­´9\Z\"9\r?Ò¹Þ\"7;c—M-Ÿ‚õ•Í‚ITÖ2y¨ŸÃž ”Ñ’\\u†æF¿ ¯~ÿ\0…gi²+ÂäýÑÀGPøa=°i’Ue¾3Rñ±ÀMt<\"ÞÃZÓ¦\'ûÊ+ÇîåÞ\r3WÕ.%.´h7(dÃò¯RÖþÉ$ÌŒ rJŠÄ¾øx#ã»q>µQ¬¤s¼#ìy.¥}$DÉ\"¼ã¯Ïj:Í‹?šñÝ	ÅzÖ­à-R0ÓCn­ë”È®C^ð²KöÊœ`ªàV‘š2ú¼ãÐó­JêÚï\";v_˜äô±n€òÉDÛÜf»M[Áº³íš2¤œ€F+›Õt+ûi›ÎÓœàrTžµ¼$ˆ•\'mNRq‡ùåÛ“ÆW¡âl`zÒÔüû(Ê¾Ÿ\"†.yâ¹­n{¸­|Û]ü±è3ƒT–§?+LšñÌ#jƒ“ß5JKèÝˆ–àc(+˜¹ñGŠ·›j¬ÄUxüLìAšÙ#ª·ô®…&ìt7šœÊ¿¸Œ`Kuª‰¯Beÿ\0JF\0\Zº~ê´z®Ÿu\Zÿ\0¤È	eèj¤ÖV*ëm~€ek\ni“ÌŽ·G×!„+ÛÞÇ+dP{zûU¥Ó¢ÕuÔ4	<›´PÏoŒ+¯÷Åp‘C=’±÷8Ú(ÓüK{£jQÜ4ÎñÇ&å;¹NÜ~µn’Z[Óá[ä¾€(Œ…ÿ\0X¹êqéZú^±u köú„w1»PàcÜWáO‰:l—ñ}­€gâ+­¿|c£Þ»Ù®Ú‰ *ÊË·(>ëW;…™iu>‹ý”kwövø¡kâ[Y]ô›²«1Û\"¤n¿Zý…øUñÃŸ|aã/\rê‰wkwºJž£¡ô9â¿žë[½OIÓš;ÞZÊIŒ‡CÇ_Ò¿B?àÿ\0¶]Å¤‹ð[ºG†êC.’³?Âå£Õ€$}1ÜRå9kA^çé‚Ã v£#¦j–¬ØjÑ¢H…ál_­[ä¾XõéÍ5±È·ÝÒŠ}Ê:‡dHö†ÏãPÈWŒ\Zs!aœ®*3ŽõÄÝ„Ýˆ&;T¹<Í|×ÿ\0\0ý¨åø)ðîoø[Yò|C¬Û¼6b,Ž2>fö?Óš÷¿‰^)>ðF©ât@ZÎÊIQO¨^¿8â¿&?l‹þ4ñWÄíBïÅWÍq¦;dT‰ÁW¡\'¹«†ãLñ\ZxÃÄ7®ñË©¬-¸ùƒq$±êO¾kŒI\"7Ë{}¨Kq\"ôvná]¯aâT3	V9×žNúÕo\n]ß>èáW g1òã])+Ër3­I©¶V}¡³´7ßü>ðÙÔŠGcæ,’+•Ó¼-2I»û>EÆfW°üZ´–;\rKŠg£ÜÃßË_Dzx\ZNSIç~	]_2\\HOQ‚ËÇç^Åá/„zNž Þ«>9#UŸ‡:.µm§@5Á–Ø1…íé]ÎŸ¬wð¯Ÿ«ZN¥´¡BŽÆM¯…ô{DÄ\Z|cê¹©ãÒìPçì¨=FÁŠÖhT®\0¨\ZÎBO?¥`ç+)$ÌMCÁÞÔÁûF™	cÑ•qŠå|Að—Lu\'O— åeaŽ•ßÍF{{Ö^¦Äü¸éš¨NHRHò‹¿†×qÂwÙy¨GÌc\\â°oþiW@Å\rØˆãÎ†½‘UÕ~FÇÕBÆÒêB³Aœ/-´×D*HËÙÅ½?	ŒÒ4):È:œW=¯üÔv‘¡\0ñ‘‘^ñuáÍ>wVŽ„êjÿ\0†ã(|²q·ŒšÑU’\'êôåº>_ñWÂë¹âkMBÕ	\0aÑ­y‡¼¨hÇ˜‰!Xƒ€+ëýsÃ6÷2´S78àíâ¼ëâ/Ã¹¾ÌÒ$Jã¹ÍuÒ«¡Ç_²>GÕôS\"½µÌ´§ÜW§Íc;Ã%¦ø$ùH+úæ¾ñÇî¡-íq*©cxz¯øW—kúDSK\"GV+ŒmÁ÷ük²LñjÑiìyÏ„,ZyxØ‚\\º{qÞ¹©t+[9e´¸ˆÇîƒ‚¯ÿ\0Z½\Zú%žÚàu\'©æ¹gLŽiêI çŠéU\Z8\\.ìróhP¬¥£WãïÁ_¯ §Çát6îøÝ•8\'­l8d¶g×Ê‹i--ä)	c™	ÉŒ÷ü?ÆµFˆöw9{Ÿ\r^Z“±Ìj˜øÖeüš…Ç—y‰¯¯è—0Åwn^ÝÓ*ä×5¨höîÅÈÈ`7\'¡þ•Ó	óìÝŒÍ]ñ4vÁ$É?‘ëÿ\0\nõ†¸ÓŸI¿r\'È_³W“[iÒéÛ£‘¸läÌ{ñÍzW„¯CÙî™V)àp%‘O\rÜ§JŠÉ^è5HíLîÐ›K©\n¤\0Ç©ÇOÒ®|ñV³ðÃÆöz¾Ÿ©ÏÛ”ky#m­o(`UôŸÂ±nï…ðK©.ã„R&¨\ZË+rß.}ý+d®ß_Ù‡â®—ûA|Ñ¼sté&¦ÖÃûBâÜìa0áœc¦â2G©5éð¬Ñ Ži·•8ÜG\'ë_”ÿ\0ðIßÛwLøeâ˜~xÿ\0RŽÛGÕ%H¡»™²¶óœž<_«¸#p ûƒÅC‚I©QLó	äbŠ	æ:™ùj¹\0T\r\"G÷ó×Ò§¹R[!±Æ?ZËÖ.¢µBÓ¹²?úõÈ•ÆÝý¶>>ÙøÁ³øvÛMóê¼2/Ÿ²8‡¦9Î+òãâ¶½ŠuiµGX¤“Î`òDNÒÝˆÏjû«öÛð|k{«øŽÆå›ggìé†É–6éœ±¯_Ÿ~&¸³µ`‰Y†âqŽGjÚEA{Ç%ÌšV¨‹-¸(üîÛúWMáÛkk¹ì7ÓÚ»”ò·>•ªCoqp®Tí$OjôƒÞ²Õµ¬¥$\0[âªsä‰×‡¦§+3¯ø{ð·Äž*–4¶)˜bY9¸ë_V|1ø+á¿\0é±ý“NY.Œ`µÃcvqÐz\nÍø9à=\'Ãp[e]FNÞ:õt´fPr1ÐWÏâ±r”¹Qö,-:QR±º\\ˆß:É«¶Ð*¨§š0™\\æ¢‰‚õ¯9FîìõbÑ …³ÀÈ¨ä·‘Iî=EN·AFò¥i–UÀÆkE“¹Ÿsmæ!RO?ZÊÔìä*\nÄpz‘[×Fx<úUB£xÜ3ìkHÄ¤®Žrm>qÐ(Àþ*¥,FÖ#9Á®›T·@\0ŒŒã¦*ƒX†M¬½}+HÄ99ÉàH†ëÓ5Vä BKö­½JÈ@¾a\0¨ë\"þòþ^3Ï5N7Ëêö>dþheÏN•JóC‚îÜ«Å’G§Ò>ž»·:äú‘QMj£r³cÐbª*È‡ÏñÏÂ›KÙgó­z£{ƒë^ñGá¥k9¸û;Kjü™í×DGr;×ØÚ½ŒW‘œ¨™(qÞ¹\rKÂÝ«²(ŠbyÜ «}Aí]“G%L<f~~øÏÂzµœîZ1\"‚ÌúÏsèk‰ž5†M³©p~µöÇÅ/šn°e¹‡MXnäÁÊIïŽÕó·ÄŸÙç_ÓÞKí2ØNØ\"H•ðTv85Ù	]=L#mØò{­¬…-Â–^Jíí\\þ Ó4àÃ@ÿ\0Üa€}«[Z±»Ò.M®¡k,.½VT\"²ïŸÙgÚAùŸ»]0³G¢ÖŒ†Úú0ÿ\0fv`äêÜœp=*ÔÖÞ]Ï›£\',¬yû¿JÇ¿imŠ6£8Y­ùÈõ4Ïí‹ÛIðÌ®¹ÀpyÐŽâº)£žNÌÔº·HÂ´»¥…†#ä)?×ß\Zäº[¦éwÂçlþÏl~4‘êP_[¼QH£?y×ª„¶¡mšÖA‘ž}U»\ZRM•ÏSÑ5};U²M>iÀ¸x·YÌÍÇü¿\nÊþÒ{Ù.4‰fò®~1±ÇC\\Nƒâ%Ò&[;é›ËÜ6ÊÜlðÃÚ»Oi‰©Ø¯‹´¹6Üù>Uà‰±æ‚§kã× ¤àÐœR6ü\'âËý1SY†F†âÑü»ÄÉÁ=ãŒƒØšýÿ\0‚QþÚÉûCü3?\n¼g«,ž(ðÍ²Gùõ\r?\0$À÷xÎýAS_†~ÖãÖ÷”}«Ëò§ðÊIëïžþõí?²gÇÏ~ÍŸ´O‰¾ºh®4;ðZl‹‹fl<Oê¥r¤{Šƒš¬ý…)òœduÅÏ|/øƒ¢ü^ø{£üMðÚÜi\ZÝ„wVRÊÃ•?í+eOºš(8¹Yé“«È¥bø’Ö	låšë;S Ý€Æ·Õbå‡OZóOÚGPñ<^\0ºÓ¼%ç»À\"Cl¹”äq·û§#ïv®Hî6|ût~ÑzÆ¬ü=Óuíî¡O&Úy<ÉŽ7îoàÒ¿<\Zy¯õ™\"•Ël”íÀïÞ½kâäé~+º°Þ­$¼sÌ·šê~sŸ÷²3^k§ZïñÚä‹\nÓdàtô­–Æ°Z…¯†^kÏ-”`ûW¼|ð…Œ²ùÅI‘XP2X\nã|+áË{]æÝ[£¯£þøÝ®–â8¼¢ƒæ87ô®<MWžÞ]‡‹ÏYðˆ¶ö]L¸Â‚©è1]Œ¨	QŽ2W·‰l¢X#èª\0ÉôªºÏˆl4˜·w®9oç^\rIÜú”áM$É®çOÌpMWóÔ’S?•y¯ÿ\0ho\nhv§ì—ž}Æò®°°Ägýªò~Ö~(…ðíÄ6Ã8i\'Ÿqcìú×\\0•$sUÇÒ¥æ}M5âÁvÇ<ñTáñ†“|ë˜·ÂQ_x›öŠø¨¼‡Pñ}ÁF%‚nÂ¯°Çjã5_‹šî¥ˆµ›ýØÜ‘šê†­YÂó„žˆý\'ŸÆš<çk_[Ý.,Ô\\²»PÐL¤v(Õù¥¥üYñV•;\\b}ÛJ‚&$.{æ»oþÑ~6Ó\Z8_U¹H™²Èò{\ZÓêˆÚŽo)»8Ÿ{4î/ŸAšt™O=0kÃþüq—Äê¶××m“÷KžN;{×®C¬¼Ñ+‡\\‘ô¬*Rä=zXkÖ]!‡åY“ZyqäÀïWä˜;uÍV¼ygµbµ6(¸à#5VöÞséS	BÉ€yïT¼Evð[™AÁêqMj5àXÙ†zV=ÜŠË“ƒÛ½X¾Ö¡šfp~yËßx’ÞÏq–ïêq]”àäìbå²ÍÇØ$È¸ˆ¤Ü×/â¯é:ºù† ²vt½½éºÇÄ?\rÛ0ûV©\Zžß8¬ø[>–SZü\'á¥º£hrÊµ=O7ø§û<i\ZÑw¸±Ì2(?á_?x÷ök¼±•ÍŠJ#êc¯³&ñVªÛà¼†DaË,‡ƒ®è:^¦\rÊl!Æ6®:×E8Ýž}Jtæî|ª|9ÖôÙZÎuic9ÈdäV5ßÃè£g³2DëÈW¾Ð×þ\ZEöÇgÓFq&Ü‚+\"O†\Z°ŠkTûØÅt§ÊpTÃÆúMáÝnÒPe¶up}?\\ÒK%ä3\"M¹€Xœÿ\0œ×Ö.ýžôë¤i ƒpaòãšñŸüÖtÛÍ¶Q³.q´©ãšŽvÝÌÞKž_©é³ËQTps]WÃCueqàŸÌÑ=Äe-®}ßE#ëÞœ|3}›k\"ªÉ-Êñ‘ÐW5{­}šñ.¯-H¸B7Œ`ã±Í]îrÎ,HäÕ|â	lç9Ò\\H•aœ‚=jôý\ZHõ‹UÕro‘ò	<Žý1éYz¦•¡ø÷Âpj¨j\0Y@ÿ\0X½³ôéMÐ÷@µ‘gXÄg(9;ªZ1“»=ÃÀµ§íðïÂ6žðoÄ{Ëm2ÇzÚÂ“6Ž1þÓøÑ^e¦–Æ9QYCqƒÇ&ŠƒSú$cïVv½ak{lðIíùrÏ—ÆíZT&ö#S\\oÅ/iÞ	Ó¡2=õÔLb†ZGUáz\0;±àWÊ·?.?mo	éÞøû«xC°ö6ÿ\0-‘-ðŽ\\°l×•xA[‹‹‰cóÞØö¯bý¬µ›|W»ñ5Ý“ÀÕb†pÄüDŽ3Ö¼âÕh“ A„¸FÎyÁëWÐë§š:†¶ ]ÅrC¯Þô<WÖŸô¯ìÝ%7c0;WÍ?t;ÍzêÞÆÚÑ¤ó‰6õ?Ì\núËÂ>½Òô-.Ý$•\0ÉQŽOW™Œ—Céð4ùaÌM¬^-•´·’\\$P@›¥‘Èë_5üqñ>·ñ\\\'C¿–ßM´ˆªÉ”3œó×Ïì ¼×nß@Y[ÈöË°‘¼ú{×1kð²[™ÔÇ¦›xÑq¹ÇÞ÷Á5£N\nìê©ÖvGÍz–ƒ}fÏ*W*r_k³¹÷Ýßé\\Nµ§k:µÙ‰á	ó`&Ö_Ï­}¡ð€\\ÄZk¥vÇÊ\0Šåo¿gÄMÚÙD%$å”`“ë]qÄBÖ9%—NGÇzïƒüL±36@£å‘ŽàG§ë•_\rk¦c:tÉþ1×ó¯³µo„ºrFÊ0Ã±Zã<Að¶ÖÉ·®$c­&$<¥Ú÷>i‡ÂÚÜs¬¢É›ç‰†A5èÞðÝ­Ü =–Xx\\œqé]ÓxrÆÖuómcÈÎAÍu¾Ò´g‰Ù!RG$š&/B©eò‹¹ðûÃc@e{V8,	T\'=y¯qðÎ·%ÅšoS€˜\0ž•Éè±ó2 ìd×áß\n\\]°[D^GÌkš­TÏo\rAÂ ··J«åaIÁÇj“YŸìV\r+¨Ès]~Ÿàcmýß9à•ÎkÆv>T>Dˆ3Æ:×$ZG_)ÇÇ¬Æçs8ÏZÌñF½Àd~u¢žTÍ´`gû×âým#ßÐñÍoIs37+^-ñŒš{ºF0pkÅ>#|\\Ô¶É»eU¹P9É®«Çú”·…ü¹Ê$z×x·Ã÷×ìb´†M„òr0O©&½*1KSÌ­);´pþ(ø¯Ý»É.§.9rp+„Õ|ªÁ•}O©åsÎ+¹Ö~x‚rÐAhÄ÷ñµs\\®·ðÄ Z+Êy?Îº £\'©åOÚßcKøÉâmäÏg<‘sÈŠ^£ñ®÷À?µ¸ºŠù÷wŠ>d‘¸ÍyÖ§ð·Äú|FâþÏËZÆ—Ãš•Žg†ôÁšÝS‚ØQrŠÔûÂß4mr4û<ëæ°Ì–ó°úí&ºÝ;QðŠ¡#Í0\\)ÿ\0Së_x[ÄZŒ»5\0P.?„€kÑt?ê0:ÜÃ|êQ7BÀŸÊ”’Ø«¶Ï¦bðãÚçk3!ç\ré\\÷‹|ßï#Œg9«\'áÿ\0Åë·³‰5	C$ eðŸé^‰þ‰«Ú,öÄø Ô[”g‡ø×àŒwÀê6ys” …èÆ¾qø©á&Ðf{kèÙf…Èósƒ_}Í ù‘à/#?x7íuðšÞóG:Ý¤H$ûÌp;ÔÅ¶ÌjÒN>kð‡ˆ®to\r^ÆbÞŠÀÆ9ù2s]„¼Eˆì–GŒïW\"aŽÕÉhñ´7Òhó€b¹Œ¡9èÝYøW;éž.“B™×nL“ÁaZÚèòÓ=šÓÁ’½²:`¹\\7j+³ðÜ>…jÌyòFsEddÛ¹ý¼…!vUÉU$S^}â_K{c¨êº”í=ÅÄ/sÔ#žÀp8ô&»ù²á”ŽsQ]D—–RZÄ@%88ûµÆr9Xü»ý±4ÍÅÖßmµm”L\0©…ëÜç95â7·‚ÃJ– <äO·5öGü/ÂQZK jšm¡XãÒ]£†fbÄþuñ^°YçHÐðsŸ­h•ÑÕ	]&}qû|<ü3oã”$J<ÈóÓ=	ïKwHãä¡	õõ¯:ý’¢Uø!¡¢®7[·O÷«Öí¢Ëýà=:×‹ˆ—5F³ÃFØxúv›á¦†óíÚš#–ÚGCëN¾{9˜E&znÅ]ñMêéáÂ®èrÖþ ·G/på9G&³Rhé‚ŒzšwZ01eÆ=H®k]›ÃZPwÔ5x¡\n2C6IíÒ¯êóx›Ä°Zõ´û\"8†.e—ê{W-\'‡ô]ìÜhÌÄÍ1ËcêzSælßK\\ä¼[ã	ÆÙ·–iW8ÌVíÏéŠóŸøãÃ¾aÊœ³Û×¤ü@×4û„‰’¸ê zðïxŽÖIœ„FƒÉâµ§NF~Ñ\\ÍÔü]¡ÝÈD x\r•8§i¾!Û Ë´ç‚­\\v§{ÃwˆæŸ¤1Y‰8ê9­}›JâRì{·ÃßÍs(¶¼;³ŒgŠúKá40ê–ÈŠÒ2HòoÃ•œÌ’ºð:WÕŸ\0%J†ÀÚsô®J#j5›ÐõÑÌQgÉÛÆEyÄ›!öƒ!Ú\0¡¯R½Ô™—nîv¯1øˆDŽÌÍÓ$Ö•ÝŽØÂûž5âÐ¶ûöõÇµxÿ\0î\\ÊpI%³^³ñh¡ŠGa‚ ×ˆx¯T2»0#¶kØÂÁ8Üá®ùYÇx’ò8˜‰\\.O!…rÓÏlÌÿ\02ò{Š½â©ÌóÏ\'­s­#…f\'¿JïQ²9¬î[;$`J’ÛGŠÿ\0÷RÀzqT,/ÒK•‰†9äã¥z„l´,Iu$€ãæýÙ\"¹ç7\rq´žÇ8Ÿ¬õp!“KYý£š[ÿ\0ÙÃFÕ!ÃhÉÛË@Ÿ5zî‹ÿ\0T)•ÔJ1ÀHÈÍl,ÚAQ•ô‘ü*Ã4¡^I‰Ð¤÷GË^#ý˜çÓ²Ú}ÍÁRNVf\\Ò¸û¿…ÚÎ‘yZ®žé³\"ýÑôï__kvñÌI0ÛÐc5Êjº%„ó‡1©>Œ ×\\*_sžt ž‡€éÞ»°ˆýª&0¶>xŽ<³ýâ=k¿øIâmsJ×AÔÂËe:†S&ârG#­v’x7Kž2$µ$vãùkŸ¸ð	Ñ/™´¶p¯\'˜±¶p #¥jÝÕÎYÒqÔô[xã–‘GZàh­	ï~\ZjsEÌPÏ|`×¡éVÌt¸dÇ1½×=ÇôªÞ,ðü\Z÷†o´›žV{gR?à&³NÚ™4¹OÌûÈ$m\\yÄ‡à`àŒV„4›©|i¡Lß8%ñÆOÄ›ì/ˆZ†ž¬BÅpp;ƒé^ƒðDŽ{$¿œ‚0ö«®Ö…Ï\"ª\\Ìö¯	|2Öu¯ZjVÒ¸I#à(8àQE}/û;þÏZßˆþ\rhšÕ½Ã$ñJU–2Ai§µÌÛ¹ÉÌ~Á±m¸Í¨EcÏ#šk¸\'h=:Ò’!&	ô®5±ÄÕÑó?ü?Â‘ëŸ\nf¾kbÏo:p¹Û’F>µùÃ¨ÚcR’ŸýSü¹5úÛûCø^ÓÄß\r5/£i1;Çn8ý3_•Þ\"ðôãÆ‹£ÂÍº½0‘?ÅŽ*¹ìta×5‘ö×ìÁk%¯ÁßDÀk2NL±5éî…úÖ°¾ø^?\røGMÑ£P>ÇeG>¡@5¹}(†Îqòú×ƒ^iÕlûÌ:WŠ}ŽÇM>æBY?/8Å`ØÇmdÍôŠý4<V×Šµ{€ØÊƒÉ÷¯øëªüAÖ­_Gð5¡g‘v‰ö$~çÖˆrËrœZ7þ%þÓ|g*Þê°4¨¼*?NÕóÅ/ÛÃQÕÒh¼¤OpUˆ2Fx)Í&¥û$xšü?ˆü¯›öWó>ËÂc?ÄQž1Þ—Rð‡‡­<\'&‡ÿ\0õµ·ÅkDU±ÁÇlW«BjqÕ•d¬|yûbüKÕ&¸e	\nŒì]ø#¤ú×«|{ñÌ—ñ[èþ4ƒPF²ŠygKB—æ‡æåŠg»œúWCâÙÛâ´Æ{x|(—¶åŽÙ£~aêA ŠÌÐe_ˆ³ÍÛ!²Ó!9Þf¹óLí^¿JíP¤¶<õ*×Õš¿¼iñ\'Æ·w„éfá]Â€A#=+Ó>øÎ9µ+mÄ°ˆŒ²ˆÒd<ƒêGaïXÞø¾ÓßO²ñ$óyóù·„	¼ôÆ+¿øuû;ØÞëpê®ÒÊC‚C\\°Ú¹ë8Æ\ržŽÚ5©ôÃ-µŠ@ñ†%Aó’FkÝ~i×:xvhŠ©\0ô®+áåx`‰””\0cžœW²izri¶«q^åÍ#ÚÃQ¾äúþ±ö[<Æ¸;y¯/ñ¯ˆâ–V‰¦Ë8èMwÚò”„³äŸCé^Uã2.šEç9Áôö¨§g;“‚G›|L»[ÈþŽkÄ5gÜÒ#ç<W´|@€­±“\';y¯Õ`Ûw*H1ó\r})Dò1‘IÝ®»æd8ÆH9®_T¹{lÄ«¸1Â×e¯Ûy2I½qž†¼ãâ?ˆït-0Ë¥Z‰%9”\'éõ®É««œ	×ÃÀMý«©Ãå,øÛø}kØü7­XCGæÃ†PPç_é:³øŽâ(ŸZ½‚G]d”íg’0~ïµr_üAñ[á_‹\"Ò¬ük{Ú¬±¥8Á=óí¥rÊŒªH‰ÖT•ÏÑK¹í|°fee~ŒTkQƒB»Œ‰¬#À<<gkpE~{xoöÃøÕá½6XOŒ&¸rà,W0†\\w9ë]§ƒ¿nÏO\"Aâ»P	ožX›\0þ¨Ži™SÇÂ¤¬«u‹[Ý6A.¬ËœC;ï}j¤:ù’A£‘68=‰ú×™xwö ð?ˆZ05-Ÿ™ÁÞ[jzoˆlÝ•ärŒpÈÀãò®…O”ÝNêæà½é°ñßšÜÒà·»€	7’:Wmu$N\"bXæº­ç(ìgU.ÄTmÄèªÛÁAòã =*\rQLZTómÈX˜ðzñWàDšÜF\0ŸãgÔnÏ\r“·CIjyòv‹gæ÷ÅÍ0ÜüLÔn|·:ƒ`ú×§ü9Ð¢·ÑÂ%æHÔ/“»·Ô×	¯£jÞ!–ôŒæàÇë_G~É¿\nï>(|qðo­,žeº¿…®ÑzÓç$ûWT \Z¬õgì—ìð_ÃÞý™¼¢kšj­Úè©4êýCJZ_ýžŠõ{]:ÚÒÖ+HHD†5Tp\0Qn(¬RLóÝMN—9;yúRòÅ´©òyäõªšÆµ¦h6jZ½âÁoîyX—éë^{•‘’æ›QHáþ>ßj\ZgÂûËmC_j/ö@Ã!$“?9ÿ\0ur\Zø./€\Z‡‡¿i­Á:Û›ëúJœƒÜüãÝq_[üXý¢<6¯lÃOÔîm-f´ÐÛçž™ÚNOá\\Žµàß‰¿´T^8ð®¢ò­‡L+‘x²ÁFAçøš°H¨6z¸L\"5cu¥ÏPÓ ò`ÁŒ|ÄœÕ™â9•a*™ÎÞEmÃFG>˜‹­ÂÒ3c°ãŠðg\'Ísí¢¬”{w«Æï3–=ù²o, •	’à}+°¿Ðœ’ÀnÉç\"³¥ðÌÍž1ÐQ2ÒÔà5].Þî3dß\";ìP;W\rã/‡º}áyV\0Ì_€¾•ì÷^\n‘ü¼öÍeKàÈ÷ñ‚Ýó]4±ƒJ/Vž5/‡3\r¾áÙd-üO.Üõ¬Y~x†W2\\¬p«7Ý\r’?\ZúVo…~Ì5Aü\"³ˆrsÊí­þ¹7Ô•†§½Ó¾CnQ$…¥Jôï…ÿ\0çšùm\Z5R2Mz/…þÇsp³Mo…ÏÍžÕèZO‡l´¸¼«Kp\ZÂuå5k4pÊ×\"ð×†`ÒmR(bjknÚ‚XqïU]¡`F~özÕ·»Š8Èzç¹éSŠŽ¦OŠöý˜ðÅy/Œ¦ò™ö¶y&½#ÄzŠ°,²à×•xÒ4¶ÓUI{ÅÎ]8ñµäsÆWc‘šò]z:‰)Ò½?Æ¤ˆÝ†:q^c«d]Ç«f¾‹\nš‰ãb^¶15Ío¬ß)–ç%ðìöîÂXr¼ã+šö…$N:Žžõ—­ø~\rB&ŽhzŽ8Åv§¥™ÀÓ<cHÑ´¨nòúbNÕèjïÄ~øÁ§@oÍÄWÐE¶Þúæ1œáàŠï¬¼…NK—?…j§‚\ZUS\Z´N::/ô¬¯Ë+™Ê’©£>?ñ¿ìQñD˜IámNÇT‰ŽHi.¿àÔ\rþx—Ãºÿ\0ö‡Ž´8c†ÝNÈAob:8ÛŠúãQðˆdaå”•}sÎ+&ëÀ7Reg°(ßí9æ´…hÿ\0SŒ%xŸ<xŸá†Ÿ«ú¤Z[1kÊþäUoÇñÀ~\"[Mî…¬ŸrâYê?†¾ˆáÇÙ›sY)öaS/ƒ!pbžÊ-Œåeë[]3xEÇqžÔçÔ,ã[¤Ã\0\nœ{w®ãEÉ@G`+Ÿ²ðüpBp\0Æ1Òº?\rA$jÈÜãšÏ¨æìŽ¿Iù­~nrkøß4–ÿ\0	uù¡á†žáHØ®JB#Æ1šÅøÕjdøE¯ª¦ãöÓ¿4 ®Ï:«´YðÇ‡<7=Þ»RÆZ-û¥!sÆ1î{{×ì_üWö8Ó¾ézOÅýcAHµCÃé*M!ÜTÌÍ€=0ŠôÏ5ùð7Ââ‰Z\'‡aUß{©[D©·9,ã¯á_¿Þ\nðÔ>ðÆ @T¥•¤p€\0QÇçšÚNñ±óØšœ³±¬?!H¿¼?:+ÌqÞ&žöÇlõ¯ÿ\0lïÚÏáµ¬Vºi»?ÙM¾cŸSÚ¾Šecƒåõ#9éŒó_›¿ðP_üR¼Ò¡Ÿ1ÃpUT7WSUcèø_õüzMlzÃOŒžø×¥)±U³ÔP?O™e÷SüCÞ»‚ÞµÐüi©êé©¹Ud¨Ý’?JùköGðLš·Ä{[Ù7ˆ£mŒTñÛé_exyZ½Í”@ÇÜõõ¯>¤yOÑ±x8P†ÇRË†+žU¹Òâ²ªsŒã5 äŠ™!$ª2\\W#Ï&Öç#u£1‚‡¤S$ÓcE\0]-ÜB1µ»óÇjÅÔ$‚7\'wn*yluBœZ¹‹jŠ…X~•…u‡ùT\nØÕõ(œíÀänéYeÃŒ²S4öq±Kû4\\ÈK6¥Ok£ÚÇpœƒÜõ©W`|\n±on%mÅ±J,‰PIÚÆ®™QýÅ–ëZ,rÀÊ¨ép¿0ÈõÍiL‘[Ú´²°Í+#hèPº¸VàÇZçµ½ZP\nB	3Zò¸¾”,\rÇñjÍ6m“$öô¥\"ïc‹Õî§hJ“Ú¸ÕðG×¢x‚Þf‘8éŠà<T%•‰1	çŠÞŒo\"¤´<çÅÖë4Eï^_â8\Zœ8<“^·âK èÀã5ç~&Óˆ$íu¯z‚´O+™i($ëVš%”å\0V~p[ÝëFÙÕÓ‚\ru%s‰Et]\"9.\0c“žâ»]3Ãö’B±×>¤Wc3Á xÇ8õ®ãÂ—Ë:8€Ê;ÖUah›Ó¦’¸à¨Üå\'ÔŠ…¾Ú®_	žù\\×T…XŒóÚ¦hU†\nãÜW3LÓ‘>‡uàf„Çû•—¨|5µKã‘÷01^ŽlÉÈ\"¢¹±U<gò­áVV2¨ò{¿^Z’ÁwpEEi¥KkŸ26x<W¨ÉcjG1nkUÓ£f;T3[ÂrêpÔŒ½*ß.GÝîjŸÅ;U—á–¹ni:{vôæµ¬¡ò‹duªßâFð²‚£JœŸûàÖ°nçŸ8Ýsÿ\0…ø;ÿ\0_ö¼Òµ[¸Õ´ßÀÚ½÷˜8`œ\"ÿ\0ßF¿fYå”ù…—.K¾ÓÀÉÎ+ñ¯öýªµoÙ—À—¿ð¯~é÷Zö±òÜëZ´¬ñÇATH—ç©&¾³øAÿ\0KñùÖaµø½àí2ïO‘ÀžçH¢š\0{…,Cžëfô<LFR\\Érá8íESð¯ˆôxvÓÅ¾ŠêÆú-´èü2ŸnÄìATSÃÕNÖ65Ë¶Óô[Ëþwk#qì¤ÿ\0Jü§øós/‰>*^Ìì[7,	cÜšýXñ\r‹êZÖœƒ&âLçÈõ¯ËŸŽ>ŸCøŸqFà¬í¿zàä•äT•®Ùú\'\0ºqÄÔo}Yý–¼-“is¬ùE_ËÄ;c¹¯tðYŠ=`GæQž~•åõ?Á_¬ZòB\'»Î`çøHàV÷„~/Ùêž5Ó¼-g\0àH|å=ÂÒ¸¦¹µ>Ë1Öç¶AŽ3ZP\0@ãž+Îïä^sÓ“ZÖòùˆ\0\"°JçÎ/tÇÖ–`äÆIƒÒ¹ëûS1Û1Î=«®Ô å€_qXWÖáäCV:©Júíî“j©º4Q½ÅdË”ÅT]\rÔ-0d\nTeµdaÐt\"£”Û™#Àåð«ÎkJÒ(•A“™q\0ó§Ò¢šëÊã8õ¨nÅ)u±£«Q1$)Vî{UMNöëWQ9T?Ä;Ö4jZ¬V*Z@:õÜ80àbœu4åÒåoøxÅæbHúÖ¡Òdœye0	êE\\°»´·A_|Òx›T·ŠÀ½œáXu\0tüiòÜI\\àþ!øjÖÆq–P¥2üóšò¥Â·±®ãÆÚÜÓ™\Z[‡nÛ‰äó^mâÍn6O–E\0v=kªŒUË{¯‰a/s\\ˆ-ÕøükwÄÞ,O1 VÎ;W)u©µÀ*î„×·F>éæb/\'±Ëk–“$¹ˆ÷õ¨tmBHï>Ç*òÃ©5»uaÛç\'#¾kÄš+[[ý¾îˆäãÒºiœ|3~ÔòÇÖxY•³ó\0Äk…ðýòÞÚ,ÀöÓx~ý!ºEg$“À¥*›ºz¹ ü£¾x«¨Äuª:[yÑ†@«ÛNy¯:iÜÖ	\\rÌŠpÏ¥E}s)\r(àqUfÉ¾â9\'9¬mNâHÁÃ=ëJqlÊ®BÝýü+ò¡Åc\\·Éæ2OsU¤Ô‹»9õÍD×EÀ ë]†§›SVÛ,D@¾*§Ž#I|#}o(ÊÍfñ°õc<S`a«7Çz”v”»æ\r£ÜÖñVv8¢×=#ðæ‡¤x>ÈA‚xFâpHUÓ½rÚïí)“®ÇkáÏ‰á’êiÝþè®{W [Ú.¥k,‘,l¼jùÇ\\³[=nk4òîÊŽ=êÚ²>—,ÂR¯;Ilü:ý«~#èþ\n°ÓtoËmmGË‚\';S,IÛ$Ñ^Cá\r2úO\rY½½¸(bà—ÇsEIçÕËpŠ¬´êÏÜá“Cc3_~ÝŸxº/i¶…`ÔpÊŸuË\0G×½}“Ì›N3îzWñÛÂ6¾-øuq–Á¥²q4GnOšó+A8ŸÃØùeùŠ—G¡ñÆÛë­(4«feŽÞÝ#^{°g½Jêãã6‹%Ä¤¢K ?Þ‡øWeûAønk†]^(ö«\"ü£‘ø×ž|Ô­´o‰šd×,>Kœr0æk‰¤â~³QÆ½4÷GÚÖ3“\ZœçŽ•¯az¡†q8¹í.WÈ»ÇÝ«ðÈÂá˜äŒ\ZåØù·tìnO(‘x#¥dßÛÈÌJ®síW!l®IüéNÇ8ÈüE-ÍbìŽ~x1ÕFjŽ¤C‚G<V¶ªÅ%Úc¶+\\™Ä ¨9‘QÌuA©èd_8^äæ±5+ÅlÆÇPkBäHI%óïš«˜®¬Ó)$÷Íg-l’±›áýJ-7Äv·ç $±ãÒºO|H\Z5É\"í|¦ÏNÂ¹­{I1YÈð±ƒÜ\ZòßŠº®«s¤½“f@qž~µµ›6ŽÇIâŸÛGá¿‚u%¶×üR° 8bŠÏß!•zƒñgÃ?ü(ž!ð¦½ok:f9íß+îì}5ð½à;Ä>\'KYoD¯4˜R nöæ½£á¯Á\Zü!Ó-µÿ\0	\\:Dà5å´™1ÊÐ\Zët¡ÜÊsŒ$zŸŽ¼A,\r!ÜF	â¼‡Å>/y%eiq]üI¨ê6FtˆÅ&xØç¼wÅ\Zœ–ì÷7wHô5½($‘r«šÎ¦$™®-Åa7ŠtŸ·-›ëV¢f?,^zî?†s\\\'ŒõOxšÕôûK¹ma`UŒqõ¯\'_…z^‹«›ÖGYKgÌy\\·×9¯JŠ8\\ùÞ§ÕP\\&ÐùÈ=1Þ›¬Ki¬ƒ£#‘^EàOßhJ¶w:“Ë¬’£êk¡×<}­lºf—#0#çrxúVŠL†•Í	êÝDAÁšêtûæ[…0kŠð½ªù[ƒÎs]=Žü€8Â†Ú)Y#Ó|/®œ#®;×V%Œ6pÏ5åú&¤Ñ:•cÀõ®çKÖ£’· z×4¢›3-j>T@€ãó®wW•A\'püé|I¬Ÿdõì±§½wRY‰úÖ´â’0œô±òªÅ€ÉïP}±CmÈç¾j½ìÌä)5±Ö±Üóê¿t×ü¸Ïá\\çÄMNÆu´Ò.nÖ9frÑ¡<¶ßÿ\0]mG2¨9ü+Æþ7ê—‡â=ƒ£X,É¹`Oò«Zja…‡µ­c±¶ŒZž`gùWÎ^!&ñ¬ÑÇƒºôþ¬kØü9ãÔn#µœÅùÇ¥y¬ž¸Õ¾0ÝiÖÖìë\rï§’O#‰ªœ”£f}†]BM½¯>|°×>èÚ­ÈæË¤Œ?¥ôßÁ„º~è>Ö¢Ýwm`¦àã£¹.Gá»…(h|Ýlt}´µêÏ²\";AÆ9¦^[Åqm%¼­…–2Ç¨§\'_Â‰#òÅp5t~uË%#æßø\'DÖo.¼3¬J\"–)HIe=8¯;¶ý–|1¥kâEº˜½´Ë4jŒ\0$6Gè+Ùÿ\0j´÷qkö3µ»ÍFhÎ\n°è\Zóï‡·zÖ•–zÞ°×ˆI³ŽÞ•åW‹„Õ2Ì\\«åÑ”YÞxtI%²37^úÕ¥å¹œ•™ °6êè\0Ý	­ØáÀ»W=Ó2Õ»’Z ó×ÔÔ¡?71\0 R»@ÚjMˆ£«ÛnÔôíŠåu²Á¶më]†£\"ìÁ#§zçuX<ì,j	\'®jºŽºjÊç5>l‡äã=*v‰Qztö­Óá³ˆ´Äe¾íQ¸¸P¸ uëQ¸çQ$cjê$W©+·+ŽÕ´­\Zó\"XƒÜ+ŒŠèõùØNÊ&ÀUÜW<â¹{£q$åvì$dñÚµ‚±ÃW(hŠáÊõY4‹Pßx?2>•ÐëZÍ¤\ZØÝÓk¸b ·®\0yYC*•+ê+â\rÂGvÑÂÀ8!¸5´[³8¾³Z£ÔóßywO2ÚÉ·#åÇ5å~*øa«ë0¾´%w‰91¨í]æ¯©Ý¶«ök”^ŸZí¼%¦Z¶•åK*O*GQšîMRI£¦Ÿ-™òÛhsÚ3!ˆª¡î1\\×‹|7a¨0Y|ÝppE}Eñ?áž…,‘ß,\")$8Ê\0éÒ¼ƒÆ?$´œ²L$Q×h¯B†\"5V§-JÒ‹º<vMÁ£Ô¤ØO\nOjê<;áXáXlž§=k@iorâùqÁ5¡iÀ\0n+©$Ë§ŠrZš:&›ºí^ý«ZX0*\0ïTtÙr1ZÖ…q†î)J)£ªN;–­d0qÛšÝ°Õœ@ç#¹¬$]ì ~5~6Ú0ZËÙ+Ü§¢¹5ó	›q\'>Æ«LTn~´öîÀ ÓX9\"«áÐÂR¹Jà~_ŸzE\\Øç´Û™I¹ØÖ¥…C0ã§^*à–çÚnÄÑ3ˆË¾=ò+Æ~5êZMö¯	G0b>½+Ø5)½“:õëÇozùÃ[ð·u_\\™ô9Ö9.’VèËži7`ËÒŽ\"æ÷Ã±öNPyÏ¨¯~ýŒ>AãŒwÞ8Öl7ØiW+<ÙL‰§ê“ð<Ÿa^_ðçáÕæˆ‰5í¾é¥p‘ÆK1û£ó¯»þxÛáwÃû/\rC2 ŸQ•W—†NOû<À×E(Fnç^kš}ZŒ’ÝÌ×‚YLÉnI÷¢±ÛSÁÀb}è®õI¼EI;ÜúÑ³§ò¥*Xì `žr*Eû´×|sø×Í¦Þ‡+wV<{ö„–òïÄ1Y¼„Ä°‚Š½3^Avš…Œ¢ó»5ôŸÄÿ\0¿ŠôÑ}§ô»uáü´_Jð?Ì¶W[^Û6\\Šóqp“w?JáÌFYz¤¤ŽáûÜM¤!·0}Ù®Å@ò×q\\?ÂÝN-NÂUŒap&»\\°àšàGmHòM¢T g4Ù$RF)Šyå©m<þ«R’*j{ÙI½b]Kå1Ï÷IÎ+oP$¡P;Öµ2[ÄY°Çi*OcFØÚsä§sÖü_“yM-ÈcÒ©YÞÍtþtÊ1ëšÆþÊ¼Ö.ž[Û‘æ+Ÿ•F\0¸­‹-ö ûQ˜‚1ŒU8¤´<—Zs‘“¬‹ÔKåÙÉ°8ÅI7†mïîLì 1@„©ã½\\¶Ñ|™˜ÜÇóoùrj]VòÏK·ó@=‰äÔó+\n©%qš~‹gláä„3‘Â¸ïŠú1håhåP:Ö´ÿ\0ôË8šy¤\nc$ó\\_‹>\'hÚÛ5£êIžŠ»‡5P…ÝÏFô<{Ryf×š6SãŸÆ½kÀvëuk“‡a\\´¾Òî¯†£i:#““’0k©ðæ£§heº½‹)Î]³éÚÁ,¢Yø™¦B–­\n*‚H8=ÿ\0Â¼GÅJ.f€séÇZôˆŸ4ÍBbö3£ü˜^ysy¤MÀQ’O^J+S–¾òÝœØ\"¹gY\"ýàl/R\rÜBÏp@o—å\n;WY=¤i™’<;\n©Ûß$pA½(TÔóÕ%‘aqÞAì­M\Zõg\")Ÿ:õ§]éŽ÷NdŒ€Ãå*3Y¿`•%pÙ$õ­Ö¨j£‹:è™‡ ýjâ–\0çŠçtMf #ÄŽ#ƒ[ÖÓ OSSÌvF¯4I~rC¤¸\0{Ó·/­\r†^?\ZOVD¤‘žÑ6ýÝø«ãÒ.ïÚ¦Ò´Z#Ï©=t)kÓkå«“Šç¼gã\rÁsYé—±4·W0ù‘Å\Zd‘ŸÐV¯ˆ%Ë¬K€sœgÚ¨	!ÔgQ¨Ù£²,Ž€²Œv¡ê¬m‡*»=\'öSðmÿ\0¼V<w¯Ø°Ò˜4º¯)û£ßšúVâéúù‡‘^û=_è²|4†ÛJ·1yS2ÜüNyÉüë±’t\'\0ôíŠôðÔ×-ÏšÍkÎ¦#•½1¹P~÷ëESgf9ÍÚyžÎ\'Ûˆý¸¦ÍÉÈ¥€NqíM}Ç \nù$¬Î[j\n¤s‘ÇCXž#ø}á’5ýÖäŸâ‘0ßZÜUr¸Ç¦ìP¼šRŒe¹­<E\\2½7cÌõ†žðÈ¹ð®œmÖë‰ÔÈXdtÆj»2ã`ýk´ñí°›EgP”Á‰îpÌÛÆáÇæbhÆÐû\\›WA¹»±Cž¹¢æo”sÖ˜¿tÔw‹f¿ø×îSnåk™|ÆëÓ©®{_0&I÷A=ý«ZôËå²«àžõÍë6òy~fâN}jS±uãb„öVQ®Í#YÛùUkÏÚéî©-Ò!ÏsY^)Ô®míÝc 2©+^ñsÇ:·q“c<Ï1ÂÛ\0‘êMmM)èÎ8RÔöˆômÒGŠê2ÛNyÆ\rxo¿iÈï•¢·»ÆÞï^K®è´/ï¼Vx´ëVn]’P½øà\nÛÐÿ\0f5‚v{ÛùHá¤Ÿh$çÝKLõpÔ/bàø³{¬†R.,f±õ?¹œ\\GtsŒ·ZÙÔf/ÙÚ­Æ‡sw‹p\\,Çïçü+†ñGÁïØk?ÉÂñç¨*9äõë®4©£Ý£‡³ØÓ—âæ©¥.=EÊŽ¸l×/âßŽ^&¸?f²Ô™##w=k™Ô|ñÊvûýœå˜äJ¼Žâ¨Ý|\'ø¥©oº¹Ô´øÂ¨*$óWì k:kcZßâ.±™î5cêXÖÖ…ñ¾êÚ@.%R `œæ¼Æãá_Å·Êÿ\0hÙ(ÝÃ5›sð»âä,ÎºÕ³ëƒ]£:½*r…™ôž…ñ7M×G%Ê£œŠÓŽîåßŠÃÔ\Zù¼[ã¿\0]Ö iT^8ü«Ñ>~ÑZN ‚)oQdÛó#þ53¢àô<<F0w‰ï×]*”W3®Á=Ür+ÂT‘òñƒLðïôíacA+|ËÓ5¯+CuüCñ¡6‘æÎÝ¸6†H®³[½u¶®ó£ ŠÁþÊ	9›VVÎžQS\0E8…6Ö…§y:‚jkwb„\Z‹#8•aÉKræî‰ÈÉ `äõôö¦£o­i¶ŸnºŠÙ\0ß$ª‰îI\0Ö´¶§ívpZž¶³ø®æÉ%â\nTö=ÿ\0ZÕÒ¢Flü§8É¯¥üOû2ü\'ñ-œ1êžHo##kûG1JÅT\rÌsÉÏ­QðßìÕðçÂs‹ô7—®ŒqßNÔ(ükXaê7v5š`ã=È?gÍ&ÿ\0Lð¬÷×±4kws˜Qªñ»õÞŽ•I´yiUT`éRŠõéG’>[Z5ë9 ¢Š+C£íÐ9ùºS$“i!jS÷?\n‚nµòIÜãNâ#\rÌÄ\nA!ÛZF“rlcH\0\0Ó®¬VÕ,’öÂ{wë\"#ñë^fv‚Ñü¤Œjõ9NFÓœ{Wø®ÅtÝveQ„•·/·ŠåÆA¸\\ú.­ìê:}ÌðS‘Mp60ÇÖžy\\úŠŠø•PA+Ç{ic6ùIb¸íX\ZžDnƒ“ƒÅmj3ì›?7lW?uÄÏ’ø^sÍI{œ¦¯§¾§)aÉntª­ð»M¾e¹…K)ÈÊç»{Kc|cw¯z±%¼qÇ…õE¸Š)Ežc©|,µFFFÓœ¨®sÄ\r®#·\rd¸9èzÜøW`ëÎ:VV«.ØpªïjÚåvwQ¬£©äQxrÿ\0K¬ñ«ú«Õã/\nXêñyŸgHŠp1Á¯[ÕÄ-\0—ËVaÀ\'Šó_‰ž!Òí¢daµÕ9\"»©bÔÏNž9.§“ê_„7æ4Ýo›½gjþH×ýà¼+¼·Õô«¿Ísö\Z.ªEs©*^eÑÚºcU\Z¼}6·8-gK•j($òkÿ\0H¹x°±‘Üã½zF§fc¤Žj‡öDsµO|Šê§ˆQ<êøˆIžU?€\"Ö’òÝ\'£Õsû9ønYšálÂ¹ïÁ•{2hö¬ÌÒC†ÏJréöi÷Pg§5o¤yU*k¹Àxátþ•Z+ùÞ0~ì’gÛª˜H9ÇSš¶€Cò¢Ê¡¹OÞ	1ÔsŠÏšç#’“Œf@ã5zÌ2òª6 )ÛžüV•§óT`ôcòCn\"œXzÐÄ84‰Þ´‚æD¶Ò%Š^í?vŸô!¯|B±¶–ñ@Æâ\\žGë\\LjKðz’{W»~Ì>º=ÿ\0‹n¡Ú×-íœÿ\0prÇñ<~ºh®i#ÍÆTöplô{÷ÜìÅ¹&¨\\0*T0àúÕ»ÂLgŽÆ³®	W$W°––>UÝÉ±ª&–›¼ú\nPÀŽH§}JI±h¢Š9‡Ê}¼]vã=ª¼Î`EòhãDnAB—š(ª)nGq!Q¹Zç¾!i&ÿ\0M\ZŒ6Ødœ}áþ4QQ[ZnçF¤èâc(÷8¸/h÷#úÿ\0*¯{r¥€è\\QEx54•ÒéIÎ7}Œ«ÔóFZCÏNµŸ9N=(¢ Òú‘,»FÜTwW~LDäò;ÑEZ˜—\ZŒ{Ì	õÍakZäj¿,¤`ã¥T·¡Ð¢¹_Ä~\"Sl¾[dçxÇÅráVR£nF:QEua•Îj¤pžÕÝìg‚áØ189<Õ¯áù7I·½WZ9á9\\·¯ÜÛÚÚòA\' ®~ÓUÜ\rÜdQETrwq\Z®P‚}ª¯Ú‰mý=³EÑ9«­E7®O.iÞaùšŠ+e±’ŠH–ÝAmÞ•~ÆN*(­3{’+ŽVžè¢µ¦ìŒ¦Ú4|3¡ßx—Z·Ð´È‹Ü]L±B;d÷ü:×ÖÚ\'…-¼/áÛOZÆ¡- XÎ?‰€å¿“øÑEváÒ½ÏžÍ§-\nwÑ¶þ\rgÜƒ¸œw¢Šõ\"Ý=QC.#”¶8QE\"ÿÙ',	'mediapipe_v1',	'2025-11-04 13:41:30',	'2025-11-04 13:41:30'),
+(2,	'2025-11-11 02:45:08',	'2025-11-11 02:45:08',	3,	'}vº±^½<|4Ë¼#‘Ü·h†š;U1K½-~¹¦É<)Ó¼²ƒ…»Q~/¼8¸½RÓŒ8™	¸GY½»	69K¢Ì»+¡L½LÐ9Ua¬¼0VÝ¼«\0½¬¼Ï\n-<>yî9Aß½U ·¼Òæð9Ó—½êpÍ¼@Ð\":Ot½nC¼vk€º-Ì<Ê`¿¼©ˆºfÛ<üG¥¼Mµˆº¦7å<™¾{¼4Î—ºniæ<¾S¼nn ºþ±ú<’Q^¼-7°ºô	=3|w¼`Á½ºWR=9W¼ôþŽºÙ\'=¨$m»}¯¸ö¿è;¾[7½êJ§»ÀOÞ;Ä½‡ÌK½”í½Ø›U=.`¬¼‡“¼AÄx:!ÛÖ¼3Q¼}Ãæ:5þ¼(>¼¬i‘;êé½.Ÿ¼•ÐI<‡¼Dí™¼¼£Î:Išè¼w\'õ¼8Ha»Ú¸¼æàð¼3i»®Â\n½ð‰ï¼`$¸\01½5á¼6‡;,‡&½³‹¼Ÿ<<$Aœ¼ÑÕ;=l¥<1¨½Î³¼áÀ^<ÅR½øº ¼Êdn=2ä8½?}£¼î–Ø<zîÊ¼°¦j9ÑQ®»Fµä»<±<>Ó¿¼¨Ì»ôóÖ<^í—¼Ë„J¼gž»<L¥¼­¼aØÅ<›¼ç,,¼ÌÔ<¹ k¼R6b¼j§Ô<à4î»}¶Ä¼ió<%ð;-å»K²’;VƒG½[±¡»<Œh¸úaT½\ZD4½D–½ñ Ö;ìSp¼¯d6¼„	¼Ñíˆ¼y{1;[ÝÒ¼•¿Š¼•:X9—½¼’*½h\'é¹€‹å;w@”»UŒ¾»~@½\"Ô½ÐÏ½Î0¼~[#½|M½—ŽG»Ð=½V@½\Z,=+,+¼[Ù	½v¹ž¼É»¼dhâ¼˜d\\ºÕá¼´É<­A\r<õ>:½Øš±<`µ=ØU¼$Ý®;œô´¼Ö­¼0Üâ;½¼Å§¼3QÖ<…Gù;g¼0×<- ¢;(,½ü#½‘£¤:3‹¼õÁ™;àê§¼1GÁ¼£½£!‡¼Ð3È¼0)(½#¼š¼;…ã¼rœk½2`»ôV3½øä/½Nöt<‘Ð¼/ÖI½.’G¼¼D<½ Þ\n½ðÚi<5ŽC½N½t9=ÞëÜ»UNÆ<<´¼²Ò;¼_É<Œg„¼iÞs¼<sÍ<…N¼¢fA¼<Ì;[¿¥¼uõ¡¼ŽÅÖ<ï¹É; ù‘¼vÂà<‚=: Õ—¼4U×<N+˜;ï}(¼“%;Îø½8wT¼2ùÙ<.l²»ò<¼k¾Ü<½P\'¼\0’¼»0á<MÊd¼½n¼<K%=æFG»áŒ\0¼Ø=ï¾J¼˜/ó»wå=õsd¼\Z0Ý»ýô<?!H¼=üÂ»Wâ<Âf<¼±ëV¼åÎÙ<t·i»H k¼b3â<CW”»î7€¼)Üì<,~´»ÊÕˆ¼žxø<&šl»6^²¼\"rŠ<éå»ŽO½qÚŸ¸ŒkÊ=Ë• ¹²I<\në½¤ø}¼-Ø<Yº:7xˆ¼åQÜ<fQ`:±ê»ü|<ý‡½¼aúw¼€ó;„]¼F·¼€j<Î®¿¼Vù¢¼H¼Û¹˜»{â¼èÉµ»wË­ºúÌ‘¼Ç8;š‹¼¯Ü ½=Z½^U<¬§½H‹B½Ò±:©ë\r½î(½‰;\Z¼ªŠ£¼yê	=ŠeZ;#äF¼/\\#½[Â¼ý°[¼DkJ½@* ¼Àúr¼$0s½v·q¼â½~{”¼÷*<Õ9½abh¼ï¦¼<Òú\\¼¤¼¹·&;A+½X^Ò¼VÕM<O6¼:f¼`]H¼æ\\¼P\':›½û>G½F;¼Ä \n=0ñ/½ Ý:¼n#w<8\\½~A#¼}¡Ö;½Žæ¼Æ)¼M!î:Kjª¼D¼ßš7ºÏ•x¼Ì‚f¼ûo»›‘»dl£¼)°½¼,šD½GÐ»û=S˜7½•à×¼ŠšŠ<lÄ/»ªká;ýÐ4½¥o¼‚©Ü»;A¼Ð„T½¬|¢¼¾µ=<5¼ªPˆ¼8Å¶»ºØ“¼þl ;˜›¼p¦½ü$³¼e~<í¥]¼®ÀùºÃ:½IH½\Zø+<¥Å=VzX¼ÊQ°¼_â—;ET¼ÏÐ»:V(½w\Z½¯¼=\0¿+=iâ½	ª=mQp=yQ½Çtoº}\Z†=Ó*,½ÕËÙ<RŠV=>K½ªlê¼ZC=Ê¢¼³¯N=ïñu<¢»y­<5½5Kœ¼#­_»1å\0¼.âD½Ë„œ¼ý=×ú¼~F¤¼wˆ¡;“§×¼Þn¢¼~ç$;“xš¼5Øå<Õ\'4;ç?½§%à;l=)&6¼à}j=ƒ©’<·ÕË¼…ÎK=é‚=¶N÷¼]‚7=ø;= -ô9>`I½­\Zµ¼¨‰Sº¬o=iy<—G³¼4¥¤¼Â|ö:Ó3¼jÁ©¼{5>;>q¼­­¼Î«–;>à@½¤oÝ¼!Ö<Di“¼œ¿¼CœŽ:ˆ¸¼ž‰Ä¼Ÿ{)º›;Ü¼i\"Æ¼6KÒÿ¼vƒÂ¼pá*;ú]½U¼¼¯åÁ;`R½¯ý÷¼@@”=2¬½ã%¨¼m+<¬$æ¹ÄŒX<¢¾¼‚‹¼vk<ËŽT¼tNT¼ö•;>ÁÒ¼¤ý»¿õX<šµ¼…Më9ÌšØ¼†¸­¼ßò½>æ\"=(H\n=ÙÕ¼×Õ8=ËÌ<Š;¼²^=æÈÍ;±G\'½r´ü<•:˜=!¯q¼|‡·¼Ì÷N;’Ô\0¼É4R¼7Ì¼¶EoºåÁb=›ë‚;IÖ™¼\nâ]=1_Ì<s­I½.Y<II†=‘Í\"¼„)Ý<ïº¼…ð6¼°Ië<\0¼{HH¼]ü<ÂÔ#¼6?U¼V!=ë¿¼Ät¼¿v=ÒurºAk†¼uÕ<š0cºþp¼ŒÒ<r0Pº”–¼”\rÎ<<F]ºpÐ¼¬ñ¦<i+9:†Á)½og<½Q•<Iü»Öæ¼\'Œ¼¸% ¼mÐ¼L&»°žO¼ªøÇ¼S—:q~|¼q‹Ø<[v9K1)½N¦<ý=	7¿»boÕ¼t±n¼Y‹¼,C)=kä˜;7Ž9Ï=:¼Ÿ¡+½>»A@x¼Lò½:®9¾£ƒ¼•ž½¥&@¼ï!½»ÞlÄ¼ºƒ=P=áç½ºQ£‡ºpZ:=s,»\'\Z¼÷÷6=I\0Ø¹:5ã¼„X\0=Ô_V<su³¼ì¦Ê;…ñª» —»¼=17<O½¬$¶;¼ö¹ËCÖ¼,ù1<5€»ä½0S<û<Ü\02¼)êK=nT‡:ò¦t¼½,X»Ç\r‹¼âgþ¼þU=aG¸<¶ïÍ¼&=õ‹Œ<À \0½vžÍ<µV<[9½à‡n<«(=_Ë½ÞæÑ<ø«¸<1g>½Ñƒ“<°U=Œ~ô¼ˆA‰<]ôO;÷6¼%q!¼}K’¼SB¼àN;•š½4„x¼ksŠ;ó2Û¼«J\Z¼¥¹•9†ä3½{g¼zSò¼Ø´»ºá»¼œ½†?ë»÷áù¼£7½¤vÍ»€·½ Ù½×ûºfÐ%½STò¼:Ö;³*½U”¬¼¨àž<`•T½¡I)¼w5=OÀ½Áy¼,P<ð>\n½E(h¼[æ;&ß¼Y]f¼\"~D;¡ž©¼£/u¼¾Š:#”|¼M	‡¼INT9p B¼MF”¼OŠ2ºI·R½Eë#¼7>Æ=Ãw¼|²;Îµ¼¾W¼|S¼õ¬½Íú¼îEm;nB5½<’®»c3Å; %½ „¼:ÿ;p±\"½cD`¼­`à;8˜š¼:G»™zÕ;%—/½ó;»‚R÷;Ù~½<¼žr°¼L;tÆ¼îÙ©¼ò»wt¼,#¦¼°¼^ì½ŽI·¼V˜<\"•!½,.Î¼¶!<xw–;®.¼C½å=”³®¼u`<nœ;ä;©ë½GP=eI½£üH=çyµ<±––¼¥\\“¹âÜ<‘¼“q‹9¨\0=FÛ¼è-;·,\Z=tÂ¢¼å%<óg”<N¡¼2; :ípó<·»ô¼C¨»­‹Æ<Zbò¼¹®¡»î¹=ãï¼lþ»ó=Ãýá¼lSþ:÷R(=çà¼vÔu<ûy<\\==ËY<à\Z=Ë ·¼;<9ÏW=—ø™¼Ïa=†ö<=tìª¼±»Â<µ=Ë<\'\'p:Q‘Ô»Ï½®;[Ì²<àÂ¼ûÆŽ;Ä€Ø<õuš¼·2<>;¾<Ô”¼h”l<Ì‘É<¯,¼Bö<Q†×<,Éu¼úH<]Ø<®Ÿ¼N(¶<âÉú<@È;·k‹;ŠC—;vDH½—	¤;Êþ8Ó_U½=8=°½ƒÄ;êÝx<Ñ21¼,¼Ãˆ<²âS;W]Ú¼aÃ‹<#^::¥ãÄ¼,5=ñ:†R§;TÓž;‡»»BA½Lm=+½ìNJ¼K,\'=Ü(½@/¨»KÍA=Áá=½êˆ÷<w =<òB\n½ß<¢¼ü!Ÿ<ûæ¼Q»ðTÔ<&»Ò<ù\0í;âë<=¿¸<Õ¥¯=èÚP<Èé½;,Žº¼÷-\n<J:î;£¿¼¹®›<ÆTÜ<c+Ñ;b{‘<è‰Ü<Ï4};Õ1=I ½¶êŒºœ\'Š<t\r­;\r¯¼!É<½:>¼lœÏ<›#\'½ßx¤¼’:í<b6j½ï¯Å»‘·8=íÊ.½ÌI<g¯Ø<fCI½ø.`¼ïB=>®½m<<ßH=ÒK½Ží<„u¢;ïÏÇ<F·¼/\"</ØË<0ˆŠ¼îz[<\rÑ<$Î$¼â¸;<…†Ú;Å\'ª¼§k–<;Ü<‚V¤;¨„<3^æ<³£8_\rŒ<ÆŸÜ<nl;m%<ªŒ;°½ˆô:<»ZÝ<Ì»-ù<B-ß<F1¼,G|;lâ<’Pj¼ì.È;9m&=7ÛU»NU¦;F…=NO¼Ñž;ù=ï~i¼Õ‚;ûö<«ªM¼ÒGx;¢¥ã<™dA¼+Ñ9<AÖÝ<@sŽ»œ‰M<ðÜæ<;™­»­a<ŠBò<}Í»íÑp<£þ<Þ²‘»‘Ø¨<2R‘<{6¼+DS=»ñg:ŽVÄ=²d<ÈÜÜ<Ã÷é9‘¨v<shá<?¾¹×¡Ý;Lv<RÀ¼$Âr<Ï`<2dh¼»¿÷;›ï<#Â¼`@¦<\\¼Bq¹»iå<Gƒž»V–,»ÆY’<ù%9;wN˜¼a&=h¼X½³<0<þê=‹ÝA½U\nÔºWE=™O(½	E8¼±/”<™Ê=Íw;CÒV<ÆÁ#½£|Æ¼Ðªi<gèI½¦‘¦¼ž2ƒ<ßVr½½¼e‰=á–¼&ŠÕ;‘.;=’-k¼8–§<:ñ}<I%«¼Ý:’&.=ÑñÖ¼¡%<A@<¸b¼SOS¼õ[<z Ã:Xž½˜|K=ãÒ+¼N¡ý<äò.=IV3¼1­O<—\0=N¼Xƒ–;raä<ƒÂ#¼	ŽÎ9ïW­<SF¼MQèºYlƒ<k\'k¼ ½“»cø©;bÝ¢¼hï¿¼Û¼G=dÅ‘º÷Ûò<cœ;=¼ðÞ¼î`g<	¤\";ù[ä;€_5½.Ût<£Ñ»‡O¼ÞÉX=‘R›¼J‘¯=ç²G<Ýþ‰¼¤Í»Ÿ@”<[ïH;¼£ê\"=Z¸¼.vY<Xs`<;áÉº5>½ÝK=ß#;<Ô.¿=i€<€å·¼þ‡u;O4<§Ö†»Á}*½84=â’\n=*±\"=â=	=w«g=éXU=uÉb7MÔ~=‹-=Ã à<…“K=_)P=çää¼qô5=-ù—<P=°_f<9/ú:zÔ<¢š½1\Zž<=»P¼ìJ=ÞL¦¼6¿=°þ<Õ¥¼œkQ;1¬Ý<A¼¥¼t‚:Ý:<@öë<¿Ø:ãB=ÿ+<wf=ó¦<ŒWk=Þ<ŸøÅ<1M=Ã¼=pjô<à=9=wí3=%½<ø¦ª¼¶V\":WWž<lÞ±¼Ïüò:59Š<”Hµ¼¦#p;gG=h[ê¼Ÿë½<Ë3¥<ZyÆ¼ÍTÔ¸©WÇ<u¾É¼ñ»#eè<É¼«;Öºy”= ÐÄ¼ó;:%=j7¿¼c€;¹V=í…ñ¼,é=Q“\n=˜µ©¼-&Å;5E„<ëYv<ÛPc¼	`P<Xm¤;)Ø¼pâ;òR^<Ø¸¼™ÿ<ÜV%=)=ûÐÍ<˜œ:=¤ªÁ<‡ì!<ï_=T=¾;¸	)=}X=ˆ“=2Œ<¤«¾¼ÿÜ;~)\n<kÀO¼àÐ¼!\0‘<kõ^=?Ä<ŸàL=ÆW <§˜=J<¶à<.„¼)8<‰Öî<Þ¯\Z¼iñ\"<*s\0=œ.¼´†-<É´\n=ß_¼üLT</e=ŠäÈº­±u<ÎÙ<ñ´ôº%Ñƒ<H—Ö<V²úºòÁ‹<.ÍÒ<kÆ»\\ÑÄ<!=¯<F°=º\r*=ê)<³I„<[>	<óÊŒ¼Ôµ¼×9A<œ\"Õ¼Å³V»ÁÑu<œ˜Í¼ 9(ýd<Ç¹Ü<80ºC)=ú‰­<H¾=|#ç;<z×¼h‚u¼Ë’{<\"\r+=þo‚;¹Ç¡;ìw¼=½ðRE<Ö!³»þñÉ¼Ú¬ö;ƒó7=]Ý>º(rØ<íê=@<Vv±<œâá;ÝåÍ»{d¯<,³=¡•	<èÁ=‚¾Ò;`üòº‘Ñ<e?<åt»€t=€c<ÍÙ;Ú\r<+M=	Ý:qÅx<û´=»Åû‘¼Š=÷<m=E«<‡Ä<&b(=.¸‚<>ø<\n-Ö<Ÿ×<<Çá:=ÎX~<i&=?f=˜lÙ<k©<‘Ô@=™‘š<§:v=Ü0í<­€‘<*Bß:õw=<6¼^Ö—¼ñ?<ˆÀf;RS\Z½v<›;n§á¼Ñ²\Z<B:Y6½Ú‚<€ô¼åÖÕ»;¶Æ<¤R½és\n¼\nØ\0=Øá½$‚ÿ»Ã·=¿3½í~»!m(=Íó¼[˜\n;¢:.=(å±¼<E‹<h;Y=éË\Z¼Å´q=E=Ÿ»y¼F2-<t\n=‹µe¼ç«;oá<di¼§ÔÈ:a^°<jz~¼é7Ê¸‰<îïŒ¼A¦5ºöH]<C×™¼aµ»ºôâV=p¸¼y*À=6t<ç\\Ã;[-»¼œs\n<4}¼Lë½¶Å<‘“~;0ë6½é‘¥;d–Ë;M|&½ÿ=<ÉÀ—;`$½[<Œ˜ð;%`Ÿ¼w›…;‚+Ú;@M0½Q`g;Ûû;/%½ŽÄb<jø¶¼Î>;“m3<ñ®¼b:E»g<™¶§¼¿a¼@|=\\±º¼ˆë;½$=*ZÑ¼¯Ùø;o0Û¼Ñ·¼×|™;‚±¯¼+¸¼×|™;ËPÜ¼H&Ö¼×|™;BU½ôh¶¼×|™;‰þÙ¼¸º˜¼×|™;8å<úÄ»¼5˜M;œˆ=xqº¼5˜M;å<›\nÛ¼5˜M;V»< o½¼5˜M;¤2å<Ë¼5˜M;',	'mediapipe_v1',	'2025-11-11 02:45:08',	'2025-11-11 02:45:08');
 
 DROP TABLE IF EXISTS `caja`;
 CREATE TABLE `caja` (
@@ -583,9 +601,13 @@ INSERT INTO `caja` (`id`, `fecha`, `concepto`, `tipo`, `monto`, `medio_pago`, `n
 (56,	'2025-11-10 07:10:30',	'Venta Entrada Local',	'INGRESO',	1500.00,	'EFECTIVO',	NULL,	16,	NULL,	NULL,	'APROBADO',	'2025-11-10 10:10:30',	'2025-11-10 10:10:30'),
 (57,	'2025-11-10 11:45:37',	'Pago cuota 2025-11 - Socio ID 1',	'INGRESO',	5000.00,	'EFECTIVO',	NULL,	33,	NULL,	NULL,	'APROBADO',	'2025-11-10 14:45:37',	'2025-11-10 14:45:37'),
 (58,	'2025-11-10 11:46:50',	'pago de luz',	'EGRESO',	10000.00,	'EFECTIVO',	NULL,	NULL,	NULL,	NULL,	'PENDIENTE',	'2025-11-10 14:46:50',	'2025-11-10 14:46:50'),
-(59,	'2025-11-10 11:47:35',	'pago de agua',	'EGRESO',	50000.00,	'EFECTIVO',	NULL,	33,	NULL,	NULL,	'PENDIENTE',	'2025-11-10 14:47:35',	'2025-11-10 14:47:35'),
+(59,	'2025-11-10 11:47:35',	'pago de agua',	'EGRESO',	50000.00,	'EFECTIVO',	NULL,	33,	NULL,	'2025-11-10 23:45:48',	'APROBADO',	'2025-11-10 14:47:35',	'2025-11-11 02:45:48'),
 (60,	'2025-11-10 19:49:45',	'Venta Entrada Local',	'INGRESO',	1500.00,	'EFECTIVO',	NULL,	NULL,	NULL,	NULL,	'APROBADO',	'2025-11-10 22:49:45',	'2025-11-10 22:49:45'),
-(61,	'2025-11-10 19:50:46',	'Venta Entrada Visitante',	'INGRESO',	5000.00,	'EFECTIVO',	NULL,	NULL,	NULL,	NULL,	'APROBADO',	'2025-11-10 22:50:46',	'2025-11-10 22:50:46');
+(61,	'2025-11-10 19:50:46',	'Venta Entrada Visitante',	'INGRESO',	5000.00,	'EFECTIVO',	NULL,	NULL,	NULL,	NULL,	'APROBADO',	'2025-11-10 22:50:46',	'2025-11-10 22:50:46'),
+(62,	'2025-11-11 08:57:39',	'Venta Entrada Local',	'INGRESO',	3000.00,	'EFECTIVO',	NULL,	69,	NULL,	NULL,	'APROBADO',	'2025-11-11 11:57:39',	'2025-11-11 11:57:39'),
+(63,	'2025-11-11 08:58:33',	'Venta Entrada Local',	'INGRESO',	3000.00,	'EFECTIVO',	NULL,	69,	NULL,	NULL,	'APROBADO',	'2025-11-11 11:58:33',	'2025-11-11 11:58:33'),
+(64,	'2025-11-11 09:27:46',	'Venta Entrada Local',	'INGRESO',	1500.00,	'EFECTIVO',	NULL,	69,	NULL,	NULL,	'APROBADO',	'2025-11-11 12:27:46',	'2025-11-11 12:27:46'),
+(65,	'2025-11-11 09:37:34',	'Venta Entrada Local',	'INGRESO',	1500.00,	'EFECTIVO',	NULL,	69,	NULL,	NULL,	'APROBADO',	'2025-11-11 12:37:34',	'2025-11-11 12:37:34');
 
 DELIMITER ;;
 
@@ -727,25 +749,30 @@ INSERT INTO `caja_audit` (`id`, `accion`, `caja_id`, `snapshot`, `realizado_por`
 (70,	'INSERT',	41,	'{\"tipo\": \"EGRESO\", \"fecha\": \"2025-10-22 19:30:26.000000\", \"monto\": 10000.0, \"concepto\": \"Pagar Insumos\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-10-22 22:30:26'),
 (71,	'UPDATE',	41,	'{\"tipo\": \"EGRESO\", \"fecha\": \"2025-10-22 19:30:26.000000\", \"monto\": 10000.0, \"concepto\": \"Pagar Insumos\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": \"2025-10-22 19:30:54.000000\"}',	NULL,	'2025-10-22 22:30:54'),
 (72,	'INSERT',	42,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-10-22 19:38:29.000000\", \"monto\": 5000.0, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-10-22 22:38:29'),
-(73,	'INSERT',	43,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 20:09:44.000000\", \"monto\": 1500.00, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-09 23:09:44'),
-(74,	'INSERT',	44,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:51.000000\", \"monto\": 5000.00, \"concepto\": \"Pago cuota 2025-09 socio_id 1 (pago_id 5)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-09 23:31:51'),
-(75,	'INSERT',	45,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:38:03.000000\", \"monto\": 4000.00, \"concepto\": \"Pago cuota 2025-10 socio_id 5 (pago_id 6)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-09 23:38:03'),
-(76,	'INSERT',	46,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 02:19:57.000000\", \"monto\": 4000.00, \"concepto\": \"Pago cuota 2025-02 socio_id 1 (pago_id 7)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:19:57'),
-(77,	'INSERT',	47,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 02:19:57.000000\", \"monto\": 4000.00, \"concepto\": \"Pago cuota 2025-06 socio_id 1 (pago_id 8)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:19:57'),
-(78,	'INSERT',	48,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 02:19:57.000000\", \"monto\": 500.00, \"concepto\": \"Pago cuota 2025-10 socio_id 1 (pago_id 9)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:19:57'),
-(79,	'INSERT',	49,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:21:01.000000\", \"monto\": 1000.00, \"concepto\": \"Pago cuota 2025-02 - Socio ID 6\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:21:01'),
-(80,	'INSERT',	50,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:32.000000\", \"monto\": 5000.00, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:31:32'),
-(81,	'INSERT',	51,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:35.000000\", \"monto\": 5000.00, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:31:35'),
-(82,	'INSERT',	52,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:36.000000\", \"monto\": 5000.00, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:31:36'),
-(83,	'INSERT',	53,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:52.000000\", \"monto\": 10000.00, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:31:52'),
-(84,	'INSERT',	54,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:32:49.000000\", \"monto\": 1500.00, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:32:49'),
-(85,	'INSERT',	55,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:33:14.000000\", \"monto\": 5000.00, \"concepto\": \"Pago cuota 2025-03 - Socio ID 2\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:33:14'),
-(86,	'INSERT',	56,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 07:10:30.000000\", \"monto\": 1500.00, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 16, \"fecha_validacion\": null}',	NULL,	'2025-11-10 10:10:30'),
-(87,	'INSERT',	57,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 11:45:37.000000\", \"monto\": 5000.00, \"concepto\": \"Pago cuota 2025-11 - Socio ID 1\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 33, \"fecha_validacion\": null}',	NULL,	'2025-11-10 14:45:37'),
-(88,	'INSERT',	58,	'{\"tipo\": \"EGRESO\", \"fecha\": \"2025-11-10 11:46:50.000000\", \"monto\": 10000.00, \"concepto\": \"pago de luz\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 14:46:50'),
-(89,	'INSERT',	59,	'{\"tipo\": \"EGRESO\", \"fecha\": \"2025-11-10 11:47:35.000000\", \"monto\": 50000.00, \"concepto\": \"pago de agua\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 33, \"fecha_validacion\": null}',	NULL,	'2025-11-10 14:47:35'),
-(90,	'INSERT',	60,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 19:49:45.000000\", \"monto\": 1500.00, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 22:49:45'),
-(91,	'INSERT',	61,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 19:50:46.000000\", \"monto\": 5000.00, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 22:50:46');
+(73,	'INSERT',	43,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 20:09:44.000000\", \"monto\": 1500.0, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-09 23:09:44'),
+(74,	'INSERT',	44,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:51.000000\", \"monto\": 5000.0, \"concepto\": \"Pago cuota 2025-09 socio_id 1 (pago_id 5)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-09 23:31:51'),
+(75,	'INSERT',	45,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:38:03.000000\", \"monto\": 4000.0, \"concepto\": \"Pago cuota 2025-10 socio_id 5 (pago_id 6)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-09 23:38:03'),
+(76,	'INSERT',	46,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 02:19:57.000000\", \"monto\": 4000.0, \"concepto\": \"Pago cuota 2025-02 socio_id 1 (pago_id 7)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:19:57'),
+(77,	'INSERT',	47,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 02:19:57.000000\", \"monto\": 4000.0, \"concepto\": \"Pago cuota 2025-06 socio_id 1 (pago_id 8)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:19:57'),
+(78,	'INSERT',	48,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 02:19:57.000000\", \"monto\": 500.0, \"concepto\": \"Pago cuota 2025-10 socio_id 1 (pago_id 9)\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:19:57'),
+(79,	'INSERT',	49,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:21:01.000000\", \"monto\": 1000.0, \"concepto\": \"Pago cuota 2025-02 - Socio ID 6\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:21:01'),
+(80,	'INSERT',	50,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:32.000000\", \"monto\": 5000.0, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:31:32'),
+(81,	'INSERT',	51,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:35.000000\", \"monto\": 5000.0, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:31:35'),
+(82,	'INSERT',	52,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:36.000000\", \"monto\": 5000.0, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:31:36'),
+(83,	'INSERT',	53,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:31:52.000000\", \"monto\": 10000.0, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:31:52'),
+(84,	'INSERT',	54,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:32:49.000000\", \"monto\": 1500.0, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:32:49'),
+(85,	'INSERT',	55,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-09 23:33:14.000000\", \"monto\": 5000.0, \"concepto\": \"Pago cuota 2025-03 - Socio ID 2\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 02:33:14'),
+(86,	'INSERT',	56,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 07:10:30.000000\", \"monto\": 1500.0, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 16, \"fecha_validacion\": null}',	NULL,	'2025-11-10 10:10:30'),
+(87,	'INSERT',	57,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 11:45:37.000000\", \"monto\": 5000.0, \"concepto\": \"Pago cuota 2025-11 - Socio ID 1\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 33, \"fecha_validacion\": null}',	NULL,	'2025-11-10 14:45:37'),
+(88,	'INSERT',	58,	'{\"tipo\": \"EGRESO\", \"fecha\": \"2025-11-10 11:46:50.000000\", \"monto\": 10000.0, \"concepto\": \"pago de luz\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 14:46:50'),
+(89,	'INSERT',	59,	'{\"tipo\": \"EGRESO\", \"fecha\": \"2025-11-10 11:47:35.000000\", \"monto\": 50000.0, \"concepto\": \"pago de agua\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 33, \"fecha_validacion\": null}',	NULL,	'2025-11-10 14:47:35'),
+(90,	'INSERT',	60,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 19:49:45.000000\", \"monto\": 1500.0, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 22:49:45'),
+(91,	'INSERT',	61,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-10 19:50:46.000000\", \"monto\": 5000.0, \"concepto\": \"Venta Entrada Visitante\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": null, \"fecha_validacion\": null}',	NULL,	'2025-11-10 22:50:46'),
+(92,	'UPDATE',	59,	'{\"tipo\": \"EGRESO\", \"fecha\": \"2025-11-10 11:47:35.000000\", \"monto\": 50000.00, \"concepto\": \"pago de agua\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 33, \"fecha_validacion\": \"2025-11-10 23:45:48.000000\"}',	NULL,	'2025-11-11 02:45:48'),
+(93,	'INSERT',	62,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-11 08:57:39.000000\", \"monto\": 3000.00, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 69, \"fecha_validacion\": null}',	NULL,	'2025-11-11 11:57:39'),
+(94,	'INSERT',	63,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-11 08:58:33.000000\", \"monto\": 3000.00, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 69, \"fecha_validacion\": null}',	NULL,	'2025-11-11 11:58:33'),
+(95,	'INSERT',	64,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-11 09:27:46.000000\", \"monto\": 1500.00, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 69, \"fecha_validacion\": null}',	NULL,	'2025-11-11 12:27:46'),
+(96,	'INSERT',	65,	'{\"tipo\": \"INGRESO\", \"fecha\": \"2025-11-11 09:37:34.000000\", \"monto\": 1500.00, \"concepto\": \"Venta Entrada Local\", \"medio_pago\": \"EFECTIVO\", \"nro_tramite\": null, \"validador_id\": null, \"responsable_id\": 69, \"fecha_validacion\": null}',	NULL,	'2025-11-11 12:37:34');
 
 DROP TABLE IF EXISTS `categoria`;
 CREATE TABLE `categoria` (
@@ -956,7 +983,7 @@ CREATE TABLE `persona` (
   `telefono` varchar(40) DEFAULT NULL,
   `domicilio` varchar(200) DEFAULT NULL,
   `foto` varchar(255) DEFAULT NULL,
-  `rol` enum('SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO') NOT NULL DEFAULT 'SOCIO',
+  `rol` enum('SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO','BOLETERIA') NOT NULL DEFAULT 'SOCIO',
   `estado` enum('ACTIVO','INACTIVO') NOT NULL DEFAULT 'ACTIVO',
   `qr_ver` int unsigned NOT NULL DEFAULT '1',
   `qr_url` varchar(255) DEFAULT NULL,
@@ -983,14 +1010,14 @@ INSERT INTO `persona` (`id`, `nombre`, `apellido`, `genero`, `dni`, `fecha_nac`,
 (21,	'Ezequiel',	'Molina',	NULL,	'12345678',	'1990-01-02',	'updated@example.com',	'987',	'Calle Falsa',	NULL,	'SOCIO',	'ACTIVO',	1,	NULL,	'2025-10-21 04:59:43',	'2025-10-21 05:25:30'),
 (22,	'Fernanda',	'Gomez',	'FEMENINO',	'99900001',	'1991-11-05',	'laura@example.com',	'999999',	'Calle 123',	'/files/personas/22/foto_600.jpg',	'SOCIO',	'ACTIVO',	3,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjIyLCJpYXQiOjE3NjEwNDk5NzUsImV4cCI6MTc3NjYwMTk3NX0.QeGVm1HGHpI_Z7mCCD6UYavBin8-F7MdRycrfMXnFzk.png',	'2025-10-21 11:48:55',	'2025-10-21 12:32:55'),
 (23,	'Nicolas',	'Andrada',	'MASCULINO',	'37123456',	'1994-04-07',	'nico@mail.com',	'3624445566',	'La Plata 456',	NULL,	'SOCIO',	'ACTIVO',	3,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjIzLCJpYXQiOjE3NjEwNDg1MjIsImV4cCI6MTc3NjYwMDUyMn0.Ha1EZIEO8eFGRAZQV2RtZbkycUGAybIMzXbbVO1KlTw.png',	'2025-10-21 11:59:56',	'2025-10-21 12:08:42'),
-(24,	'Santiago',	'Osuna',	'MASCULINO',	'44567777',	'2002-11-06',	'osuna@gmail.com',	'3624778899',	'avenida falsa 123',	NULL,	'SOCIO',	'ACTIVO',	3,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjI0LCJpYXQiOjE3NjEwNzEwMjAsImV4cCI6MTc3NjYyMzAyMH0.Oqh5xT-r8hPOXBYm3drX_VZC8bgyBU3_nyLNtRzbJ7Q.png',	'2025-10-21 18:21:49',	'2025-10-21 18:23:40'),
+(24,	'Santiago',	'Osuna',	'MASCULINO',	'44567777',	'2002-11-06',	'osuna@gmail.com',	'3624778899',	'avenida falsa 123',	NULL,	'SOCIO',	'ACTIVO',	4,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjI0LCJpYXQiOjE3NjI4NjM0MzcsImV4cCI6MTc3ODQxNTQzN30.Ut3wGi3Vf1pEA01uThUFng4gpNVFlgnMgX6AHb_Vwh0.png',	'2025-10-21 18:21:49',	'2025-11-11 12:17:18'),
 (25,	'Santiago',	'Rodriguez',	'MASCULINO',	'44123456',	'2000-11-11',	'rodrisanti@gmail.com',	'3624112233',	'avenida falsa 222',	NULL,	'SOCIO',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjI1LCJpYXQiOjE3NjEwNzE2MTIsImV4cCI6MTc3NjYyMzYxMn0.QyVB7QdD1_Ni-gNuXWVwf-lrlyE0rVkO_fdW_TB8FKg.png',	'2025-10-21 18:33:32',	'2025-10-21 18:33:32'),
 (26,	'Juan',	'Zacarias',	'MASCULINO',	'23987654',	'1999-10-10',	'juanza@gmail.com',	'3614717171',	'avenida real 123',	NULL,	'SOCIO',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjI2LCJpYXQiOjE3NjEwNzIyMjgsImV4cCI6MTc3NjYyNDIyOH0.DV6hjeYX4TD61qYAJ2RwLJOuS3QnEAWKsblzrKyikyc.png',	'2025-10-21 18:43:47',	'2025-10-21 18:43:48'),
 (27,	'Juan Martin',	'Kordi',	'MASCULINO',	'12345679',	'2000-01-01',	'juanmar@gmail.com',	'3624111111',	'avenida real 111',	NULL,	'JUGADOR',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjI3LCJpYXQiOjE3NjEwNzIzMzMsImV4cCI6MTc3NjYyNDMzM30.lBUQwf0114K9RUEJ06a5nVE4yrgqOP2WattLD8Cb35M.png',	'2025-10-21 18:45:33',	'2025-10-21 18:45:33'),
 (28,	'gonzalo',	'gomez',	'MASCULINO',	'44444444',	'2001-02-20',	'gonza@gmail.com',	'3624899889',	'avenida siempre viva 123',	NULL,	'SOCIO',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjI4LCJpYXQiOjE3NjEwNzMwMDgsImV4cCI6MTc3NjYyNTAwOH0.GMwZfzxQnb62OOeUaZR-_F3o8v_6f2tI5BF9tGvHyw4.png',	'2025-10-21 18:56:48',	'2025-10-21 18:56:48'),
 (29,	'Roberto',	'Zacaria',	'MASCULINO',	'12345987',	'1988-02-01',	'rober@gmai.com',	'3624716622',	'Avenida alver 123',	NULL,	'JUGADOR',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjI5LCJpYXQiOjE3NjExNTg0MjQsImV4cCI6MTc3NjcxMDQyNH0.TSa9bdxRX_-cDvk5SBxnafEtpBLnfn1eZllYf98LuY8.png',	'2025-10-22 18:40:24',	'2025-10-22 18:40:24'),
 (30,	'Lautaro',	'Martinez',	'MASCULINO',	'24294943',	'2000-10-10',	'toro@gmail.com',	'3261821910',	'avenida falsa 1213',	NULL,	'JUGADOR',	'ACTIVO',	3,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjMwLCJpYXQiOjE3NjI3NDEyMjEsImV4cCI6MTc3ODI5MzIyMX0.ULu5O1VyfUYjtweRCDFkQLK60beaw7xl-JLXsn4yQLk.png',	'2025-10-22 20:42:05',	'2025-11-10 02:20:21'),
-(31,	'Lionel Andres',	'Messi',	'MASCULINO',	'12345609',	'1979-11-20',	'leo@gmail.com',	'3624612234',	'Avenida Miami 123',	NULL,	'SOCIO',	'ACTIVO',	4,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjMxLCJpYXQiOjE3NjI4MDk2NDAsImV4cCI6MTc3ODM2MTY0MH0.BAJXei42fEjf4N8CV6DM1SaSaxV6Pe2vhcgaAFjoUgg.png',	'2025-10-22 21:41:39',	'2025-11-10 21:20:40'),
+(31,	'Lionel Andres',	'Messi',	'MASCULINO',	'12345609',	'1979-11-20',	'leo@gmail.com',	'3624612234',	'Avenida Miami 123',	NULL,	'SOCIO',	'ACTIVO',	6,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjMxLCJpYXQiOjE3NjI4MjkyMDUsImV4cCI6MTc3ODM4MTIwNX0.ATHEqlSnwa1oo_uKJXnziILCfJ9IsVjbV3l7NZ72PQ0.png',	'2025-10-22 21:41:39',	'2025-11-11 02:46:45'),
 (32,	'Lucas',	'Pablovich',	'MASCULINO',	'45678532',	'1999-10-10',	'luc@gmail.com',	'3624112233',	'avenida falsa',	NULL,	'SOCIO',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjMyLCJpYXQiOjE3NjExNzIzNjYsImV4cCI6MTc3NjcyNDM2Nn0.5tO6WGp5SU2IJlG8xgcZgTKdymVM4ngZ8MMf8C7TEos.png',	'2025-10-22 22:32:46',	'2025-10-22 22:42:27'),
 (33,	'Cajero',	'Test',	'NO ESPECIFICADO',	'99999999',	NULL,	NULL,	NULL,	NULL,	NULL,	'PERSONAL',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjMzLCJpYXQiOjE3NjI4MDk4NDksImV4cCI6MTc3ODM2MTg0OX0.os1qR9ghgSUMUWKL0ykrb2YPqjRE-4YT6GWPXQFDfWI.png',	'2025-11-10 10:22:27',	'2025-11-10 21:24:09'),
 (35,	'Carlos',	'RodrÃƒÂ­guez',	'MASCULINO',	'35789456',	'1990-05-15',	'carlos.rodriguez@clublujan.com',	'2323-456789',	'Av. San Martin 456, LujÃƒÂ¡n',	NULL,	'SOCIO',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjM1LCJpYXQiOjE3NjI4MDk4MTgsImV4cCI6MTc3ODM2MTgxOH0.MNCzfisq0dtEgKZas-OV1PB8HNG-ZC5BJ3p--1TS8ww.png',	'2025-11-10 20:22:06',	'2025-11-10 21:23:38'),
@@ -1013,13 +1040,73 @@ INSERT INTO `persona` (`id`, `nombre`, `apellido`, `genero`, `dni`, `fecha_nac`,
 (63,	'TomÃ¡s',	'SÃ¡nchez',	'MASCULINO',	'54000001',	'2012-06-22',	'tomas.sanchez@email.com',	'2323-4001',	'Calle 8, LujÃ¡n',	NULL,	'ALUMNO',	'ACTIVO',	1,	NULL,	'2025-11-10 22:16:04',	'2025-11-10 22:16:04'),
 (64,	'BenjamÃ­n',	'Torres',	'MASCULINO',	'54000002',	'2011-12-05',	'benjamin.torres@email.com',	'2323-4002',	'Calle 9, LujÃ¡n',	NULL,	'ALUMNO',	'ACTIVO',	1,	NULL,	'2025-11-10 22:16:04',	'2025-11-10 22:16:04'),
 (65,	'Martina',	'DÃ­az',	'FEMENINO',	'55000001',	'2011-02-14',	'martina.diaz@email.com',	'2323-5001',	'Calle 10, LujÃ¡n',	NULL,	'ALUMNO',	'ACTIVO',	1,	NULL,	'2025-11-10 22:16:04',	'2025-11-10 22:16:04'),
-(66,	'Emma',	'RamÃ­rez',	'FEMENINO',	'55000002',	'2010-10-08',	'emma.ramirez@email.com',	'2323-5002',	'Calle 11, LujÃ¡n',	NULL,	'ALUMNO',	'ACTIVO',	1,	NULL,	'2025-11-10 22:16:04',	'2025-11-10 22:16:04');
+(66,	'Emma',	'RamÃ­rez',	'FEMENINO',	'55000002',	'2010-10-08',	'emma.ramirez@email.com',	'2323-5002',	'Calle 11, LujÃ¡n',	NULL,	'ALUMNO',	'ACTIVO',	1,	NULL,	'2025-11-10 22:16:04',	'2025-11-10 22:16:04'),
+(69,	'Juan',	'Boletero',	'MASCULINO',	'09000061',	NULL,	NULL,	NULL,	NULL,	NULL,	'BOLETERIA',	'ACTIVO',	1,	NULL,	'2025-11-11 03:44:31',	'2025-11-11 03:44:31'),
+(70,	'Facundo',	'Lopez',	'MASCULINO',	'01020344',	'2000-11-06',	'lopezfacu@gmail.com',	'3624889966',	'avenida lopez 123',	NULL,	'SOCIO',	'ACTIVO',	2,	'http://localhost:3000/qr/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaWQiOjcwLCJpYXQiOjE3NjI5NTYzNDAsImV4cCI6MTc3ODUwODM0MH0.JIUDxMflkDyasA9oFVAakY7-fM67oiO9cWF9Tr5QV5s.png',	'2025-11-12 14:05:38',	'2025-11-12 14:05:40');
+
+DELIMITER ;;
+
+CREATE TRIGGER `trg_audit_persona_insert` AFTER INSERT ON `persona` FOR EACH ROW
+BEGIN
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, new_values, connection_id, operation_timestamp
+  ) VALUES (
+    'INSERT', 'persona', NEW.id, @current_user_id,
+    JSON_OBJECT(
+      'nombre', NEW.nombre, 'apellido', NEW.apellido, 'genero', NEW.genero,
+      'dni', NEW.dni, 'fecha_nac', NEW.fecha_nac, 'email', NEW.email,
+      'telefono', NEW.telefono, 'domicilio', NEW.domicilio, 'foto', NEW.foto,
+      'rol', NEW.rol, 'estado', NEW.estado, 'qr_ver', NEW.qr_ver, 'qr_url', NEW.qr_url
+    ),
+    CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+CREATE TRIGGER `trg_audit_persona_update` AFTER UPDATE ON `persona` FOR EACH ROW
+BEGIN
+  DECLARE changed JSON;
+  SET changed = JSON_ARRAY();
+
+  IF OLD.nombre != NEW.nombre THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'nombre'); END IF;
+  IF OLD.apellido != NEW.apellido THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'apellido'); END IF;
+  IF OLD.genero != NEW.genero THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'genero'); END IF;
+  IF OLD.dni != NEW.dni THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'dni'); END IF;
+  IF OLD.fecha_nac != NEW.fecha_nac THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'fecha_nac'); END IF;
+  IF OLD.email != NEW.email THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'email'); END IF;
+  IF OLD.telefono != NEW.telefono THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'telefono'); END IF;
+  IF OLD.domicilio != NEW.domicilio THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'domicilio'); END IF;
+  IF OLD.foto != NEW.foto THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'foto'); END IF;
+  IF OLD.rol != NEW.rol THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'rol'); END IF;
+  IF OLD.estado != NEW.estado THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'estado'); END IF;
+
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, old_values, new_values, changed_fields, connection_id, operation_timestamp
+  ) VALUES (
+    'UPDATE', 'persona', NEW.id, @current_user_id,
+    JSON_OBJECT('nombre', OLD.nombre, 'apellido', OLD.apellido, 'dni', OLD.dni, 'email', OLD.email, 'telefono', OLD.telefono, 'rol', OLD.rol, 'estado', OLD.estado),
+    JSON_OBJECT('nombre', NEW.nombre, 'apellido', NEW.apellido, 'dni', NEW.dni, 'email', NEW.email, 'telefono', NEW.telefono, 'rol', NEW.rol, 'estado', NEW.estado),
+    changed, CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+CREATE TRIGGER `trg_audit_persona_delete` AFTER DELETE ON `persona` FOR EACH ROW
+BEGIN
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, old_values, connection_id, operation_timestamp
+  ) VALUES (
+    'DELETE', 'persona', OLD.id, @current_user_id,
+    JSON_OBJECT('nombre', OLD.nombre, 'apellido', OLD.apellido, 'dni', OLD.dni, 'email', OLD.email, 'telefono', OLD.telefono, 'rol', OLD.rol),
+    CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+DELIMITER ;
 
 DROP TABLE IF EXISTS `persona_rol`;
 CREATE TABLE `persona_rol` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `persona_id` bigint unsigned NOT NULL,
-  `rol` enum('SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO') DEFAULT NULL,
+  `rol` enum('SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO','BOLETERIA') DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `persona_id` (`persona_id`),
   CONSTRAINT `persona_rol_ibfk_1` FOREIGN KEY (`persona_id`) REFERENCES `persona` (`id`) ON DELETE CASCADE
@@ -1094,7 +1181,9 @@ INSERT INTO `persona_rol` (`id`, `persona_id`, `rol`) VALUES
 (116,	63,	'ALUMNO'),
 (117,	64,	'ALUMNO'),
 (118,	65,	'ALUMNO'),
-(119,	66,	'ALUMNO');
+(119,	66,	'ALUMNO'),
+(120,	69,	'BOLETERIA'),
+(123,	70,	'SOCIO');
 
 DROP TABLE IF EXISTS `personal_cred`;
 CREATE TABLE `personal_cred` (
@@ -1218,7 +1307,52 @@ INSERT INTO `socio` (`id`, `persona_id`, `nro_socio`, `fecha_alta`, `estado_cuen
 (3,	25,	'40000003',	'2025-10-21',	'AL_DIA',	'2025-10-21 18:41:17',	'2025-10-21 18:41:17'),
 (5,	30,	'40000004',	'2025-10-22',	'AL_DIA',	'2025-10-22 20:42:05',	'2025-10-22 20:42:05'),
 (6,	31,	'40000005',	'2025-10-22',	'AL_DIA',	'2025-10-22 21:41:39',	'2025-10-22 21:41:39'),
-(7,	32,	'40000006',	'2025-10-22',	'AL_DIA',	'2025-10-22 22:32:46',	'2025-10-22 22:32:46');
+(7,	32,	'40000006',	'2025-10-22',	'AL_DIA',	'2025-10-22 22:32:46',	'2025-10-22 22:32:46'),
+(8,	70,	'40000007',	'2025-11-12',	'AL_DIA',	'2025-11-12 14:05:38',	'2025-11-12 14:05:38');
+
+DELIMITER ;;
+
+CREATE TRIGGER `trg_audit_socio_insert` AFTER INSERT ON `socio` FOR EACH ROW
+BEGIN
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, new_values, connection_id, operation_timestamp
+  ) VALUES (
+    'INSERT', 'socio', NEW.id, @current_user_id,
+    JSON_OBJECT('persona_id', NEW.persona_id, 'nro_socio', NEW.nro_socio, 'fecha_alta', NEW.fecha_alta, 'estado_cuenta', NEW.estado_cuenta),
+    CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+CREATE TRIGGER `trg_audit_socio_update` AFTER UPDATE ON `socio` FOR EACH ROW
+BEGIN
+  DECLARE changed JSON;
+  SET changed = JSON_ARRAY();
+
+  IF OLD.nro_socio != NEW.nro_socio THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'nro_socio'); END IF;
+  IF OLD.estado_cuenta != NEW.estado_cuenta THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'estado_cuenta'); END IF;
+
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, old_values, new_values, changed_fields, connection_id, operation_timestamp
+  ) VALUES (
+    'UPDATE', 'socio', NEW.id, @current_user_id,
+    JSON_OBJECT('nro_socio', OLD.nro_socio, 'estado_cuenta', OLD.estado_cuenta),
+    JSON_OBJECT('nro_socio', NEW.nro_socio, 'estado_cuenta', NEW.estado_cuenta),
+    changed, CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+CREATE TRIGGER `trg_audit_socio_delete` AFTER DELETE ON `socio` FOR EACH ROW
+BEGIN
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, old_values, connection_id, operation_timestamp
+  ) VALUES (
+    'DELETE', 'socio', OLD.id, @current_user_id,
+    JSON_OBJECT('persona_id', OLD.persona_id, 'nro_socio', OLD.nro_socio, 'estado_cuenta', OLD.estado_cuenta),
+    CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+DELIMITER ;
 
 DROP TABLE IF EXISTS `socio_plan`;
 CREATE TABLE `socio_plan` (
@@ -1263,7 +1397,7 @@ INSERT INTO `tarifa_actividad` (`id`, `date_created`, `date_modified`, `deporte_
 DROP TABLE IF EXISTS `turno`;
 CREATE TABLE `turno` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nombre` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `hora_inicio` time DEFAULT NULL,
   `hora_fin` time DEFAULT NULL,
   `activo` tinyint(1) NOT NULL DEFAULT '1',
@@ -1283,7 +1417,7 @@ CREATE TABLE `usuario` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(60) NOT NULL,
   `password_hash` varchar(120) NOT NULL,
-  `rol_sistema` enum('ADMIN','TESORERIA','COORDINADOR','STAFF','DIRECTIVO','REVISOR_CUENTA','PERSONAL_CAJA') NOT NULL,
+  `rol_sistema` enum('ADMIN','TESORERIA','COORDINADOR','STAFF','DIRECTIVO','REVISOR_CUENTA','PERSONAL_CAJA','BOLETERIA') NOT NULL,
   `persona_id` bigint unsigned DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -1301,7 +1435,53 @@ INSERT INTO `usuario` (`id`, `username`, `password_hash`, `rol_sistema`, `person
 (8,	'coord_futbolfem',	'$2a$10$2FJnr49Qs0t8HzfzS8b.eeLPztv9gkQwsiqd2rgBa.hwBHf2c.M5C',	'COORDINADOR',	49,	'2025-11-10 21:57:56',	'2025-11-10 22:09:30'),
 (9,	'coord_handball',	'$2a$10$2FJnr49Qs0t8HzfzS8b.eeLPztv9gkQwsiqd2rgBa.hwBHf2c.M5C',	'COORDINADOR',	50,	'2025-11-10 21:57:56',	'2025-11-10 22:09:30'),
 (10,	'coord_hockey',	'$2a$10$2FJnr49Qs0t8HzfzS8b.eeLPztv9gkQwsiqd2rgBa.hwBHf2c.M5C',	'COORDINADOR',	51,	'2025-11-10 21:57:56',	'2025-11-10 22:09:30'),
-(15,	'coord_futbol',	'$2a$10$2FJnr49Qs0t8HzfzS8b.eeLPztv9gkQwsiqd2rgBa.hwBHf2c.M5C',	'COORDINADOR',	35,	'2025-11-10 22:16:04',	'2025-11-10 22:16:04');
+(15,	'coord_futbol',	'$2a$10$2FJnr49Qs0t8HzfzS8b.eeLPztv9gkQwsiqd2rgBa.hwBHf2c.M5C',	'COORDINADOR',	35,	'2025-11-10 22:16:04',	'2025-11-10 22:16:04'),
+(18,	'boleteria',	'$2a$10$V/YRhtOcOFWftPjTXR4jEeQVo3IN19m2IvnotGDUm6kkxe.tbBT3i',	'BOLETERIA',	69,	'2025-11-11 03:44:31',	'2025-11-11 03:53:39');
+
+DELIMITER ;;
+
+CREATE TRIGGER `trg_audit_usuario_insert` AFTER INSERT ON `usuario` FOR EACH ROW
+BEGIN
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, new_values, connection_id, operation_timestamp
+  ) VALUES (
+    'INSERT', 'usuario', NEW.id, @current_user_id,
+    JSON_OBJECT('username', NEW.username, 'rol_sistema', NEW.rol_sistema, 'persona_id', NEW.persona_id),
+    CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+CREATE TRIGGER `trg_audit_usuario_update` AFTER UPDATE ON `usuario` FOR EACH ROW
+BEGIN
+  DECLARE changed JSON;
+  SET changed = JSON_ARRAY();
+
+  IF OLD.username != NEW.username THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'username'); END IF;
+  IF OLD.rol_sistema != NEW.rol_sistema THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'rol_sistema'); END IF;
+  IF OLD.password_hash != NEW.password_hash THEN SET changed = JSON_ARRAY_APPEND(changed, '$', 'password_hash'); END IF;
+
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, old_values, new_values, changed_fields, connection_id, operation_timestamp
+  ) VALUES (
+    'UPDATE', 'usuario', NEW.id, @current_user_id,
+    JSON_OBJECT('username', OLD.username, 'rol_sistema', OLD.rol_sistema, 'persona_id', OLD.persona_id),
+    JSON_OBJECT('username', NEW.username, 'rol_sistema', NEW.rol_sistema, 'persona_id', NEW.persona_id),
+    changed, CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+CREATE TRIGGER `trg_audit_usuario_delete` AFTER DELETE ON `usuario` FOR EACH ROW
+BEGIN
+  INSERT INTO club_lujan_audit.audit_master (
+    operation_type, table_name, record_id, usuario_id, old_values, connection_id, operation_timestamp
+  ) VALUES (
+    'DELETE', 'usuario', OLD.id, @current_user_id,
+    JSON_OBJECT('username', OLD.username, 'rol_sistema', OLD.rol_sistema, 'persona_id', OLD.persona_id),
+    CONNECTION_ID(), NOW(6)
+  );
+END;;
+
+DELIMITER ;
 
 DROP VIEW IF EXISTS `v_caja_detallada`;
 CREATE TABLE `v_caja_detallada` (`id` bigint unsigned, `fecha` datetime, `concepto` varchar(200), `tipo` enum('INGRESO','EGRESO'), `monto` decimal(12,2), `medio_pago` varchar(40), `nro_tramite` varchar(80), `estado` enum('APROBADO','PENDIENTE','RECHAZADO'), `responsable_id` bigint unsigned, `responsable_nombre` varchar(161), `validador_id` bigint unsigned, `validador_nombre` varchar(161), `fecha_validacion` datetime, `created_at` timestamp, `updated_at` timestamp);
@@ -1387,4 +1567,4 @@ CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `vw_performance_history` AS
 DROP TABLE IF EXISTS `vw_physical_summary`;
 CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `vw_physical_summary` AS select `a`.`id` AS `alumno_id`,concat(`p`.`nombre`,' ',`p`.`apellido`) AS `alumno_nombre`,`ps`.`id` AS `session_id`,`ps`.`analysis_date` AS `analysis_date`,`ps`.`video_path` AS `video_path`,`ps`.`analyzed` AS `analyzed`,max((case when (`pm`.`metric_type` = 'SPEED') then `pm`.`value` end)) AS `velocidad_maxima`,max((case when (`pm`.`metric_type` = 'JUMP_HEIGHT') then `pm`.`value` end)) AS `salto_maximo`,avg((case when (`pm`.`metric_type` = 'SPEED') then `pm`.`value` end)) AS `velocidad_promedio`,avg((case when (`pm`.`metric_type` = 'REACTION_TIME') then `pm`.`value` end)) AS `tiempo_reaccion_promedio`,avg((case when (`pm`.`metric_type` = 'BALANCE') then `pm`.`value` end)) AS `equilibrio_promedio`,avg((case when (`pm`.`metric_type` = 'POSTURE') then `pm`.`value` end)) AS `postura_promedio`,`ps`.`notes` AS `notes`,`ps`.`created_at` AS `created_at`,`ps`.`updated_at` AS `updated_at` from (((`physical_session` `ps` join `alumno` `a` on((`a`.`id` = `ps`.`alumno_id`))) join `persona` `p` on((`p`.`id` = `a`.`persona_id`))) left join `physical_metric` `pm` on((`pm`.`session_id` = `ps`.`id`))) group by `a`.`id`,`ps`.`id`,`p`.`nombre`,`p`.`apellido`,`ps`.`analysis_date`,`ps`.`video_path`,`ps`.`analyzed`,`ps`.`notes`,`ps`.`created_at`,`ps`.`updated_at` order by `ps`.`analysis_date` desc;
 
--- 2025-11-11 00:54:27 UTC
+-- 2025-11-12 14:26:12 UTC
