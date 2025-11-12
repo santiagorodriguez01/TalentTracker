@@ -45,9 +45,9 @@ async function proxy(req: NextRequest, ctx: { params: ProxyParams }) {
   };
 
   if (hasBody) {
-    // Node 18+ / 22 exige duplex cuando hay body en fetch del lado servidor
+    // Node 18+/22 exige duplex cuando hay body en fetch del lado del servidor
     (init as any).duplex = 'half';
-    // @ts-ignore: NextRequest.body es un ReadableStream
+    // @ts-ignore: el body de NextRequest es un ReadableStream
     init.body = req.body as any;
   }
 
@@ -62,18 +62,20 @@ async function proxy(req: NextRequest, ctx: { params: ProxyParams }) {
   });
 }
 
-export async function GET(req: NextRequest, ctx: { params: ProxyParams }) {
+// Acá viene el truco: el segundo parámetro lo tipamos como `any`
+// para que el tipo sea compatible con lo que Next espera internamente.
+export async function GET(req: NextRequest, ctx: any) {
   return proxy(req, ctx);
 }
-export async function POST(req: NextRequest, ctx: { params: ProxyParams }) {
+export async function POST(req: NextRequest, ctx: any) {
   return proxy(req, ctx);
 }
-export async function PUT(req: NextRequest, ctx: { params: ProxyParams }) {
+export async function PUT(req: NextRequest, ctx: any) {
   return proxy(req, ctx);
 }
-export async function PATCH(req: NextRequest, ctx: { params: ProxyParams }) {
+export async function PATCH(req: NextRequest, ctx: any) {
   return proxy(req, ctx);
 }
-export async function DELETE(req: NextRequest, ctx: { params: ProxyParams }) {
+export async function DELETE(req: NextRequest, ctx: any) {
   return proxy(req, ctx);
 }
