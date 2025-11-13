@@ -1,10 +1,11 @@
 # services/pose_estimator.py
 from ultralytics import YOLO
-import numpy as np, cv2
+from pathlib import Path
 
 class PoseEstimator:
-    def __init__(self, model_path="yolov8n-pose.pt"):
-        self.model = YOLO(model_path)
+    def __init__(self, model_path: str = "models/yolov8n-pose.pt"):
+        model_file = Path(__file__).resolve().parent.parent / model_path
+        self.model = YOLO(str(model_file))
 
     def detect_keypoints(self, frame):
         results = self.model(frame)

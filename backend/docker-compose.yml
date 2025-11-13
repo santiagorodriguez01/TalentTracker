@@ -32,6 +32,7 @@ services:
       DB_USER: club
       DB_PASS: club
       DB_POOL: 10
+      DB_AUDIT_DB: club_lujan
       JWT_SECRET: devsecret
       PUBLIC_BASE_URL: http://localhost:3000
       AI_BIOMETRIC_URL: http://biometric:8010/biometric
