@@ -119,7 +119,7 @@ services:
       NEXT_PUBLIC_FRONT_API_PREFIX: /api/proxy
 
       # A dónde tiene que apuntar el proxy de Next dentro de la red Docker
-      BACKEND_API_URL: http://api:3000/v1
+      BACKEND_API_URL: http://api:3000
     ports:
       - "3001:3000"   # contenedor escucha 3000, host expone 3001
     depends_on:
