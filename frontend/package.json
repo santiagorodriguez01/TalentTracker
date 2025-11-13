@@ -1,11 +1,11 @@
 {
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+"scripts": {
+  "dev": "next dev -H 0.0.0.0 -p 3000",
+  "build": "next build",
+  "start": "next start -H 0.0.0.0 -p 3000",
+  "lint": "next lint"
+},
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",

@@ -1,32 +1,38 @@
-# Etapa 1: build
+# Etapa 1: dependencias
+FROM node:20-alpine AS deps
+
+WORKDIR /app
+
+# Copiamos manifests
+COPY package*.json ./
+
+# Instalamos dependencias (ci para usar package-lock si existe)
+RUN npm ci || npm install
+
+# Etapa 2: build
 FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Copiamos los manifests del proyecto
-COPY package*.json ./
-
-# Instalamos dependencias
-RUN npm install
-
-# Copiamos el resto del código
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Construimos la app (para Next: npm run build)
+ENV NEXT_TELEMETRY_DISABLED=1
+
+# Construimos la app de producción
 RUN npm run build
 
-# Etapa 2: runtime (imagen más liviana)
-FROM node:20-alpine
+# Etapa 3: runtime
+FROM node:20-alpine AS runner
 
 WORKDIR /app
 ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 
-# Copiamos lo que construimos en la etapa anterior
+# Copiamos todo lo generado al contenedor final
 COPY --from=builder /app ./
 
-# Next/React suele escuchar en el 3000 dentro del contenedor
+# Next escucha en 3000 dentro del contenedor
 EXPOSE 3000
 
-# Para Next.js, asegurate de tener en package.json:
-# "scripts": { "start": "next start -H 0.0.0.0 -p 3000", ... }
 CMD ["npm", "start"]
