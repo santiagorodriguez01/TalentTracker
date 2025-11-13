@@ -1,4 +1,3 @@
-// backend/src/db/connection.js
 import mysql from 'mysql2/promise';
 import 'dotenv/config';
 
@@ -24,14 +23,11 @@ class DB {
     if (!DB.#i) DB.#i = new DB();
     return DB.#i;
   }
-
   get pool() { return this.#p; }
-
   async query(sql, params = []) {
     const [rows] = await this.#p.execute(sql, params);
     return rows;
   }
-
   async getConnection() { return this.#p.getConnection(); }
 }
 
@@ -39,5 +35,4 @@ const db = DB.getInstance();
 
 export const query = (s, p) => db.query(s, p);
 export const getConnection = () => db.getConnection();
-export const pool = db.pool; // <<--- 🔧 export nombrado requerido por auditContext.js
 export default db;

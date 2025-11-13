@@ -12,70 +12,94 @@ const backendBase = normalizeBase(BACKEND);
 
 type ProxyParams = { path?: string[] };
 
-export const dynamic = 'force-dynamic';
-
-async function proxy(req: NextRequest, ctx: { params: ProxyParams }) {
-  const segments = ctx.params.path ?? [];
+async function proxy(req: NextRequest, params: ProxyParams) {
+  const segments = params.path ?? [];
   const targetPath = segments.join('/');
   const url = new URL(req.url);
   const sp = new URLSearchParams(url.searchParams);
-
   const bearer = sp.get('bearer') || sp.get('token') || undefined;
-  if (bearer) {
-    sp.delete('bearer');
-    sp.delete('token');
-  }
-
+  if (bearer) { sp.delete('bearer'); sp.delete('token'); }
   const search = sp.toString();
   const targetUrl = `${backendBase}/${targetPath}${search ? `?${search}` : ''}`;
+  if (process.env.NODE_ENV !== 'production') {
+    console.info('[proxy] forwarding', req.method, targetUrl);
+  }
 
   const headers = new Headers(req.headers);
   headers.delete('host');
-  headers.delete('connection');
-
-  if (bearer) {
-    headers.set('authorization', `Bearer ${bearer}`);
+  headers.delete('content-length');
+  // If no Authorization header, try to forward from bearer query or cookie `token`
+  if (!headers.get('authorization')) {
+    const cookieToken = req.cookies.get('token')?.value;
+    const tok = bearer || cookieToken;
+    if (tok) headers.set('authorization', `Bearer ${tok}`);
   }
-
-  const hasBody = req.method !== 'GET' && req.method !== 'HEAD';
 
   const init: RequestInit = {
     method: req.method,
     headers,
+    redirect: 'manual'
   };
 
-  if (hasBody) {
-    // Node 18+/22 exige duplex cuando hay body en fetch del lado del servidor
-    (init as any).duplex = 'half';
-    // @ts-ignore: el body de NextRequest es un ReadableStream
-    init.body = req.body as any;
+  if (!['GET', 'HEAD'].includes(req.method.toUpperCase())) {
+    const contentType = req.headers.get('content-type') || '';
+    if (contentType.includes('application/json')) {
+      init.body = await req.text();
+    } else if (contentType.includes('form')) {
+      const form = await req.formData();
+      headers.delete('content-type'); // dejar que fetch setee el boundary correcto
+      init.body = form as any;
+    } else if (contentType.includes('multipart')) {
+      const form = await req.formData();
+      headers.delete('content-type'); // dejar que fetch setee el boundary correcto
+      init.body = form as any;
+    } else {
+      init.body = await req.arrayBuffer();
+    }
   }
 
-  const resp = await fetch(targetUrl, init);
+  const response = await fetch(targetUrl, init);
+  const resHeaders = new Headers(response.headers);
+  resHeaders.delete('content-length');
+  resHeaders.set('access-control-expose-headers', '*');
 
-  const respHeaders = new Headers(resp.headers);
-  respHeaders.delete('transfer-encoding');
-
-  return new NextResponse(resp.body, {
-    status: resp.status,
-    headers: respHeaders,
+  return new NextResponse(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: resHeaders
   });
 }
 
-// Acá viene el truco: el segundo parámetro lo tipamos como `any`
-// para que el tipo sea compatible con lo que Next espera internamente.
-export async function GET(req: NextRequest, ctx: any) {
-  return proxy(req, ctx);
+function isPromise<T>(value: T | Promise<T>): value is Promise<T> {
+  return typeof (value as Promise<T>).then === 'function';
 }
-export async function POST(req: NextRequest, ctx: any) {
-  return proxy(req, ctx);
+
+async function resolveParams(context: { params: ProxyParams } | { params: Promise<ProxyParams> }): Promise<ProxyParams> {
+  const value = context.params;
+  return isPromise(value) ? await value : value;
 }
-export async function PUT(req: NextRequest, ctx: any) {
-  return proxy(req, ctx);
+
+export async function GET(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
+  const params = await resolveParams(context);
+  return proxy(req, params);
 }
-export async function PATCH(req: NextRequest, ctx: any) {
-  return proxy(req, ctx);
+
+export async function POST(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
+  const params = await resolveParams(context);
+  return proxy(req, params);
 }
-export async function DELETE(req: NextRequest, ctx: any) {
-  return proxy(req, ctx);
+
+export async function PUT(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
+  const params = await resolveParams(context);
+  return proxy(req, params);
+}
+
+export async function DELETE(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
+  const params = await resolveParams(context);
+  return proxy(req, params);
+}
+
+export async function PATCH(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
+  const params = await resolveParams(context);
+  return proxy(req, params);
 }

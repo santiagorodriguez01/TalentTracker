@@ -24,11 +24,8 @@ ENV NODE_ENV=production
 COPY --from=build /app /app
 COPY src/server/ai_integration/websocket/performanceSocket.js /app/src/server/ai_integration/websocket/performanceSocket.js
 
-# Seguridad: usuario no-root + permisos para uploads
-RUN addgroup -S nodegrp && adduser -S nodeusr -G nodegrp \
-  && mkdir -p /app/uploads \
-  && chown -R nodeusr:nodegrp /app
-
+# Seguridad: usuario no-root
+RUN addgroup -S nodegrp && adduser -S nodeusr -G nodegrp
 USER nodeusr
 
 # Puerto real de tu app (ajustá si no es 3000)
@@ -39,3 +36,4 @@ EXPOSE 3000
 #   CMD wget -qO- http://127.0.0.1:3000/health || exit 1
 
 CMD ["node","src/server/index.js"]
+

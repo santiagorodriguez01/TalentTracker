@@ -12,7 +12,7 @@ const qc = new QueryClient({ defaultOptions: { queries: { refetchOnWindowFocus: 
 export default function Providers({ children }: { children: React.ReactNode }){
   return (
     <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-      <CssVarsProvider theme={theme} defaultMode="system" disableTransitionOnChange>
+      <CssVarsProvider theme={theme} defaultMode="system" storageKey="app-color-scheme" disableTransitionOnChange>
         <CssBaseline />
         <QueryClientProvider client={qc}>
           <AppProgress />

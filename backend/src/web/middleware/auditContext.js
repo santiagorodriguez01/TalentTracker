@@ -6,7 +6,7 @@
  * =========================================
  */
 
-import { pool } from '../../db/connection.js';
+import { pool } from '../../domain/database/pool.js';
 
 /**
  * Middleware que establece el contexto de auditoría en MySQL
@@ -46,7 +46,7 @@ export async function setAuditContext(req, res, next) {
 
       // Asegurar que la conexión se libere al finalizar la request
       const originalEnd = res.end;
-      res.end = function (...args) {
+      res.end = function(...args) {
         if (req.auditConnection) {
           req.auditConnection.release();
           req.auditConnection = null;
@@ -116,16 +116,7 @@ export async function logUserSession(req, res, next) {
  * @param {string} username - Username del usuario (opcional)
  * @param {string} userRole - Rol del usuario (opcional)
  */
-export async function logAuditEvent(
-  userId,
-  operation,
-  tableName,
-  recordId,
-  oldValues = null,
-  newValues = null,
-  username = null,
-  userRole = null
-) {
+export async function logAuditEvent(userId, operation, tableName, recordId, oldValues = null, newValues = null, username = null, userRole = null) {
   try {
     const changedFields = [];
 

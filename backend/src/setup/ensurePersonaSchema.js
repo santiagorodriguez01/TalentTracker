@@ -16,15 +16,13 @@ async function columnExists(table, column) {
 }
 
 export async function ensurePersonaSchema() {
-  const enumPersonaRol = `'SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO','BOLETERIA'`;
-
-  // Crea la tabla mínima si no existe (estructura básica para no cortar el alta).
+  // Crea la tabla minima si no existe (estructura basica para no cortar el alta).
   await query(`
     CREATE TABLE IF NOT EXISTS persona (
       id BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
       nombre       VARCHAR(80)  NOT NULL,
       apellido     VARCHAR(80)  NOT NULL,
-      genero       ENUM('MASCULINO','FEMENINO','NO ESPECIFICADO') NOT NULL DEFAULT 'NO ESPECIFICADO',
+      genero       ENUM('MASCULINO','FEMENINO','NO_ESPECIFICADO') NULL,
       dni          VARCHAR(12)  NOT NULL UNIQUE,
       fecha_nac    DATE         NULL,
       email        VARCHAR(120) NULL,
@@ -33,39 +31,28 @@ export async function ensurePersonaSchema() {
       foto         VARCHAR(255) NULL,
       qr_ver       INT UNSIGNED NOT NULL DEFAULT 1,
       qr_url       VARCHAR(255) NULL,
-      rol          ENUM(${enumPersonaRol}) NOT NULL DEFAULT 'SOCIO',
+      rol          ENUM('SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO','BOLETERIA') NOT NULL DEFAULT 'SOCIO',
       estado       ENUM('ACTIVO','INACTIVO') NOT NULL DEFAULT 'ACTIVO',
       created_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
   `);
 
-  // ----- genero -----
   const hasGenero = await columnExists('persona', 'genero');
   if (!hasGenero) {
-    // Si no existe, la creamos directamente con la definición final
     await query(`
       ALTER TABLE persona
-        ADD COLUMN genero ENUM('MASCULINO','FEMENINO','NO ESPECIFICADO')
-        NOT NULL DEFAULT 'NO ESPECIFICADO'
+        ADD COLUMN genero ENUM('MASCULINO','FEMENINO','NO_ESPECIFICADO') NULL
         AFTER apellido
     `);
   } else {
-    // Por seguridad, limpiamos posibles NULL o vacíos antes de volverla NOT NULL
-    await query(`
-      UPDATE persona
-      SET genero = 'NO ESPECIFICADO'
-      WHERE genero IS NULL OR genero = ''
-    `);
     await query(`
       ALTER TABLE persona
-        MODIFY COLUMN genero ENUM('MASCULINO','FEMENINO','NO ESPECIFICADO')
-        NOT NULL DEFAULT 'NO ESPECIFICADO'
+        MODIFY COLUMN genero ENUM('MASCULINO','FEMENINO','NO_ESPECIFICADO') NULL
         AFTER apellido
     `);
   }
 
-  // ----- qr_ver -----
   const hasQrVer = await columnExists('persona', 'qr_ver');
   if (!hasQrVer) {
     await query(`
@@ -74,11 +61,7 @@ export async function ensurePersonaSchema() {
         AFTER foto
     `);
   } else {
-    await query(`
-      UPDATE persona
-      SET qr_ver = 1
-      WHERE qr_ver IS NULL OR qr_ver < 1
-    `);
+    await query(`UPDATE persona SET qr_ver = 1 WHERE qr_ver IS NULL OR qr_ver < 1`);
     await query(`
       ALTER TABLE persona
         MODIFY COLUMN qr_ver INT UNSIGNED NOT NULL DEFAULT 1
@@ -86,7 +69,6 @@ export async function ensurePersonaSchema() {
     `);
   }
 
-  // ----- qr_url -----
   const hasQrUrl = await columnExists('persona', 'qr_url');
   if (!hasQrUrl) {
     await query(`
@@ -102,28 +84,23 @@ export async function ensurePersonaSchema() {
     `);
   }
 
-  // ----- rol principal en persona -----
+  const enumPersonaRol = `'SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO','BOLETERIA'`;
   const hasRol = await columnExists('persona', 'rol');
   if (!hasRol) {
     await query(`
       ALTER TABLE persona
         ADD COLUMN rol ENUM(${enumPersonaRol}) NOT NULL DEFAULT 'SOCIO'
-        AFTER qr_url
+        AFTER foto
     `);
   } else {
-    await query(`
-      UPDATE persona
-      SET rol = 'SOCIO'
-      WHERE rol IS NULL OR rol = ''
-    `);
+    await query(`UPDATE persona SET rol = 'SOCIO' WHERE rol IS NULL OR rol = ''`);
     await query(`
       ALTER TABLE persona
         MODIFY COLUMN rol ENUM(${enumPersonaRol}) NOT NULL DEFAULT 'SOCIO'
-        AFTER qr_url
+        AFTER foto
     `);
   }
 
-  // ----- estado -----
   const hasEstado = await columnExists('persona', 'estado');
   if (!hasEstado) {
     await query(`
@@ -132,11 +109,7 @@ export async function ensurePersonaSchema() {
         AFTER rol
     `);
   } else {
-    await query(`
-      UPDATE persona
-      SET estado = 'ACTIVO'
-      WHERE estado IS NULL OR estado = ''
-    `);
+    await query(`UPDATE persona SET estado = 'ACTIVO' WHERE estado IS NULL OR estado = ''`);
     await query(`
       ALTER TABLE persona
         MODIFY COLUMN estado ENUM('ACTIVO','INACTIVO') NOT NULL DEFAULT 'ACTIVO'
@@ -144,40 +117,18 @@ export async function ensurePersonaSchema() {
     `);
   }
 
-  // ----- created_at / updated_at -----
-  const hasCreatedAt = await columnExists('persona', 'created_at');
-  if (!hasCreatedAt) {
-    await query(`
-      ALTER TABLE persona
-        ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        AFTER estado
-    `);
-  }
-
-  const hasUpdatedAt = await columnExists('persona', 'updated_at');
-  if (!hasUpdatedAt) {
-    await query(`
-      ALTER TABLE persona
-        ADD COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-        AFTER created_at
-    `);
-  }
-
-  // ----- tabla persona_rol (roles adicionales) -----
   await query(`
     CREATE TABLE IF NOT EXISTS persona_rol (
       id BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
       persona_id BIGINT UNSIGNED NOT NULL,
-      rol ENUM(${enumPersonaRol}) NULL,
+      rol ENUM('SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO','BOLETERIA') NULL,
       CONSTRAINT fk_persona_rol_persona
         FOREIGN KEY (persona_id) REFERENCES persona(id)
         ON DELETE CASCADE
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
   `);
-
-  // Nos aseguramos de que el ENUM de persona_rol quede sincronizado
   await query(`
     ALTER TABLE persona_rol
-      MODIFY COLUMN rol ENUM(${enumPersonaRol}) NULL
+      MODIFY COLUMN rol ENUM('SOCIO','ALUMNO','JUGADOR','PERSONAL','PERSONAL_CAJA','REVISOR_CUENTA','COORDINADOR','DIRECTIVO','BOLETERIA') NULL
   `);
 }
