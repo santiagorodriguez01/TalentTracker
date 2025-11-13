@@ -115,10 +115,13 @@ services:
     build: ../frontend
     container_name: talenttracker_frontend
     environment:
-      # REEMPLAZADO PARA PRODUCCIÓN: el FRONTEND usa rutas /api hacia NGINX
-      NEXT_PUBLIC_API_BASE: /api
+      # Base para las llamadas desde el navegador (Axios)
+      NEXT_PUBLIC_FRONT_API_PREFIX: /api/proxy
+
+      # A dónde debe apuntar el proxy de Next dentro de la red de Docker
+      BACKEND_API_URL: http://api:3000
     ports:
-      - "3001:3000"   # contenedor escucha puerto 3000
+      - "3001:3000"   # contenedor escucha en 3000, host expone 3001
     depends_on:
       - api
     restart: unless-stopped
