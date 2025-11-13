@@ -33,10 +33,12 @@ services:
       DB_PASS: club
       DB_POOL: 10
       JWT_SECRET: devsecret
-      PUBLIC_BASE_URL: http://localhost:3000
+      # URL pública que el backend usa para armar links (ajustala si tenés dominio)
+      PUBLIC_BASE_URL: http://localhost
       AI_BIOMETRIC_URL: http://biometric:8010/biometric
       AI_PERFORMANCE_URL: http://performance:8020/performance
     ports:
+      # Exponemos el backend por si querés debuggear desde el host
       - "3000:3000"
     depends_on:
       mysql:
@@ -110,14 +112,13 @@ services:
     build: ./frontend
     container_name: talenttracker_frontend
     environment:
-      # El frontend habla siempre con el backend mediante el proxy /api/proxy
-      # y este env le dice al proxy a qué backend pegarle.
+      # El frontend (Next) usa este backend interno de Docker
       BACKEND_API_URL: http://api:3000
-      # Opcional, por si en algún lado lo usás en el cliente
+      # Prefijo que usás en el cliente para llamar al proxy (ajustá si tu código usa otro)
       NEXT_PUBLIC_FRONT_API_PREFIX: /api/proxy
     ports:
-      # Host 3001 -> contenedor 3000 (Next arranca en 3000 por defecto)
-      - "3001:3000"
+      # Exponemos el frontend en el puerto 80 del VPS (http://IP_DEL_VPS/)
+      - "80:3000"
     depends_on:
       api:
         condition: service_started
