@@ -1,94 +1,73 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
-const BACKEND =
-  process.env.BACKEND_API_URL ||
-  process.env.NEXT_PUBLIC_API_URL ||
-  process.env.NEXT_PUBLIC_API_BASE ||
-  'http://localhost:3000';
-
-const normalizeBase = (value: string) => value.replace(/\/+$/, '');
-const backendBase = normalizeBase(BACKEND);
+// ---------------
+// BACKEND REAL
+// ---------------
+const BACKEND = process.env.BACKEND_API_URL || "http://api:3000";
+const backendBase = BACKEND.replace(/\/+$/, ""); // limpio barras finales
 
 type ProxyParams = { path?: string[] };
 
 async function proxy(req: NextRequest, params?: ProxyParams) {
   const segments = params?.path ?? [];
-  const targetPath = segments.join('/');
-  const url = new URL(req.url);
-  const sp = new URLSearchParams(url.searchParams);
-  const bearer = sp.get('bearer') || sp.get('token') || undefined;
-  if (bearer) {
-    sp.delete('bearer');
-    sp.delete('token');
-  }
-  const search = sp.toString();
-  const targetUrl = `${backendBase}/${targetPath}${search ? `?${search}` : ''}`;
-  if (process.env.NODE_ENV !== 'production') {
-    console.info('[proxy] forwarding', req.method, targetUrl);
+  const targetPath = segments.join("/");
+
+  // Construyo URL final SIEMPRE correcta
+  const targetUrl = `${backendBase}/${targetPath}`;
+
+  if (process.env.NODE_ENV !== "production") {
+    console.log("[proxy] →", req.method, targetUrl);
   }
 
+  // Headers seguros
   const headers = new Headers(req.headers);
-  headers.delete('host');
-  headers.delete('content-length');
+  headers.delete("host");
+  headers.delete("content-length");
 
-  // Si no viene Authorization, intentamos con bearer query o cookie `token`
-  if (!headers.get('authorization')) {
-    const cookieToken = req.cookies.get('token')?.value;
-    const tok = bearer || cookieToken;
-    if (tok) headers.set('authorization', `Bearer ${tok}`);
+  // Auth opcional
+  const cookieToken = req.cookies.get("token")?.value;
+  if (!headers.get("authorization") && cookieToken) {
+    headers.set("authorization", `Bearer ${cookieToken}`);
   }
 
   const init: RequestInit = {
     method: req.method,
     headers,
-    redirect: 'manual',
   };
 
-  if (!['GET', 'HEAD'].includes(req.method.toUpperCase())) {
-    const contentType = req.headers.get('content-type') || '';
-    if (contentType.includes('application/json')) {
-      init.body = await req.text();
-    } else if (contentType.includes('form') || contentType.includes('multipart')) {
-      const form = await req.formData();
-      headers.delete('content-type'); // dejar que fetch setee el boundary correcto
-      init.body = form as any;
-    } else {
-      init.body = await req.arrayBuffer();
-    }
+  // BODY según tipo
+  if (!["GET", "HEAD"].includes(req.method.toUpperCase())) {
+    init.body = await req.arrayBuffer();
   }
 
   const response = await fetch(targetUrl, init);
-  const resHeaders = new Headers(response.headers);
-  resHeaders.delete('content-length');
-  resHeaders.set('access-control-expose-headers', '*');
 
-  return new NextResponse(response.body, {
+  // ARMADO LIMPIO DE RESPUESTA (evita decoding_failed)
+  const body = await response.arrayBuffer();
+  const outHeaders = new Headers(response.headers);
+  outHeaders.delete("content-length");
+  outHeaders.set("access-control-expose-headers", "*");
+
+  return new NextResponse(body, {
     status: response.status,
-    statusText: response.statusText,
-    headers: resHeaders,
+    headers: outHeaders,
   });
 }
 
-// A partir de acá, aflojamos el tipado del contexto para evitar el conflicto con Next 15
-type RouteContextAny = any;
-
-export async function GET(req: NextRequest, context: RouteContextAny) {
-  return proxy(req, context?.params);
+// HANDLERS
+export async function GET(req: NextRequest, ctx: any) {
+  return proxy(req, ctx?.params);
 }
-
-export async function POST(req: NextRequest, context: RouteContextAny) {
-  return proxy(req, context?.params);
+export async function POST(req: NextRequest, ctx: any) {
+  return proxy(req, ctx?.params);
 }
-
-export async function PUT(req: NextRequest, context: RouteContextAny) {
-  return proxy(req, context?.params);
+export async function PUT(req: NextRequest, ctx: any) {
+  return proxy(req, ctx?.params);
 }
-
-export async function DELETE(req: NextRequest, context: RouteContextAny) {
-  return proxy(req, context?.params);
+export async function PATCH(req: NextRequest, ctx: any) {
+  return proxy(req, ctx?.params);
 }
-
-export async function PATCH(req: NextRequest, context: RouteContextAny) {
-  return proxy(req, context?.params);
+export async function DELETE(req: NextRequest, ctx: any) {
+  return proxy(req, ctx?.params);
 }
