@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   mysql:
     image: mysql:8
@@ -34,7 +36,10 @@ services:
       DB_POOL: 10
       DB_AUDIT_DB: club_lujan
       JWT_SECRET: devsecret
+
+      # EN PRODUCCIÓN ESTO DEBE SER EL DOMINIO REAL (lo ajustamos después)
       PUBLIC_BASE_URL: http://localhost:3000
+
       AI_BIOMETRIC_URL: http://biometric:8010/biometric
       AI_PERFORMANCE_URL: http://performance:8020/performance
     ports:
@@ -69,8 +74,8 @@ services:
       dockerfile: biometric_access/Dockerfile
     container_name: talenttracker_biometric
     environment:
-      - BIOMETRIC_MATCH_THRESHOLD=0.92
-      - BIOMETRIC_MAX_L2=0.20
+      BIOMETRIC_MATCH_THRESHOLD: "0.92"
+      BIOMETRIC_MAX_L2: "0.20"
     ports:
       - "8010:8010"
     restart: unless-stopped
@@ -110,9 +115,10 @@ services:
     build: ../frontend
     container_name: talenttracker_frontend
     environment:
-      NEXT_PUBLIC_API_BASE: http://api:3000
+      # REEMPLAZADO PARA PRODUCCIÓN: el FRONTEND usa rutas /api hacia NGINX
+      NEXT_PUBLIC_API_BASE: /api
     ports:
-      - "3001:3001"
+      - "3001:3000"   # contenedor escucha puerto 3000
     depends_on:
       - api
     restart: unless-stopped
