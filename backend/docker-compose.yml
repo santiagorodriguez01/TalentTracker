@@ -106,13 +106,13 @@ services:
         condition: service_healthy
     restart: unless-stopped
 
-  # frontend:
-  #   build: ./frontend
-  #   container_name: talenttracker_frontend
-  #   environment:
-  #     NEXT_PUBLIC_API_BASE: http://api:3000
-  #   ports:
-  #     - "3001:3001"
-  #   depends_on:
-  #     - api
-  #   restart: unless-stopped
+  frontend:
+    build: ./frontend
+    container_name: talenttracker_frontend
+    environment:
+      NEXT_PUBLIC_API_BASE: http://api:3000
+    ports:
+      - "3001:3001"
+    depends_on:
+      - api
+    restart: unless-stopped
