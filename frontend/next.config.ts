@@ -1,8 +1,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  pageExtensions: ['tsx','ts','jsx','js'],
-  experimental: { typedRoutes: true }
+  // typedRoutes: false, // opcional, por defecto ya queda desactivado
+  // otras opciones que ya tengas...
 };
 
 export default nextConfig;

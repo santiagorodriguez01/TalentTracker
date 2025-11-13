@@ -12,13 +12,16 @@ const backendBase = normalizeBase(BACKEND);
 
 type ProxyParams = { path?: string[] };
 
-async function proxy(req: NextRequest, params: ProxyParams) {
-  const segments = params.path ?? [];
+async function proxy(req: NextRequest, params?: ProxyParams) {
+  const segments = params?.path ?? [];
   const targetPath = segments.join('/');
   const url = new URL(req.url);
   const sp = new URLSearchParams(url.searchParams);
   const bearer = sp.get('bearer') || sp.get('token') || undefined;
-  if (bearer) { sp.delete('bearer'); sp.delete('token'); }
+  if (bearer) {
+    sp.delete('bearer');
+    sp.delete('token');
+  }
   const search = sp.toString();
   const targetUrl = `${backendBase}/${targetPath}${search ? `?${search}` : ''}`;
   if (process.env.NODE_ENV !== 'production') {
@@ -28,7 +31,8 @@ async function proxy(req: NextRequest, params: ProxyParams) {
   const headers = new Headers(req.headers);
   headers.delete('host');
   headers.delete('content-length');
-  // If no Authorization header, try to forward from bearer query or cookie `token`
+
+  // Si no viene Authorization, intentamos con bearer query o cookie `token`
   if (!headers.get('authorization')) {
     const cookieToken = req.cookies.get('token')?.value;
     const tok = bearer || cookieToken;
@@ -38,18 +42,14 @@ async function proxy(req: NextRequest, params: ProxyParams) {
   const init: RequestInit = {
     method: req.method,
     headers,
-    redirect: 'manual'
+    redirect: 'manual',
   };
 
   if (!['GET', 'HEAD'].includes(req.method.toUpperCase())) {
     const contentType = req.headers.get('content-type') || '';
     if (contentType.includes('application/json')) {
       init.body = await req.text();
-    } else if (contentType.includes('form')) {
-      const form = await req.formData();
-      headers.delete('content-type'); // dejar que fetch setee el boundary correcto
-      init.body = form as any;
-    } else if (contentType.includes('multipart')) {
+    } else if (contentType.includes('form') || contentType.includes('multipart')) {
       const form = await req.formData();
       headers.delete('content-type'); // dejar que fetch setee el boundary correcto
       init.body = form as any;
@@ -66,40 +66,29 @@ async function proxy(req: NextRequest, params: ProxyParams) {
   return new NextResponse(response.body, {
     status: response.status,
     statusText: response.statusText,
-    headers: resHeaders
+    headers: resHeaders,
   });
 }
 
-function isPromise<T>(value: T | Promise<T>): value is Promise<T> {
-  return typeof (value as Promise<T>).then === 'function';
+// A partir de acá, aflojamos el tipado del contexto para evitar el conflicto con Next 15
+type RouteContextAny = any;
+
+export async function GET(req: NextRequest, context: RouteContextAny) {
+  return proxy(req, context?.params);
 }
 
-async function resolveParams(context: { params: ProxyParams } | { params: Promise<ProxyParams> }): Promise<ProxyParams> {
-  const value = context.params;
-  return isPromise(value) ? await value : value;
+export async function POST(req: NextRequest, context: RouteContextAny) {
+  return proxy(req, context?.params);
 }
 
-export async function GET(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
-  const params = await resolveParams(context);
-  return proxy(req, params);
+export async function PUT(req: NextRequest, context: RouteContextAny) {
+  return proxy(req, context?.params);
 }
 
-export async function POST(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
-  const params = await resolveParams(context);
-  return proxy(req, params);
+export async function DELETE(req: NextRequest, context: RouteContextAny) {
+  return proxy(req, context?.params);
 }
 
-export async function PUT(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
-  const params = await resolveParams(context);
-  return proxy(req, params);
-}
-
-export async function DELETE(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
-  const params = await resolveParams(context);
-  return proxy(req, params);
-}
-
-export async function PATCH(req: NextRequest, context: { params: ProxyParams } | { params: Promise<ProxyParams> }) {
-  const params = await resolveParams(context);
-  return proxy(req, params);
+export async function PATCH(req: NextRequest, context: RouteContextAny) {
+  return proxy(req, context?.params);
 }
