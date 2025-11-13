@@ -107,7 +107,7 @@ services:
     restart: unless-stopped
 
   frontend:
-    build: ./frontend
+    build: ../frontend
     container_name: talenttracker_frontend
     environment:
       NEXT_PUBLIC_API_BASE: http://api:3000
