@@ -35,6 +35,12 @@ export default function PersonaEdit(){
   const personaId = Number(id);
   const router = useRouter();
   const qc = useQueryClient();
+
+  // 🔹 ESTO ANTES ESTABA AFUERA DEL COMPONENTE: lo traemos adentro
+  const authUser = useAuthStore(s => s.user as any);
+  const rol = ((authUser?.user?.rol_sistema || authUser?.rol_sistema || '') as Rol) || undefined;
+  const puedeEditar = rol ? can.editarPersona(rol) : false;
+
   const [cameraOpen, setCameraOpen] = React.useState(false);
   const [fotoFile, setFotoFile] = React.useState<File | null>(null);
   const [preview, setPreview] = React.useState<string | null>(null);
@@ -230,12 +236,8 @@ export default function PersonaEdit(){
         </Stack>
       </Stack>
 
-      <CameraCapture open={cameraOpen} onClose={()=>setCameraOpen(false)} onCapture={(f)=>{ setFotoFile(f); setPreview(URL.createObjectURL(f)); }} facingMode="environment" />
+      <CameraCapture open={cameraOpen} onClose={()=>setCameraOpen(false)} onCapture={onCapture} facingMode="environment" />
       <Snackbar open={ok} autoHideDuration={2500} onClose={()=>setOk(false)} message="Persona actualizada" />
     </Box>
   );
 }
-
-  const authUser = useAuthStore(s => s.user as any);
-  const rol = ((authUser?.user?.rol_sistema || authUser?.rol_sistema || '') as Rol) || undefined;
-  const puedeEditar = rol ? can.editarPersona(rol) : false;
