@@ -1,7 +1,7 @@
 services:
   mysql:
     image: mysql:8
-    container_name: talenttracker_mysql
+    container_name: tt_mysql
     environment:
       MYSQL_DATABASE: club_lujan
       MYSQL_USER: club
@@ -23,7 +23,7 @@ services:
 
   api:
     build: .
-    container_name: talenttracker_api
+    container_name: tt_backend
     command: ["node", "src/server/index.js"]
     environment:
       DB_HOST: mysql
@@ -33,12 +33,12 @@ services:
       DB_PASS: club
       DB_POOL: 10
       JWT_SECRET: devsecret
-      # URL pública que el backend usa para armar links (ajustala si tenés dominio)
+      # URL pública que el backend usa para armar enlaces (ajustala si tenés dominio)
       PUBLIC_BASE_URL: http://localhost
       AI_BIOMETRIC_URL: http://biometric:8010/biometric
       AI_PERFORMANCE_URL: http://performance:8020/performance
     ports:
-      # Exponemos el backend por si querés debuggear desde el host
+      # Exponemos el backend en el host (útil para debug: curl al 3000 del VPS)
       - "3000:3000"
     depends_on:
       mysql:
@@ -49,13 +49,13 @@ services:
         condition: service_started
     volumes:
       - ./uploads:/app/uploads
-    # en este compose estás corriendo como root en el contenedor
+    # en este compose corrés como root dentro del contenedor
     user: "0:0"
     restart: unless-stopped
 
   adminer:
     image: adminer:latest
-    container_name: talenttracker_adminer
+    container_name: tt_adminer
     ports:
       - "8080:8080"
     environment:
@@ -69,7 +69,7 @@ services:
     build:
       context: ..
       dockerfile: biometric_access/Dockerfile
-    container_name: talenttracker_biometric
+    container_name: tt_biometric
     environment:
       - BIOMETRIC_MATCH_THRESHOLD=0.92
       - BIOMETRIC_MAX_L2=0.20
@@ -81,7 +81,7 @@ services:
     build:
       context: ..
       dockerfile: performance_tracker/Dockerfile
-    container_name: talenttracker_performance
+    container_name: tt_performance
     ports:
       - "8020:8020"
     volumes:
@@ -92,7 +92,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.automation
-    container_name: talenttracker_automation
+    container_name: tt_automation
     environment:
       DB_HOST: mysql
       DB_USER: club
@@ -110,14 +110,14 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: talenttracker_frontend
+    container_name: tt_frontend
     environment:
       # El frontend (Next) usa este backend interno de Docker
       BACKEND_API_URL: http://api:3000
-      # Prefijo que usás en el cliente para llamar al proxy (ajustá si tu código usa otro)
+      # Prefijo que usás en el cliente para el proxy (ajustá si tu código usa otro)
       NEXT_PUBLIC_FRONT_API_PREFIX: /api/proxy
     ports:
-      # Exponemos el frontend en el puerto 80 del VPS (http://IP_DEL_VPS/)
+      # El sitio queda accesible en http://IP_DEL_VPS/
       - "80:3000"
     depends_on:
       api:
