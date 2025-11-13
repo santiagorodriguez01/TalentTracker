@@ -115,13 +115,13 @@ services:
     build: ../frontend
     container_name: talenttracker_frontend
     environment:
-      # Base para las llamadas desde el navegador (Axios)
+      # Lo que usa Axios en el navegador
       NEXT_PUBLIC_FRONT_API_PREFIX: /api/proxy
 
-      # A dónde debe apuntar el proxy de Next dentro de la red de Docker
-      BACKEND_API_URL: http://api:3000
+      # A dónde tiene que apuntar el proxy de Next dentro de la red Docker
+      BACKEND_API_URL: http://api:3000/api
     ports:
-      - "3001:3000"   # contenedor escucha en 3000, host expone 3001
+      - "3001:3000"   # contenedor escucha 3000, host expone 3001
     depends_on:
       - api
     restart: unless-stopped
